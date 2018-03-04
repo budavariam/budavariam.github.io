@@ -32,6 +32,7 @@ function regenerateCustomIcons(startDir, resultFile, done){
             result.push(`  ${data.fileName}: '${data.base64}',`);
         });
         result.push(')');
+        result.push('');
         done(resultFile, result.join('\n'), ids);
     });
 }

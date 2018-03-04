@@ -26,6 +26,17 @@ New icon:
     ```
 1. Run `jekyll serve` to see the results.
 
+### Edit SVG size
+
+Ubuntu:
+
+```bash
+sudo apt-get install librsvg2-bin
+rsvg-convert -a -w $size -f svg $sourceFileName -o $resultFileName
+echo "Please credit the author!"
+inkscape $resultFileName
+```
+
 ### Links
 
 * [Inkscape - svg editor](https://inkscape.org/)
