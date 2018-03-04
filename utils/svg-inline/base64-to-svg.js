@@ -3,9 +3,8 @@ const fs = require('fs');
 
 module.exports = base64ToSvg;
 
-function base64ToSvg(fileName){
-    const data = fs.readFileSync(file);
-    return new Buffer(data.toString(), 'base64').toString('ascii');
+function base64ToSvg(base64String){
+    return new Buffer(base64String, 'base64').toString('ascii');
 }
 
 if (require.main === module) {
