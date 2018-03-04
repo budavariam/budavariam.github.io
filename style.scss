@@ -150,10 +150,6 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
@@ -272,7 +268,6 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
@@ -287,3 +282,23 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-masthead {
+  flex: 1 auto;
+}
+
+.wrapper-main {
+  flex: 2 0px;
+}
+
+.wrapper-footer {
+  flex-shrink: 0;
+}
