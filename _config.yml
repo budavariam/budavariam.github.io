@@ -14,7 +14,7 @@ footer-links:
   instagram: budavariam
   linkedin: mátyás-budavári-015767150
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: + # just type anything here for a working RSS icon
   tumblr: budavari
   twitter: budavari
   stackoverflow: users/9174012/mátyás-budavári
@@ -24,10 +24,10 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: budavariam
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# Enter your Google Analytics web tracking code (e.g. UA-1234567-8) to activate tracking
+google_analytics: UA-115499513-1
 
 url:
 
@@ -35,7 +35,7 @@ baseurl: ""
 
 #
 
-permalink: /:title/
+permalink: posts/:year/:month/:day/:title/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
