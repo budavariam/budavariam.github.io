@@ -11,7 +11,7 @@ Ebédre egy óra alatt 2 főnyi adag. Az olivaolajjal vigyázz, ha bacont is has
 
 * 4tk olivaolaj
 * 300g vöröshagyma
-* 250g bacon
+* 125g bacon
 * 150g gomba
 * 150g piros színű paprika
 * egy marék spenót
