@@ -65,3 +65,14 @@ exclude:
   - CNAME
   - utils/
   - images/svg-icons/
+
+defaults:
+  - scope:
+      path: "assets/food"
+    values:
+      food: true
+  - scope:
+      path: "_posts"
+    values:
+      comments: false
+      language: en
