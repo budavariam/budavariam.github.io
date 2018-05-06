@@ -7,6 +7,7 @@
     "svg": "node utils/svg-inline",
     "bts": "node utils/svg-inline/base64-to-svg.js",
     "stb": "node utils/svg-inline/svg-to-base64.js",
+    "imgopt": "jpegoptim assets/food/*.jpg",
     "start": "jekyll serve"
   },
   "repository": {

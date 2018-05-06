@@ -7,3 +7,7 @@
 3. Serve the site and watch for markup/sass changes `jekyll serve`
 4. View your website at http://127.0.0.1:4000/
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+
+## Compress images
+
+Install [jpegoptim](https://github.com/tjko/jpegoptim) to compress your images, not to fill this repo unnecessarily.
