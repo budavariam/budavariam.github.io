@@ -74,5 +74,5 @@ defaults:
   - scope:
       path: "_posts"
     values:
-      comments: false
+      comments: true
       language: en
