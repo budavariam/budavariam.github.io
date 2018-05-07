@@ -7,6 +7,8 @@ language: hu
 
 Vacsorára húsz perc alatt 2 tányérnyi étel.
 
+A hagymát most nem hagytam olyan sokáig dinsztelődni mint szoktam, így jobban érződött az íze. Most nem használtam gombát, így ez pont jól jött ki.
+
 ## Hozzávalók
 
 * 80g 100% paripüré (29 kcal)
