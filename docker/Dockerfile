@@ -1,9 +1,13 @@
-FROM ruby:2.6.3
+FROM ruby:2.6.3-alpine
 LABEL maintainer='Mátyás Budavári <budavariam@gmail.com>'
 
-RUN apt-get update && \
-	gem install bundler -v 1.12.3 && \
-    gem install github-pages
+ENV GHP_GEM_VERSION 197
+
+RUN apk --update add --virtual build_deps \
+      build-base ruby-dev libc-dev linux-headers && \
+    gem install --no-document github-pages:${GHP_GEM_VERSION} && \
+    apk del build_deps && \
+    rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
 EXPOSE 4000
 
