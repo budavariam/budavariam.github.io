@@ -4,7 +4,7 @@ title: Flexbox zombies
 comments: true
 ---
 
-A few days ago I've been thinking whether if there's a more interactive way of learning flexbox, rather than [this great guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+A few days ago I've been thinking whether there's a more interactive way of learning flexbox, rather than [this great guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 I know the basics, the concept, read this introduction many times, but I had to look up the parameters all the time.
 
