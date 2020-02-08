@@ -59,6 +59,8 @@ plugins:
 
 # Exclude these files from your production _site
 exclude:
+  - docker/
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - LICENSE
