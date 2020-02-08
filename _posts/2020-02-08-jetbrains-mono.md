@@ -22,7 +22,7 @@ I turned on ligatures as well, my favourites are the arrows, comparisons lte, gt
 
 ![Jetbrains mono favourite parts](/assets/post/2020-02-08-jetbrains-mono.png)
 
-This font is used in Jetbrain's applications' latest versions (starting from `v2019.3`),
+This font is used in Jetbrains applications' latest versions (starting from `v2019.3`),
 currently I only use DataGrip from that repertoire.
 For my daily work I use the `iTerm2` terminal and `VSCode`. It was quite simple to set them up.
 
