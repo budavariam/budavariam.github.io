@@ -47,7 +47,7 @@ filler text | `lorem5` | `Lorem ipsum dolor sit amet.`
 
 * Use `>` to step into thee prev item, and define its children.
 * Use `+` to define a sibling of the previous item.
-* Use `^` to climb up to parent. (I can be used multiple times).
+* Use `^` to climb up to parent. (It can be used multiple times).
 
 What | Emmet | Generated HTML
 ---- | ---- | ----
