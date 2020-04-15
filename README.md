@@ -1,4 +1,8 @@
-# Jekyll
+# My personal site
+
+Hello, I'm Mátyás Budavári, and you're looking at the source of my personal site.
+
+You can see it LIVE on [github pages](https://budavariam.github.io).
 
 ## Local Development
 
