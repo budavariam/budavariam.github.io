@@ -29,9 +29,10 @@ The side presentation even syncs up with the cursor and shows only the current s
 For a basic overview of the possibilities the VSCode plugin promotes a sample file, that is available
 [here](https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md).
 
-This is the first time I met this lib, and I haven't yet got time to dive in the docs, here are the essential parts I needed:
+This is the first time I met this lib, and I haven't yet got time to dive in the docs,
+here are the essential parts I needed:
 
-* The markdown file has to start with a frontmatter like this:
+* The markdown file has to start with a front-matter like this:
 
     ```yml
     ---
@@ -52,7 +53,9 @@ This is the first time I met this lib, and I haven't yet got time to dive in the
     ```
 
 * Tables can be embedded as well.
-* I needed to get rid of image borders. I added `customTheme : "overrides"` to front-matter, and this css to `overrides.css` in the same folder as the presentation. There might be a more sophisticated way, but it was fine for me.
+* I needed to get rid of image borders. I added `customTheme: "overrides"` to front-matter,
+and this css to `overrides.css` in the same folder as the presentation.
+There might be a more sophisticated way, but it was fine for me.
 
     ```css
     .reveal section img {
