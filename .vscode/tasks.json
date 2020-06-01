@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "new_post ${input:postTitle}",
+			"problemMatcher": [],
+			"label": "npm: new_post",
+			"detail": "node utils/new_post",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	],
+	"inputs": [
+		{
+			"id": "postTitle",
+			"description": "Title of the post",
+			"default": "new-post-title",
+			"type": "promptString"
+		},
+	]
+}

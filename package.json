@@ -7,6 +7,7 @@
     "svg": "node utils/svg-inline",
     "bts": "node utils/svg-inline/base64-to-svg.js",
     "stb": "node utils/svg-inline/svg-to-base64.js",
+    "new_post": "node utils/new_post",
     "imgopt": "jpegoptim assets/food/*.jpg",
     "serve": "jekyll serve",
     "start": "docker-compose up"
