@@ -81,9 +81,16 @@ There might be a more sophisticated way, but it was fine for me.
     42 {.fragment}
     ```
 
+* To make sure that an image is fit to the whole screen add `{.stretch}` class to it
+
+    ```md
+    ![Alt text](./images/file-location.png) {.stretch}
+    ```
+
 * Some useful shortcuts during runtime:
   * To pause the presentation press `.`
   * To draw in the presentation press `c`
+  * To show all slides and navigate easily press `ESC`
 
 ## What I missed during this first day
 
