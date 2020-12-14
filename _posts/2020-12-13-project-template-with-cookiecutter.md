@@ -42,7 +42,7 @@ I usually present my [advent of code](/posts/2020/12/01/advent-of-code/) solutio
 This year I decided to create a [project template](https://github.com/budavariam/advent_of_code/tree/master/2020/template)
 for the solutions, and it works great.
 
-I use the python API interface to have some custom behaviour and
+I use the python API interface to have some custom behavior and
 [start it out from this python script](https://github.com/budavariam/advent_of_code/blob/master/2020/init.py).
 
 ## Disclaimer

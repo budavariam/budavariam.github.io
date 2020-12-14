@@ -5,12 +5,12 @@ comments: true
 ---
 
 It's the time of the year when many people start to countdown with their advent calendars.
-For coders there is a special kind of calendar,
+For coders, there is a special kind of calendar
 that keeps us busy and help us prepare for the celebration.
 
 [Advent of Code](https://adventofcode.com/) presents a free challenge every day until December 25th.
 Each year there is a different back story.
-Usually YOU are the coder hero and you need to save christmas.
+Usually, YOU are the coder hero and you need to save Christmas.
 
 You do not have to have a CS background to participate, the challenges are solvable without extensive math/programming knowledge.
 
@@ -22,22 +22,24 @@ The problems are separated into two parts.
 The second part becomes available when you submit your successful solution.
 
 You do not need to solve the problems in the actual day.
-In your [personal stats page](https://adventofcode.com/2020/leaderboard/self) it is available how long after the opening did you solve the challenge for the actual day. The challenges open at midnight EST/UTC-5.
+On your [personal stats page](https://adventofcode.com/2020/leaderboard/self) you can see how
+long after the opening did you solve the challenge for the actual day. The challenges open at midnight EST/UTC-5.
 
 The two parts use the same input but require a different solution.
-From the site itself you can not know what will be the question to the second part,
-so you usually can not prepare for the next part, and need some refactoring afterwards.
+From the site itself, you can not know in advance what will be the question to the second part.
+For this reason, it's usually hard to give a solution to the first part, that
+can be simply reused in the second part, you usually need to do some restructuring.
 
 You get a smaller input to test out your solution before submitting.
-And there is an explanation for that input to clear ambigiuities.
+And there is an explanation for that input to clear ambiguities.
 
 Each day has a hidden easter egg, some funny words or references, that are made visible at the end of the journey.
 
 ## Community
 
-They have a community forum in reddit at [r/adventofcode](https://www.reddit.com/r/adventofcode/).
+They have a community forum on reddit at [r/adventofcode](https://www.reddit.com/r/adventofcode/).
 There you can ask for hints/help, post your solution to the solutions megathread,
-or post your fun crafts that you made with the data or during the solution.
+or post fun crafts that you made with the data or during the solution.
 
 ## My experience with it
 
@@ -47,7 +49,7 @@ I did not have too much time to take it seriously, but it was a fun thing that I
 
 It helped me strengthen my python knowledge and get to know it better.
 Helped me to practice Typescript when I first had to learn it for my work.
-Also I used it to practice golang when I started out with it.
+Also, I used it to practice golang when I started with it.
 
 I post all my solutions into my [advent_of_code](https://github.com/budavariam/advent_of_code) github repo.
 
