@@ -1,6 +1,7 @@
 ---
 layout: post
 title: External Function Calls From Snowflake
+tags: programming database snowflake lambda sql mapbox
 comments: true
 ---
 

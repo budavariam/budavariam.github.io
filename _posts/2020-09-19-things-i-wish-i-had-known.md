@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Things I Wish I Had Known
+tags: programming my-advice keyboard
 comments: true
 ---
 

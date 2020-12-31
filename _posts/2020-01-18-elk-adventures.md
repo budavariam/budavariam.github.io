@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ELK adventures
+tags: programming logs devops docker elk-stack
 comments: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown Slideshow
+tags: markdown slideshow vscode
 comments: true
 ---
 

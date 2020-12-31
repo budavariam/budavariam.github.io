@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Advent Of Code
+tags: programming advent-of-code challenge site-description my-solution
 comments: true
 ---
 

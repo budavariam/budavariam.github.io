@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First MakeoverMonday submission
+tags: my-solution dataviz challenge
 comments: true
 ---
 
@@ -10,7 +11,7 @@ I've started to learn how to create Visualizations with Tableau for a few weeks 
 
 The organizers summarized it perfectly on [data.world](https://data.world/makeovermonday).
 
->Each week we post a link to a chart, and its data, and then you rework the chart. Maybe you retell the story more effectively, or find a new story in the data. We’re curious to see the different approaches you all take. Whether it’s a simple bar chart or an elaborate infographic, we encourage everyone of all skills to partake. Together we can have broader conversations about and with data.
+>Each week we post a link to a chart, and its data, and then you rework the chart. Maybe you retell the story more effectively, or find a new story in the data. We're curious to see the different approaches you all take. Whether it’s a simple bar chart or an elaborate infographic, we encourage everyone of all skills to partake. Together we can have broader conversations about and with data.
 
 ## Before / After
 

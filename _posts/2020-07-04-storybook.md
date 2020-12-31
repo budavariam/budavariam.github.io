@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Storybook
+tags: programming storybook component-library
 comments: true
 ---
 

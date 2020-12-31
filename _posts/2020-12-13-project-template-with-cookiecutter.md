@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Project Template With Cookiecutter
+tags: programming python template
 comments: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: React CSSTransition appear animation with in=false and without unmountOnExit
+tags: programming javascript react css my-solution
 comments: true
 ---
 

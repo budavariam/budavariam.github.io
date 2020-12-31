@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Iframe zoom
+tags: programming my-solution html css
 comments: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Postgres External Python Call
+tags: programming database postgres sql python docker
 comments: true
 ---
 

@@ -258,6 +258,17 @@ nav {
     font-style: italic;
   }
 
+  h1 {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  
+  .tag {
+    color: #aaaaaa;
+    font-style: italic;
+    font-size: smaller;
+  }
+
   .comments {
     margin-top: 10px;
   }

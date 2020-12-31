@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Supercharge your command line
+tags: programming my-opinion command-line fzf zsh
 comments: true
 ---
 

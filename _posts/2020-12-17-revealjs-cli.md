@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reveal.js CLI
+tags: programming markdown slideshow javascript reveal.js cli my-solution
 comments: true
 ---
 
