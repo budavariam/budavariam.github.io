@@ -16,7 +16,7 @@ Out of the documented languages I choose
 
 ## Create a docker image with Python and the extension
 
-You must to install `python3` and `plpython3` explicitly.
+You must install `python3` and `plpython3` explicitly.
 The rest is not mandatory, it would be inherited from the original image.
 
 ```dockerfile
@@ -80,7 +80,7 @@ AS $$
   -- add any python code here
   for index, who in enumerate([ "World", "PostgreSQL", "PL/Python" ]):
     yield ( index, f"{how} {who}!" )
-  -- end oof python code
+  -- end of python code
 $$ LANGUAGE plpython3u;
 ```
 
