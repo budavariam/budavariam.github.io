@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Things I Wish I Had Known
-tags: programming my-advice keyboard
+tags: programming my-advice keyboard developer-toolbox
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Developer font
-tags: my-opinion programming font
+tags: my-opinion programming font developer-toolbox
 comments: true
 ---
 
