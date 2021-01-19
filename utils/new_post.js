@@ -23,6 +23,7 @@ const getFileName = (title) => {
 const getDefaultContent = (title) => `---
 layout: post
 title: ${title.split("-").map(capitalize).join(" ")}
+tags:
 comments: true
 ---
 
