@@ -75,7 +75,7 @@ Tip: Syntax highlight and bracket matching usually helps to understand complex e
   - Negated forms: `\S`, `\W`, `\D`
 - Backreference: match the same text as the marked capture group
 - Non-capturing groups: `(?:)` do not store the result of the group
-  - `(?:19)(9[0-9])` matches numbers 1990-1999, but captures only the last 2 digits
+  - `(?:19)?(9[0-9])` matches numbers 1990-1999 OR 90-99, but captures only the second group
 - Non-greedy matches (`*?`, `+?`) try to keep the match to the bare minimum so that the remaining part matches
 - Exact number of matches
   - `{n}`: Matches the previous element exactly `n` times
