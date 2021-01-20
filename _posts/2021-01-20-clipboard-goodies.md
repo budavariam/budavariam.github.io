@@ -70,11 +70,12 @@ pbpaste | less
 ### Linux
 
 On Linux that use X11 window manager you can use [xclip](https://github.com/astrand/xclip).
+In case you switch between Mac and Linux often, you can use aliases to keep things consistent.
 
 ```bash
-# install
+# install on ubuntu, for others see its page
 sudo apt-get install xclip
-# add to ~/.bash_profile
+# add to e.g: ~/.bash_profile to load on startup
 alias pbcopy="xclip -selection c"
 alias pbpaste="xclip -selection clipboard -o"
 ```
@@ -84,7 +85,7 @@ On linux servers that does not have window manager I did not yet see the point t
 ### Windows
 
 Windows has builtin [clip.exe](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/clip).
-Unfortunately it can only copy TO the clipboardd, can not read from it.
+Unfortunately, it can only copy TO the clipboard, can not read from it.
 
 If you need access to the clipboard you need to use
 [Get-Clipboard](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-clipboard?view=powershell-7.1)
@@ -119,7 +120,7 @@ In web browsers you can use the modern
 [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
 to interact with the clipboard.
 Previously you could use
-[Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand)
+[document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand)
 but it's obsolete, that means it might still work, but it's discouraged.
 
 For browser support see [caniuse.com](https://caniuse.com/?search=clipboard).
@@ -140,3 +141,5 @@ copy($0)
 copy($0.value)
 copy(window.myGlobalObject)
 ```
+
+Happy coding!
