@@ -69,7 +69,7 @@ pbpaste | less
 
 ### Linux
 
-On Linux that use X11 window manager you can use [xclip](https://github.com/astrand/xclip).
+On Linux that use [X window manager](https://en.wikipedia.org/wiki/X_window_manager) you can use [xclip](https://github.com/astrand/xclip).
 In case you switch between Mac and Linux often, you can use aliases to keep things consistent.
 
 ```bash
