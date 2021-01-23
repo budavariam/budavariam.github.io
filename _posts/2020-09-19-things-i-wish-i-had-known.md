@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Things I Wish I Had Known
+title: Things I Wish I Had Known As a Junior
 tags: programming my-advice keyboard developer-toolbox
 comments: true
 ---
