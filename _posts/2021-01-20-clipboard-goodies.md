@@ -5,8 +5,8 @@ tags: developer-toolbox multi-clipboard cli
 comments: true
 ---
 
-Have you ever needed to copy and paste multiple entries at once from multiple places on a page?
 Have you ever typed ctrl-c instead of ctrl-v and had to recopy it again?
+Have you ever needed to copy and paste multiple entries at once from multiple places on a page switching back and forth?
 Have you ever needed to copy the output of a program running in the terminal?
 I did, and got fed up with it almost 5 years ago, I'll show you how you can eliminate these problems.
 
@@ -51,7 +51,9 @@ In case I copy **sensitive data**, I can turn off clipboard monitoring all at on
 
 Sadly it does not yet have an option to assign shortcuts to Nth entries
 
-My only problem with it is that it sometimes tends to **quit unexpectedly on mac**. It happens roughly once a month.
+My only problem with it is that it sometimes tends to **quit unexpectedly on mac**.
+It happens roughly once a month.
+According to their github issues they're working on it.
 
 ## Clipboard in the command line
 
