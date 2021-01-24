@@ -56,7 +56,9 @@ According to their [github issues](https://github.com/hluk/CopyQ/issues/1563) th
 ## Clipboard in the command line
 
 In the command line you can take advantage of the operating system's pipeline.
-Imagine *copy* as a utility that consumes text, and *paste* as one that produce text.
+Imagine *copy* as a utility that consumes text, and *paste* as one that produce text,
+and when you use them the clipboard changes accordingly.
+
 Let's see what are the exact utilities that can be used for different systems.
 
 ### Mac
@@ -126,7 +128,7 @@ Previously you could use
 [document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand)
 but it's obsolete, that means it might still work, but it's discouraged.
 
-For browser support see [caniuse.com](https://caniuse.com/?search=clipboard).
+For browser support see [clipboard at caniuse.com](https://caniuse.com/?search=clipboard).
 
 For up to date and extensive examples see these pages sbove.
 
