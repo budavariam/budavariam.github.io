@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Goodies
-tags: developer-toolbox multi-clipboard cli
+title: Clipboard Goodies For Productivity
+tags: developer-toolbox multi-clipboard cli productivity
 comments: true
 ---
 
-Have you ever typed ctrl-c instead of ctrl-v and had to recopy it again?
-Have you ever needed to copy and paste multiple entries at once from multiple places on a page switching back and forth?
+Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
+Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
 Have you ever needed to copy the output of a program running in the terminal?
-I did, and got fed up with it almost 5 years ago, I'll show you how you can eliminate these problems.
+I did, and got fed up with them almost 5 years ago, I'll show you how you can eliminate these problems.
 
 ## Clipboard History
 
@@ -21,11 +21,12 @@ Luckily there are apps for that.
 
 The latest version of **Windows 10** have a setting to make clipboard history
 available in the `System` settings under `Clipboard history`.
-It makes clipboard history available with `win+V` key, that's better than nothing.
+It makes clipboard history available with `win+V` key.
+Not too configurable, but perfectly usable.
 
 On **Mac** you can use a secondary clipboard with `ctrl+k` (copy) and `ctrl+y` (paste),
-alongside `cmd+c` (copy) and `cmd+v` (paste),
-but still this means you can only have 2 separate entries at once.
+alongside `cmd+c` (copy) and `cmd+v` (paste).
+You can still only have 2 separate entries at once.
 
 ### Ditto
 
@@ -42,20 +43,22 @@ a free open-source multiplatform clipboard manager.
 
 I love that it has a configurable
 clipboard **size**, I can **search** through the entries,
-and it has a configurable shortcut: `Show main window under mouse cursor` that can **speed up work**.
+and it has a configurable shortcut to `Show main window under mouse cursor` that can **speed up work**.
 
 ![Search through clipboard entries on mac](/assets/post/2021-01-20-cipboard-goodies-copyq-find.png)
 
 In case I copy **sensitive data**, I can turn off clipboard monitoring all at once with a configurable shortcut:
 `Toggle Clipboard Storing`.
 
-Sadly it does not yet have an option to assign shortcuts to Nth entries
-
 My only problem with it is that it sometimes tends to **quit unexpectedly on mac**.
-It happens roughly once a month.
+It happens roughly once a month in my workflow.
 According to their github issues they're working on it.
 
 ## Clipboard in the command line
+
+In the command line you can take advantage of the operating system's pipeline.
+Imagine *copy* as a utility that consmes text, and *paste* as one that producce text.
+Let's see what are the exact utilities that can be used for different systems.
 
 ### Mac
 
@@ -75,11 +78,10 @@ On Linux that use [X window manager](https://en.wikipedia.org/wiki/X_window_mana
 In case you switch between Mac and Linux often, you can use aliases to keep things consistent.
 
 ```bash
-# install on ubuntu, for others see its page
-sudo apt-get install xclip
-# add to e.g: ~/.bash_profile to load on startup
-alias pbcopy="xclip -selection c"
-alias pbpaste="xclip -selection clipboard -o"
+# Install it with the available package manager.
+# Add to e.g: ~/.bash_profile to load on startup
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 ```
 
 On linux servers that does not have window manager I did not yet see the point to investigate this further.
