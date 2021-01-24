@@ -2,7 +2,7 @@
 layout: post
 title: Emmet
 custom_css: post-emmet
-tags: programming emmet html
+tags: programming emmet html cheatsheet
 comments: true
 ---
 
