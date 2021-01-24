@@ -39,7 +39,7 @@ The only problem I had with it, that it **only worked for windows**.
 
 When I started to use [Ubuntu](https://ubuntu.com/) for my daily work I found
 [CopyQ](https://hluk.github.io/CopyQ/),
-a free open-source multiplatform clipboard manager.
+a free open-source multiplatform clipboard manager. I use it daily ever since.
 
 I love that it has a configurable
 clipboard **size**, I can **search** through the entries,
@@ -51,13 +51,12 @@ In case I copy **sensitive data**, I can turn off clipboard monitoring all at on
 `Toggle Clipboard Storing`.
 
 My only problem with it is that it sometimes tends to **quit unexpectedly on mac**.
-It happens roughly once a month in my workflow.
-According to their github issues they're working on it.
+According to their [github issues](https://github.com/hluk/CopyQ/issues/1563) they're working on it.
 
 ## Clipboard in the command line
 
 In the command line you can take advantage of the operating system's pipeline.
-Imagine *copy* as a utility that consmes text, and *paste* as one that producce text.
+Imagine *copy* as a utility that consumes text, and *paste* as one that produce text.
 Let's see what are the exact utilities that can be used for different systems.
 
 ### Mac
