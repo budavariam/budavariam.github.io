@@ -9,6 +9,7 @@
     "stb": "node utils/svg-inline/svg-to-base64.js",
     "new_post": "node utils/new_post",
     "imgopt": "jpegoptim assets/food/*.jpg",
+    "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
     "serve": "jekyll serve",
     "start": "docker-compose up"
   },
