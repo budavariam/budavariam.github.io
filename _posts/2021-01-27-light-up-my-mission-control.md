@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Light Up My Mission Control
-tags: productivity, theme
+tags: productivity theme
 comments: true
 ---
 
