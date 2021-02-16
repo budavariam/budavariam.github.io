@@ -29,6 +29,9 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus: budavariam
 
+# Enter your AddThis script url
+addthisurl: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93
+
 # Enter your Google Analytics web tracking code (e.g. UA-1234567-8) to activate tracking
 google_analytics: UA-115499513-1
 
