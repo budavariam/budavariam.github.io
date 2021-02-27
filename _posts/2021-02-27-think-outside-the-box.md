@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Think Outside The Box
-tags:
+tags: developer-toolbox productivity ssh tmux screen byobu
 comments: true
 ---
 
@@ -20,11 +20,26 @@ I have to see that it works manually, in order to automatize it.
 SSH provides secure shell connection to a remote machine. You can work in it just like your local machine.
 There are multiple authentication methods, I found ssh public key auth feasible in my use case.
 
-- `ssh-copy-id` can put ssh keys into `authorized-keys` simply, if you already have access to the server
-- `ssh-add -K ${key_location}` can remember the passphrases of the ssh keys
-- `ssh -t byobu` can attach to the already existing byobu session (see [below](#byobu))
+- put ssh keys into `authorized-keys` of the remote user simply, if you already have access to the server
+  - `ssh-copy-id <connection>`
+- [sshpass](https://linux.die.net/man/1/sshpass) make it easy to use `ssh-copy-id` in a script
+  - `sshpass -p $secretpass ssh-copy-id <connection>`
+- remember the passphrases of the ssh keys
+  - `ssh-add -K ${key_location}`
+- ssh port forward
+  - `ssh -N -L REMOTE_PORT:localhost:LOCAL_PORT <connection>`
+- copy keys to the server
+  - `scp ~/.ssh/my_keyprefix_* '<connection>:~/.ssh/'`
+- start ssh service
+  - `sudo systemctl start ssh.service`
+- attach to the already existing byobu session (see [below](#byobu)):
+  - `ssh -t byobu`
 
-### Permissions
+Where `<connection>` is the data necessary to establish the ssh connection.
+Most likely an identity file and the server address: `-i ~/.ssh/my_keyprefix.pem user@192.168.1.101`.
+I think it's better to user [SSH Config](#ssh-config), and `myserver` if specified `Host myserver`.
+
+### SSH Permissions
 
 SSH is picky with the permission settings.
 
@@ -67,12 +82,15 @@ run_rsync; fswatch -o "${projectpath}" | \
 ### Debug SSH connection problems
 
 You can debug ssh issues with the verbose flag on the client side, e.g: `ssh -vvv server-1`.
+
 If you need to debug your issues on the server side, you can view debug logs with: `LogLevel DEBUG` in `/etc/ssh/sshd_conf`.
+
 View the logs with e.g: `journalctl -F -u sshd`.
 
 In my case I needed to access a user that had his home folder outside `/home` AND had his password locked.
 Also his home folder had group write permissions by default. Such a thrill.
-Leave it here just in case someone might need it later.
+
+I'm just gonna leave it here just in case someone might need it later.
 
 ```bash
 sudo semanage fcontext -a -t ssh_home_t ~customuser/.ssh/authorized_keys
@@ -140,7 +158,7 @@ You can have multiple sessions in a machine at a given time, multiple users can 
 
 You can use it in your local machine as well, and log in to it from multiple shell emulators if that's what you need.
 
-### The old boys
+## Screen & tmux
 
 [GNU screen](https://www.gnu.org/software/screen/) is there since 1987, widely available.
 
@@ -149,7 +167,7 @@ screen -S sessionName       # create session with a name
 screen -r sessionName       # reconnect to named session
 screen -ls                  # list current sessions
 screen -XS sessionName quit # terminate session
-screen -r -d                # reconnect to the last screen session
+screen -r -d                # reconnect to the last session
 screen -xr                  # share screen
 ```
 
@@ -157,15 +175,18 @@ screen -xr                  # share screen
 They operate with key chords, both have a meta character that marks the actions for the multiplexer.
 
 ```bash
-tmux new -s session_name            # new session
+tmux new -s session_name            # create session with a name
+tmux attach-session -t session_name # reconnect to named session
 tmux ls                             # list current sessions
-tmux attach-session -t session_name # attach to the named session
-tmux kill-session -t session_name
+tmux kill-session -t session_name   # terminate session
+tmux new -As0              # attach to default session if exists
 ```
+
+![tmux layout](/assets/post/2021-02-27-think-outside-the-box-tmux.png)
 
 ### Byobu
 
-My facourite is [byobu](https://www.byobu.org/), it's a config layer over the other two above.
+My favourite is [byobu](https://www.byobu.org/), it's a config layer over the other two above.
 it provides a simple interface for their functionalities.
 Byobu maps its functionality to the F1-F12 keys.
 
@@ -173,8 +194,8 @@ You can use the key chords that you're used to, even select the underlying backe
 
 ```bash
 byobu
-byobu-screen # any tmux options can be given
-byobu-tmux # any screen options can be given
+byobu-screen  # any tmux options can be given
+byobu-tmux    # any screen options can be given
 ```
 
 ### Basic Keybinding comparison
@@ -191,11 +212,12 @@ byobu-tmux # any screen options can be given
 | F4       | meta p     | meta CTRL-P  | prev tab                                                           |
 |          | meta 0     | meta CTRL-0  | switch to tab (0 can be any number)                                |
 |          |            |              |                                                                    |
-| shift+F2 | meta "     | meta PIPE    | split horizontally                                                 |
-| CTRL+F2  | meta %     | meta S       | split vertically                                                   |
+| shift+F2 | meta "     | meta SHIFT-s | split horizontally                                                 |
+| CTRL+F2  | meta %     | meta &#124;  | split vertically                                                   |
 |          | meta o     | meta TAB     | switch to pane                                                     |
 |          | meta x     | meta SHIFT-x | close the pane that has focus                                      |
 | F8       | meta ,     | meta SHIFT-a | rename tab                                                         |
+| F7       |            |              | start scroll mode                                                  |
 |          | meta q     |              | show pane numbers if you press a number the cursor will jump to it |
 |          | meta ;     |              | toggle between prev/current pane                                   |
 |          | meta SPACE |              | toggle between layouts                                             |
