@@ -15,14 +15,6 @@ I usually don't like to repeat myself, and supposedly I'll have to do these modi
 So as I see something is working, I take a note of the solution and create a script as I go.
 I have to see that it works manually, in order to automatize it.
 
-- [SSH](#ssh)
-- [Welcome message](#welcome-message)
-  - [Set SSH banner](#set-ssh-banner)
-- [Terminal multiplexers](#terminal-multiplexers)
-  - [Screen and tmux](#screen-and-tmux)
-  - [Byobu](#byobu)
-  - [Basic Keybinding comparison](#basic-keybinding-comparison)
-
 ## SSH
 
 SSH provides secure shell connection to a remote machine. You can work in it just like your local machine.
@@ -35,7 +27,7 @@ There are multiple authentication methods, I found ssh public key auth feasible 
 - remember the passphrases of the ssh keys
   - `ssh-add -K ${key_location}`
 - ssh port forward
-  - `ssh -N -L REMOTE_PORT:localhost:LOCAL_PORT <connection>`
+  - `ssh -N -L LOCAL_PORT:localhost:REMOTE_PORT <connection>`
 - copy keys to the server
   - `scp ~/.ssh/my_keyprefix_* '<connection>:~/.ssh/'`
 - start ssh service
