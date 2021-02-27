@@ -207,7 +207,7 @@ tmux new -As0              # attach to default session if exists
 ### Byobu
 
 My favourite is [byobu](https://www.byobu.org/), it's a config layer over the other two above.
-it provides a simple interface for their functionalities.
+It provides a simple interface for their functionalities.
 Byobu maps its functionality to the F1-F12 keys.
 
 You can use the key chords that you're used to, even select the underlying backend on start.
