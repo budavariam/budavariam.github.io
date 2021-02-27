@@ -19,7 +19,7 @@ I have to see that it works manually, in order to automatize it.
 - [Welcome message](#welcome-message)
   - [Set SSH banner](#set-ssh-banner)
 - [Terminal multiplexers](#terminal-multiplexers)
-  - [Screen & tmux](#screen--tmux)
+  - [Screen and tmux](#screen-and-tmux)
   - [Byobu](#byobu)
   - [Basic Keybinding comparison](#basic-keybinding-comparison)
 
@@ -178,7 +178,7 @@ You can have multiple sessions in a machine at a given time, multiple users can 
 
 You can use it in your local machine as well, and log in to it from multiple shell emulators if that's what you need.
 
-## Screen & tmux
+## Screen and tmux
 
 [GNU screen](https://www.gnu.org/software/screen/) is there since 1987, widely available.
 
