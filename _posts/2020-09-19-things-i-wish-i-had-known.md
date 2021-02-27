@@ -10,14 +10,14 @@ A few days ago I read a question in twitter, what is the thing that you wish you
 I started to learn programming in high school, we tackled the basics of the field, by learning sql,
 networks, logic, binary calculations, imperative programming, but we did not really learn how these are going to work in real life.
 
-Below are the concepts that I found, that works for me during my day-to-day coding.
+I collected some concepts that work for me now during my day-to-day coding, that I did not use much when I started out.
 
 - [Interpreters can help with quick calculations](#interpreters-can-help-with-quick-calculations)
 - [Sandboxes are great to investigate problems in isolation](#sandboxes-are-great-to-investigate-problems-in-isolation)
 - [Read as much code as you can](#read-as-much-code-as-you-can)
 - [Debugger is usually easy to set up, and really useful](#debugger-is-usually-easy-to-set-up-and-really-useful)
 - [Learning new programming languages comes easier with each new language](#learning-new-programming-languages-comes-easier-with-each-new-language)
-- [Terminal can do more than GUI](#terminal-can-do-more-than-gui)
+- [Terminal can be simpler than GUI](#terminal-can-be-simpler-than-gui)
 - [Typing is crucial](#typing-is-crucial)
 - [Write documentation what you'd like to read](#write-documentation-what-youd-like-to-read)
 - [Other advices I find helpful](#other-advices-i-find-helpful)
@@ -36,7 +36,7 @@ In order to solve problems it's a good tactic to isolate the issue, and try to s
 
 For web projects I love online sandboxes, some of them have base templates and let me choose the frameworks that I want to include.
 
-I can share them with my collegaues and we can experiment in them together independently.
+I can share them with my colleagues and we can experiment in them together independently.
 
 - [CodePen](https://codepen.io)
 - [CodeSandbox](https://codesandbox.io)
@@ -63,10 +63,11 @@ From there you can inspect the variables, step forward, step into function calls
 
 The simple debugging tactic is to log every variable that needs to be inspected, but it can be hard to determine what variable do you actually need.
 
-Usually when I write javascript code my main problem is that I do not see at first what properties are available at that point for those objects,
-debugger makes it easy to see it, and I do not need to guess what do I need to log to the console I can just stop time and look around.
+Usually when I have to write vanilla javascript code, my main problem is that I can not always be sure what properties are available at a certain point for the available objects.
+Debugger makes it easy to see the possible options.
+Otherwise I'd need to guess what I need to log to the console, but this way I can just freeze time and look around.
 
-Check this if you want to learn more about [debugging in Javascript](https://developers.google.com/web/tools/chrome-devtools/javascript)
+Chrome devtools has a great intro article, if you want to learn more about [debugging in Javascript](https://developers.google.com/web/tools/chrome-devtools/javascript)
 
 ## Learning new programming languages comes easier with each new language
 
@@ -78,12 +79,16 @@ When you learn a new language you don't have to know everything about it at firs
 enough and if you need to use advanced approaches you can find the answers to your questions later on.
 The important thing is to practice.
 
-I found it useful to have a script language that I know very well, and can quickly solve probems with it to help with my daily routine.
-When a problem comes up that involves a lot of repetition or can be easily coded, I can write a mini script to it
-instead of spending my time typing it, and change everything when I figured that it should be done differently.
+I found it useful to have a script language that I know very well.
+If I can quickly solve simple problems with it, it can boost productivity in my daily coding routine.
 
-There are programming challange sites that let me achive learning programming languages better by presenting real world
-problems in an isolated state, they might not require you to handle all cases and write production ready code, but great to practice.
+You can write mini disposable code to achive a one-time simple task, that you'd otherwise have to type out.
+For example if you need to type the same pattern over and over, it's frustrating to figure out in the middle, that the pattern should be different. Generated code can save you from this nightmare.
+
+Programming challange sites helped me achive learning new languages better by presenting
+problems in an isolated state.
+They do not require you to handle all errors and write production ready code, but still great for practice.
+They make you able to focus on the way it has to be calculated.
 
 My favourite programming challenge sites:
 
@@ -91,23 +96,25 @@ My favourite programming challenge sites:
 - [HackerRank](https://www.hackerrank.com/)
 - [SPOJ](https://www.spoj.com/)
 
-## Terminal can do more than GUI
+## Terminal can be simpler than GUI
+
+Imagine you have a simple operation with 2 parameters.
+In the command line you have to type these options, but the GUI has to provide specific input fields or clickable items to select the appropriate data.
 
 If an application comes with a terminal, or command interpreter, it's worth it to learn to use what it's capable of.
 Most of the time it involves less clicking and mouse movement to achieve the same thing, or even do many more options.
 
-My favourite examples are AutoCAD and Excel.
+My favourite examples are Excel and AutoCAD.
 
 In Excel you can select the commands from a form and add each parameter for a function.
 But when it comes to nesting those params, you'll end up with juggling many windows.
-At least it was the case in version 2003, I haven't really used new versions since then.
-But you have the option to write a formula, that's simpler, and the help menu is still over the cursor.
+At least it was the case in version 2003, I haven't really used new versions since then, but this experience stuck.
+You have the option to write a formula, that's simpler, and the help menu and the next property hovers over the cursor anyways.
 The only thing you need to be aware of, not to make any syntax errors.
+I recall one time I needed a specific drawing command option, but it was not available as a button. TODO: look for it.
 
-In AutoCAD you could do any operation in the command line that you could access from the GUI, it even typed the commands, and let you repeat them.
-As I recall some drawing commands did not even have the GUI option, so you could really do more.
-
-My favourite IDE is curretly VSCode, I always keep the terminal open in the bottom.
+My favorite IDE is curretly VSCode, I always keep the terminal open in the bottom.
+I can pipe together operations that would be impossible to do in the GUI of the operating system.
 
 ## Typing is crucial
 
@@ -141,19 +148,19 @@ My favourite learning materials were:
 In my first few months of coding at a company was a totally new experience unlike anything.
 I had to familiarize myself with many things all at once.
 I found myself asking the same questions all over again.
-One day I saw a colleague taking notes in a Word document,
-and I realized it can save me a lot of time, and I can remember things while I write them down.
+One day I saw a colleague taking notes in a Word document.
+I realized it can save me a lot of time, and I can process the new information while I write them down.
 
 I started out with simple txt files, later I changed to [markdown](https://en.wikipedia.org/wiki/Markdown), to get familiar with it.
 
 Nowadays I find it useful to write README files for each project I'm working on,
 to make it easier for others to get started.
 
-Most importantly the docs I write help me get restarted, when I need to work on the projects again after a long time (more than 2 weeks).
+Most importantly the docs I write help **me** get restarted, when I need to work on the projects again after a long time (more than 2 weeks).
 
-The processes might seem logical now, but a few projects and many new experiences and trends later it might not behave what you'd expect them to be.
+The processes might seem logical at the time of writing, but a few projects and many new experiences/trends later it might not behave as what you'd expect them to be.
 
-Sometimes it's hard to keep the docs up to date, but they are my main source of truth, so it's worth it.
+It takes effort to keep the docs up to date, but if you handle them as the main source of truth, it's going to worth it.
 
 ## Other advices I find helpful
 
@@ -164,17 +171,12 @@ Sometimes it's hard to keep the docs up to date, but they are my main source of 
 - Clean after yourself, leave the code cleaner than you found it, code will be read more than written. (Clean code, boy scout rule)
 - Read through your changes before you submit a merge request, to avoid the mistakes that can be easily spotted
 - Linters are good to keep a consistent style, and save you from common mistakes
-- [Pragmatic programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer)
+- [Pragmatic programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer) principles
 - [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 - [KISS](https://en.wikipedia.org/wiki/KISS_principle)
 - [12 factor app](https://12factor.net/)
 - [UX rules](https://lawsofux.com/)
 - Practice practice, practice
-
-## Disclaimer
-
-I was not asked to create this post, and did not get anything for it,
-I just wanted to share how simple it is to use and some of my experience with it.
 
 ...
 
