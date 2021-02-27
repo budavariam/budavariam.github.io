@@ -6,7 +6,7 @@ comments: true
 ---
 
 In the past few days I've been working in manual mode on multiple linux boxes simultaneously.
-I have to folow logs, modify configurations and kill/start applications all at once.
+I have to follow logs, modify configurations and kill/start applications all at once.
 I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
 On top of that my ISP had a huge traffic hit these days, and my VPN connection dropped constantly.
 I dusted off my knowledge about some tools that boosted my productivity.
@@ -14,6 +14,14 @@ I dusted off my knowledge about some tools that boosted my productivity.
 I usually don't like to repeat myself, and supposedly I'll have to do these modifications for many more machines.
 So as I see something is working, I take a note of the solution and create a script as I go.
 I have to see that it works manually, in order to automatize it.
+
+- [SSH](#ssh)
+- [Welcome message](#welcome-message)
+  - [Set SSH banner](#set-ssh-banner)
+- [Terminal multiplexers](#terminal-multiplexers)
+  - [Screen & tmux](#screen--tmux)
+  - [Byobu](#byobu)
+  - [Basic Keybinding comparison](#basic-keybinding-comparison)
 
 ## SSH
 
@@ -88,9 +96,21 @@ If you need to debug your issues on the server side, you can view debug logs wit
 View the logs with e.g: `journalctl -F -u sshd`.
 
 In my case I needed to access a user that had his home folder outside `/home` AND had his password locked.
-Also his home folder had group write permissions by default. Such a thrill.
+On top of that their home folder had group write permissions by default.
+Such a thrill.
 
-I'm just gonna leave it here just in case someone might need it later.
+#### Locked password
+
+The locked password made it harder to put out the ssh key, there are 2 simple solutions to choose from
+
+One would be to set a password manually with: `passwd customuser` as a root user, then use `ssh=copy-id` as usual, and finally lock the password again with `passwd --lock customuser`.
+
+The other solution is to append the public key manually to `~customuser/.ssh/authorized_keys`.
+
+#### Home folder outside /home
+
+In my case selinux did not know that this folder can be used as an ssh_home folder.
+These few lines permanently fixed it.
 
 ```bash
 sudo semanage fcontext -a -t ssh_home_t ~customuser/.ssh/authorized_keys
