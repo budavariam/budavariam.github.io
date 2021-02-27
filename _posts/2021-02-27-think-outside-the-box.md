@@ -217,7 +217,7 @@ byobu-tmux    # any screen options can be given
 |          | meta o     | meta TAB     | switch to pane                                                     |
 |          | meta x     | meta SHIFT-x | close the pane that has focus                                      |
 | F8       | meta ,     | meta SHIFT-a | rename tab                                                         |
-| F7       |            |              | start scroll mode                                                  |
+| F7       | meta [     | meta ESC     | start scroll mode                                                  |
 |          | meta q     |              | show pane numbers if you press a number the cursor will jump to it |
 |          | meta ;     |              | toggle between prev/current pane                                   |
 |          | meta SPACE |              | toggle between layouts                                             |
