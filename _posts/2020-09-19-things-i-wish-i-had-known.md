@@ -98,9 +98,6 @@ My favourite programming challenge sites:
 
 ## Terminal can be simpler than GUI
 
-Imagine you have a simple operation with 2 parameters.
-In the command line you have to type these options, but the GUI has to provide specific input fields or clickable items to select the appropriate data.
-
 If an application comes with a terminal, or command interpreter, it's worth it to learn to use what it's capable of.
 Most of the time it involves less clicking and mouse movement to achieve the same thing, or even do many more options.
 
