@@ -37,7 +37,8 @@ There are multiple authentication methods, I found ssh public key auth feasible 
 
 Where `<connection>` is the data necessary to establish the ssh connection.
 Most likely an identity file and the server address: `-i ~/.ssh/my_keyprefix.pem user@192.168.1.101`.
-I think it's better to user [SSH Config](#ssh-config), and `myserver` if specified `Host myserver`.
+I think it's better to use [SSH Config](#ssh-config).
+If you specify `Host myserver` in the config, you can use case `myserver` for the `<connection>` part.
 
 ### SSH Permissions
 
@@ -46,12 +47,25 @@ SSH is picky with the permission settings.
 - The home folder that contains `.ssh` folder can not have group write permission.
 - `.ssh` folder should have `700` octal permission
 - `.ssh/authorized_keys` and public keys should have `644` octal permission
+- `.ssh/config` should have `600` octal permission
 - private keys under `.ssh/` should have `600` octal permission
+
+#### Permission basics
+
+Octal permissions in linux specify the permissions of the **owner**, **group** and **others** as the numbers respectively.
+
+The permissions can be any combination of: **read** (4), **write** (2) and **execute** (1).
+
+That way `644` permission means **read** permission for everyone, and an extra **write** permission for the **owner**.
+
+Permissions can be set with `chmod` command like: `chmod $octal_permission filelist`.
 
 ### SSH Config
 
-I think it's amazing that you can collect ssh configurations under a custom name and you can connect into it.
-`.ssh/config`
+I think it's amazing that you can collect ssh configurations under a custom name,
+and you can use that name to connect to the specified server.
+
+You need to set the necessary data into:`~/.ssh/config`.
 
 ```bash
 Host server-1
@@ -83,9 +97,9 @@ run_rsync; fswatch -o "${projectpath}" | \
 
 You can debug ssh issues with the verbose flag on the client side, e.g: `ssh -vvv server-1`.
 
-If you need to debug your issues on the server side, you can view debug logs with: `LogLevel DEBUG` in `/etc/ssh/sshd_conf`.
+If you need to debug your issues on the server side, you can set the ssh service to print debug logs by setting `LogLevel DEBUG` in `/etc/ssh/sshd_config`. You need to restart the sshd service to apply this modification. `systemctl restart sshd`
 
-View the logs with e.g: `journalctl -F -u sshd`.
+View the logs with e.g: `journalctl -f -u sshd`.
 
 In my case I needed to access a user that had his home folder outside `/home` AND had his password locked.
 On top of that their home folder had group write permissions by default.
@@ -117,7 +131,7 @@ When I log in to a box, I found it beneficial to print a huge unique identifier 
 It made it easier to keep track of what's happening.
 
 I found a great tool called [FIGlet](http://www.figlet.org/), that can generate ASCII art like text from ordinary text.
-As a small practice project, in my free time I took the time and put together
+As a small practice project, in my free time I put together
 a simple [webapp](https://budavariam.github.io/asciiart-text/) to showcase an already existing
 [JS renderer](https://github.com/scottgonzalez/figlet-js).
 
@@ -144,7 +158,7 @@ But of course I could have just used [cowsay](https://en.wikipedia.org/wiki/Cows
 
 ### Set SSH banner
 
-I was interested in the ssh banner part, to print it when an ssh session connects, before the used logs in.
+SSH banner prints a message when an ssh session connects, before the used logs in.
 
 I aimed for a simple banner, centos have a [wiki page](https://wiki.centos.org/TipsAndTricks/BannerFiles)
 that explains the simple steps to achieve it, but since it's ssh config it should work similarly in other distributions.
