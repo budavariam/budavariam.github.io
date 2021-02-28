@@ -1,0 +1,34 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#62bfda",
+        "activityBar.activeBorder": "#ce31ab",
+        "activityBar.background": "#62bfda",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#ce31ab",
+        "activityBarBadge.foreground": "#e7e7e7"
+    },
+    "peacock.color": "#39aed0",
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/_posts/2021-01-20-clipboard-goodies.md"
+            ],
+            "config": {
+                "audience": "expert",
+                "dialect": "american",
+                "domain": "casual",
+                "emotions": [
+                    "confident",
+                    "joyful",
+                    "friendly",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ]
+            }
+        }
+    ]
+}
