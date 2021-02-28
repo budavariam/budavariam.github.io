@@ -56,7 +56,7 @@ Octal permissions in linux specify the permissions of the **owner**, **group** a
 
 The permissions can be any combination of: **read** (4), **write** (2) and **execute** (1).
 
-That way `644` permission means **read** permission for everyone, and an extra **write** permission for the **owner**.
+With that in mind: `644` permission means **read** permission for everyone, and an extra **write** permission for the **owner**.
 
 Permissions can be set with `chmod` command like: `chmod $octal_permission filelist`.
 

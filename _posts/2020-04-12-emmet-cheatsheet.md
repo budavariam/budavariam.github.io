@@ -46,7 +46,7 @@ filler text | `lorem5` | `Lorem ipsum dolor sit amet.`
 
 ### Movements
 
-* Use `>` to step into thee prev item, and define its children.
+* Use `>` to step into the previous item, and define its children.
 * Use `+` to define a sibling of the previous item.
 * Use `^` to climb up to parent. (It can be used multiple times).
 
