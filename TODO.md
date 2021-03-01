@@ -12,3 +12,5 @@
 - [ ] colorchanging border into the header bottom part
 - [ ] social icons in about page
 - [ ] turn on searchbar
+- [ ] fix utils for this site
+- [ ] create github action for deploy to gh pages
