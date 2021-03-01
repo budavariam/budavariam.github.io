@@ -2,7 +2,7 @@
 layout: post
 title: First MakeoverMonday submission
 tags: [ my-solution, dataviz, challenge ]
-comments: true
+date: 2020-06-08
 ---
 
 I've started to learn how to create Visualizations with Tableau for a few weeks now. Today I've submitted my solution to the recent [MakeoverMonday](https://www.makeovermonday.co.uk/data/) challenge (2020 #23).

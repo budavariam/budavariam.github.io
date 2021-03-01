@@ -2,7 +2,7 @@
 layout: post
 title: Advent Of Code
 tags: [ programming, advent-of-code, challenge, site-description, my-solution ]
-comments: true
+date: 2020-12-01
 ---
 
 It's the time of the year when many people start to countdown with their advent calendars.

@@ -2,7 +2,7 @@
 layout: post
 title: Flexbox zombies
 tags: [ programming, css, site-description ]
-comments: true
+date: 2018-05-06
 ---
 
 A few days ago I've been thinking whether there's a more interactive way of learning flexbox, rather than [this great guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).

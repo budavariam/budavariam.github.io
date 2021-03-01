@@ -2,7 +2,7 @@
 layout: post
 title: ELK adventures
 tags: [ programming, logs, devops, docker, elk-stack ]
-comments: true
+date: 2020-01-18
 ---
 
 I have an application that logs a lot, and during development I got tired of looking through the command line for the error logs, that were hidden by other logs (that were also necessary). So I looked around what is the preferred way of handling logs nowadays.

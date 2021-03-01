@@ -2,7 +2,7 @@
 layout: post
 title: Supercharge your command line
 tags: [ programming, my-opinion, command-line, fzf, zsh, developer-toolbox ]
-comments: true
+date: 2020-04-27
 ---
 
 The commmand line can be your best friend during development, if you take some time to get to know its capabilities.

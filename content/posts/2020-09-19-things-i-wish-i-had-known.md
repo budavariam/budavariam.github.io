@@ -2,7 +2,7 @@
 layout: post
 title: Things I Wish I Had Known As a Junior
 tags: [ programming, my-advice, keyboard, developer-toolbox ]
-comments: true
+date: 2020-09-19
 ---
 
 A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.

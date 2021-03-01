@@ -2,7 +2,8 @@
 layout: post
 title: External Function Calls From Snowflake
 tags: [ programming, database, snowflake, lambda, sql, mapbox ]
-comments: true
+date: 2020-12-30
+
 ---
 
 A few months ago at work, I wrote a simple node.js snippet to calculate route distances in [Mapbox](https://docs.mapbox.com/api/navigation/#directions).

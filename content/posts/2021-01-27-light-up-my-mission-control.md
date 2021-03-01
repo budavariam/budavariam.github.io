@@ -2,7 +2,8 @@
 layout: post
 title: Light Up My Mission Control
 tags: [ productivity, theme ]
-comments: true
+date: 2021-01-27
+
 ---
 
 I'm currently following the trends with my dev setup.

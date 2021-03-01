@@ -2,7 +2,7 @@
 layout: post
 title: Reveal.js CLI
 tags: [ programming, markdown, slideshow, javascript, reveal.js, cli, my-solution ]
-comments: true
+date: 2020-12-17
 ---
 
 Ever since I wrote about [VSCode Reveal](/posts/2020/06/01/markdown-slideshow/),

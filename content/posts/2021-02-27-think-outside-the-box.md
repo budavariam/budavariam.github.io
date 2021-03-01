@@ -2,7 +2,8 @@
 layout: post
 title: Think Outside The Box
 tags: [ developer-toolbox, productivity, ssh, tmux, screen, byobu ]
-comments: true
+
+date: 2021-02-27
 ---
 
 In the past few days I've been working in manual mode on multiple linux boxes simultaneously.

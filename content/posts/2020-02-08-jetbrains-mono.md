@@ -2,7 +2,7 @@
 layout: post
 title: Developer font
 tags: [ my-opinion, programming, font, developer-toolbox ]
-comments: true
+date: 2020-02-08
 ---
 
 A few days ago I came across a tweet about [Jetbrains Mono](https://www.jetbrains.com/lp/mono/),

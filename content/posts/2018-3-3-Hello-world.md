@@ -2,7 +2,7 @@
 layout: post
 title: Hello world
 tags: [ template ]
-comments: true
+date: 2018-03-03
 ---
 
 I just started my [github pages](https://pages.github.com/)

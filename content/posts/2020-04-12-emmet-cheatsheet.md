@@ -3,7 +3,7 @@ layout: post
 title: Emmet
 custom_css: post-emmet
 tags: [ programming, emmet, html, cheatsheet ]
-comments: true
+date: 2020-04-12
 ---
 
 In my opinion Emmet is an essential tool for web developers.

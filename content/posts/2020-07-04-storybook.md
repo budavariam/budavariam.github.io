@@ -2,7 +2,7 @@
 layout: post
 title: Storybook
 tags: [ programming, storybook, component-library ]
-comments: true
+date: 2020-07-04
 ---
 
 When I develop new web components I find it frustrating that I have to run the app,

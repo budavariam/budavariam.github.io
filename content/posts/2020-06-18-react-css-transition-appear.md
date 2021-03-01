@@ -2,7 +2,7 @@
 layout: post
 title: React CSSTransition appear animation with in=false and without unmountOnExit
 tags: [ programming, javascript, react, css, my-solution ]
-comments: true
+date: 2020-06-18
 ---
 
 [React Transition group](http://reactcommunity.org/react-transition-group/css-transition) is a great library for animations in react.

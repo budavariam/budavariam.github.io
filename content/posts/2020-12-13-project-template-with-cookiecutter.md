@@ -2,7 +2,7 @@
 layout: post
 title: Project Template With Cookiecutter
 tags: [ programming, python, template ]
-comments: true
+date: 2020-12-13
 ---
 
 Sometimes I work on similar projects that need so little customization

@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Slideshow
 tags: [ markdown, slideshow, vscode ]
-comments: true
+date: 2020-06-01
 ---
 
 Today I've found an awesome library, called

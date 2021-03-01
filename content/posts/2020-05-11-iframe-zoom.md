@@ -2,7 +2,7 @@
 layout: post
 title: Iframe zoom
 tags: [ programming, my-solution, html, css ]
-comments: true
+date: 2020-05-11
 ---
 
 I need to set the zoom factor in an iframe.
