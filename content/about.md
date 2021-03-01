@@ -4,6 +4,7 @@ permalink: /about/
 showtoc: false
 hidemeta: true
 comments: false
+disableShare: true
 ---
 
 I've been working as a software developer for 6 years, mainly focusing on web development.
@@ -14,5 +15,3 @@ I got my MSc degree in Computer Science at University of Szeged.
 In my free time, I like to extend my knowledge about technologies or tools that seems interesting.
 
 Recently I've worked with golang, reactjs, python, bash, postgresql and kubernetes.
-
-In the bottom bar are links to my public profiles, feel free to contact me.

@@ -10,11 +10,20 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-115499513-1
-
 minify:
     disableXML: true
     minifyOutput: true
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqusShortname: budavariam
+
+# Enter your AddThis script url
+
+googleAnalytics: UA-115499513-1
+
+permalinks: 
+  posts: "/posts/:year/:month/:day/:title/"
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -22,6 +31,7 @@ params:
     description: "ExampleSite description"
     author: Mátyás Budavári
     images: ["<link or path of image for opengraph, twitter-cards>"]
+    addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
 
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -66,7 +76,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
+        Content: 
 
     socialIcons:
         - name: gmail
@@ -110,7 +120,7 @@ params:
 
     analytics:
         google:
-            SiteVerificationTag: "XYZabc"
+            SiteVerificationTag: "ocrG4G5ZSn2awC0mgHAsgk2qlhd3IAXCACgWNrqJcwY"
 
     cover:
         hidden: true # hide everywhere but not in structured data
@@ -147,72 +157,3 @@ menu:
 #         lineNos: true
 #         style: monokai
 
-
-
-
-
-
-# name: Mátyás Budavári
-# description: Developer from Szeged
-# avatar: https://avatars2.githubusercontent.com/u/33528704?s=460&v=4
-
-
-# # Enter your Disqus shortname (not your username) to enable commenting on posts
-# # You can find your shortname on the Settings page of your Disqus account
-# disqus: budavariam
-
-# # Enter your AddThis script url
-# addthisurl: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93
-
-# # Enter your Google Analytics web tracking code (e.g. UA-1234567-8) to activate tracking
-# google_analytics: UA-115499513-1
-
-# url:
-
-# baseurl: ""
-
-# #
-
-# permalink: posts/:year/:month/:day/:title/
-
-# # Jekyll 3 now only supports Kramdown for Markdown
-# kramdown:
-#   # Use GitHub flavored markdown, including triple backtick fenced code blocks
-#   input: GFM
-#   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     # Use existing pygments syntax highlighting css
-#     css_class: 'highlight'
-
-# # Set the Sass partials directory, as we're using @imports
-# sass:
-#   style: :expanded # You might prefer to minify using :compressed
-
-# # Use the following plug-ins
-# plugins:
-#   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-#   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# # Exclude these files from your production _site
-# exclude:
-#   - docker/
-#   - docker-compose.yml
-#   - Gemfile
-#   - Gemfile.lock
-#   - LICENSE
-#   - README.md
-#   - CNAME
-#   - utils/
-#   - images/svg-icons/
-
-# defaults:
-#   - scope:
-#       path: "assets/food"
-#     values:
-#       food: true
-#   - scope:
-#       path: "_posts"
-#     values:
-#       comments: true
-#       language: en
