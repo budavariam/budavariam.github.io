@@ -1,5 +1,6 @@
 #! /usr/bin/node
 /* jslint esversion: 6 */
+"use strict"
 
 const commandLineArgs = process.argv.slice(2);
 if (commandLineArgs.length !== 1) {
@@ -11,35 +12,49 @@ The title should not contain whitespace, the words should be separated by dashes
     process.exit(1)
 }
 
+const fs = require('fs')
+const path = require('path')
+
 const pad = (n) => (n < 10) ? `0${n}` : n
 const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1)
-const getFileName = (title) => {
+const getDate = () => {
     const today = new Date()
     const year = today.getFullYear()
     const month = pad(today.getMonth() + 1)
     const day = pad(today.getDate())
-    return `${year}-${month}-${day}-${title}.md`
+    return `${year}-${month}-${day}`
 }
+const getFileName = (title, date) => {
+    return `${date}-${title}.md`
+}
+const getImageFolderName = (title, date) => {
+    return `${date}-${title}`
+}
+
 const getDefaultContent = (title) => `---
 layout: post
 title: ${title.split("-").map(capitalize).join(" ")}
-tags:
-comments: true
+tags: []
+cover: 
+    image: /${postImageFolderPath}/cover.png
+    alt: Cover
+    hidden: true
+date: ${formattedCurrentDate}
+draft: true
 ---
 
-
+<!--more-->
 `
 
-const fs = require('fs')
-const path = require('path')
-
-const postLocation = "_posts"
+const postLocation = ["content", "posts"]
 const newPostTitle = commandLineArgs[0]
-const newFilePath = path.join(postLocation, getFileName(newPostTitle))
+const formattedCurrentDate = getDate()
+const newFilePath = path.join(...postLocation, getFileName(newPostTitle, formattedCurrentDate))
+const postImageFolderPath = path.join("images", getImageFolderName(newPostTitle, formattedCurrentDate))
 
 fs.appendFile(
     newFilePath,
-    getDefaultContent(newPostTitle),
+    getDefaultContent(newPostTitle, postImageFolderPath),
     (err) => {
         if (err) {
             throw err
@@ -47,3 +62,7 @@ fs.appendFile(
         console.log(`New post created @ '%s'`, newFilePath);
     }
 );
+
+fs.mkdir(path.join("static", postImageFolderPath), {}, () => {
+    console.log("DONE")
+})

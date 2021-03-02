@@ -8,9 +8,9 @@
     "bts": "node utils/svg-inline/base64-to-svg.js",
     "stb": "node utils/svg-inline/svg-to-base64.js",
     "new_post": "node utils/new_post",
-    "imgopt": "jpegoptim assets/food/*.jpg",
+    "imgopt": "jpegoptim assets/static/images/*.jpg",
     "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
-    "serve": "jekyll serve",
+    "serve": "hugo serve -D",
     "start": "docker-compose up"
   },
   "repository": {
@@ -19,5 +19,8 @@
   },
   "author": "Mátyás Budavári <budavariam@gmail.com> (https://budavariam.github.io)",
   "license": "MIT",
-  "homepage": "https://github.com/budavariam/budavariam.github.io#readme"
+  "homepage": "https://github.com/budavariam/budavariam.github.io#readme",
+  "devDependencies": {
+    "svgo": "^2.2.0"
+  }
 }

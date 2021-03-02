@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <g transform="translate(-11.283 -11.283) scale(1.30346)">
+        <linearGradient gradientTransform="matrix(1 0 0 -1 0 50)" gradientUnits="userSpaceOnUse" id="a" x1="24" x2="24"
+            y1="8.717" y2="43.88">
+            <stop offset=".097" stop-color="#ffd879" />
+            <stop offset=".154" stop-color="#fccb76" />
+            <stop offset=".258" stop-color="#f5aa6c" />
+            <stop offset=".398" stop-color="#e9755e" />
+            <stop offset=".449" stop-color="#e45f58" />
+            <stop offset=".679" stop-color="#d22a9c" />
+            <stop offset="1" stop-color="#6968df" />
+        </linearGradient>
+        <circle cx="24" cy="24" r="15.344" fill="url(#a)" />
+        <path
+            d="M24 27.715A3.72 3.72 0 0120.285 24 3.719 3.719 0 0124 20.285 3.72 3.72 0 0127.716 24 3.72 3.72 0 0124 27.715zm0-6.43A2.718 2.718 0 0021.285 24 2.719 2.719 0 0024 26.715 2.72 2.72 0 0026.716 24 2.718 2.718 0 0024 21.285z"
+            fill="#fff" />
+        <circle cx="28.248" cy="19.891" r=".462" fill="#fff" />
+        <path
+            d="M27.198 31.264h-6.396a4.071 4.071 0 01-4.067-4.066v-6.396a4.071 4.071 0 014.067-4.067h6.396a4.071 4.071 0 014.067 4.067v6.396a4.071 4.071 0 01-4.067 4.066zm-6.396-13.529a3.07 3.07 0 00-3.067 3.067v6.396a3.07 3.07 0 003.067 3.066h6.396a3.07 3.07 0 003.067-3.066v-6.396a3.07 3.07 0 00-3.067-3.067z"
+            fill="#fff" />
+    </g>
+</svg>

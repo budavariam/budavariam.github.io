@@ -6,11 +6,17 @@ You can see it LIVE on [github pages](https://budavariam.github.io).
 
 ## Local Development
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://127.0.0.1:4000/
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+```bash
+hugo new site budavariam.github.io
+hugo serve
+
+git submodule add git@github.com:budavariam/hugo-PaperMod.git themes/PaperModBudavariam --depth=1
+git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically)
+
+hugo new about.md
+hugo new post about.md
+hugo serve -D
+```
 
 ## Compress images
 
@@ -22,3 +28,20 @@ You can set the development environment up locally easier with docker.
 Run `docker-compose up`, wait until you see that *the server is running*,
 navigate to [localhost:4000](localhost:4000).
 You can edit the content and changes trigger regeneration.
+
+## Dev info
+
+- [Shortcodes](https://gohugo.io/content-management/shortcodes/)
+- [emoji support](https://gohugo.io/functions/emojify/)
+- [Scratch](https://gohugo.io/functions/scratch/)
+  - create a static map of values:
+
+    ```html
+    {{ $scratch := newScratch}}
+    {{ $scratch.Add "email" "mailto:" }}
+    {{ $scratch.Add "gmail" "mailto:" }}
+    <a href="{{ $scratch.Get "gmail" }}email@domain.com"></a>
+    ```
+
+- [printf](https://gohugo.io/functions/printf/)
+  - debug values: `{{ printf "Count %#v " .Count }}`
