@@ -29,7 +29,18 @@ Run `docker-compose up`, wait until you see that *the server is running*,
 navigate to [localhost:4000](localhost:4000).
 You can edit the content and changes trigger regeneration.
 
-## Docs
+## Dev info
 
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/)
 - [Scratch](https://gohugo.io/functions/scratch/)
+  - create a static map of values:
+
+    ```html
+    {{ $scratch := newScratch}}
+    {{ $scratch.Add "email" "mailto:" }}
+    {{ $scratch.Add "gmail" "mailto:" }}
+    <a href="{{ $scratch.Get "gmail" }}email@domain.com"></a>
+    ```
+
+- [printf](https://gohugo.io/functions/printf/)
+  - debug values: `{{ printf "Count %#v " .Count }}`
