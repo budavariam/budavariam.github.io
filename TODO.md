@@ -19,3 +19,4 @@
 - [x] fix image assets and locations like tmux
 - [x] generate svg-s to template from here with svgomg minify as well
 - [x] add 404 page
+- [ ] dockerize development
