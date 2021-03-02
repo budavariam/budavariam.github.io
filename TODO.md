@@ -8,7 +8,7 @@
 - [ ] prevent logo blinking
 - [x] use submodule from branch
 - [z] generate rss
-- [ ] github icon middle white part
+- [x] github icon middle white part dark friendly
 - [ ] colorchanging border into the header bottom part
 - [x] social icons in about page
 - [x] fix social icon url generation without adding the full url
@@ -16,3 +16,5 @@
 - [ ] fix utils for this site
 - [ ] create github action for deploy to gh pages
 - [x] add `<!--more-->`
+- [x] fix image assets and locations like tmux
+- [ ] generate svg-s to template from here with svgomg minify as well
