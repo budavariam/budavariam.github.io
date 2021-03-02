@@ -6,6 +6,8 @@ theme: "PaperModBudavariam"
 paginate: 20
 
 enableRobotsTXT: true
+enableInlineShortcodes: true
+enableEmoji: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -77,7 +79,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "Hi there \U0001F44B"
-        Content: 
+        Content: I like to post about the tools I use, and the productivity hacks I come across. I hope you'll enjoy my content.
 
     socialIcons:
         - name: gmail
@@ -127,6 +129,7 @@ params:
         hidden: true # hide everywhere but not in structured data
         hiddenInList: true # hide on list pages and home
         hiddenInSingle: true # hide on single page
+        relative: false
 
     # for search
     # https://fusejs.io/api/options.html
@@ -148,6 +151,9 @@ menu:
           name: Search
           url: /search/
           weight: 10
+        - identifier: archives
+          name: Archive
+          url: /archives/
         - identifier: about
           name: About
           url: /about/

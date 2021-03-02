@@ -32,6 +32,7 @@ You can edit the content and changes trigger regeneration.
 ## Dev info
 
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/)
+- [emoji support](https://gohugo.io/functions/emojify/)
 - [Scratch](https://gohugo.io/functions/scratch/)
   - create a static map of values:
 
