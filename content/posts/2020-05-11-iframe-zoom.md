@@ -9,7 +9,7 @@ I need to set the zoom factor in an iframe.
 I knew exactly how much space should the embedded content fit into.
 And the scale needs to be adjustable.
 Here's how I'd do it.
-
+<!--more-->
 ```html
 <div class="container">
     <iframe

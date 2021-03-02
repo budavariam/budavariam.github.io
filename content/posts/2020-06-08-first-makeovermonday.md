@@ -6,7 +6,7 @@ date: 2020-06-08
 ---
 
 I've started to learn how to create Visualizations with Tableau for a few weeks now. Today I've submitted my solution to the recent [MakeoverMonday](https://www.makeovermonday.co.uk/data/) challenge (2020 #23).
-
+<!--more-->
 ## About the challenge
 
 The organizers summarized it perfectly on [data.world](https://data.world/makeovermonday).

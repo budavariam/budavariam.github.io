@@ -9,7 +9,7 @@ A few days ago I came across a tweet about [Jetbrains Mono](https://www.jetbrain
 the new free and open source font of Jetbrains.
 I have never used custom fonts for my developer environments, so I thought it would be a good start to give it a shot.
 Long story short, it was totally worth it.
-
+<!--more-->
 This font is [designed](https://blog.jetbrains.com/blog/2020/01/15/jetbrains-mono-a-new-font-made-for-developers/) for developers,
 it is optimized to reduce eye strain that can occur when we scan quickly between multiple lines of code.
 It's characters are of course monospace and easily distinguishable.

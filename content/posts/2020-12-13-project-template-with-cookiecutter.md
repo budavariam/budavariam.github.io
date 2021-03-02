@@ -9,7 +9,7 @@ Sometimes I work on similar projects that need so little customization
 I feel like I can just copy and paste it, and tweak some variables,
 then create a new repo for it, and start to generate the content.
 Here is where project templates come into play.
-
+<!--more-->
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) is a python tool
 that lets you create an initial template that you can use for later projects.
 Just because it is written in python it does not mean it can only scaffold python projects.

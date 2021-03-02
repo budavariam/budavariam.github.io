@@ -8,7 +8,7 @@ date: 2020-12-01
 It's the time of the year when many people start to countdown with their advent calendars.
 For coders, there is a special kind of calendar
 that keeps us busy and help us prepare for the celebration.
-
+<!--more-->
 [Advent of Code](https://adventofcode.com/) presents a free challenge every day until December 25th.
 Each year there is a different back story.
 Usually, YOU are the coder hero and you need to save Christmas.

@@ -9,7 +9,7 @@ date: 2021-01-05
 After [experiencing the awesomeness](/posts/2020/12/30/external-function-from-snowflake/)
 of External Calls in Snowflake
 I decided to look into the possibilities of running external snippets from Postgres.
-
+<!--more-->
 I did not need to search too much to find out that it supports external calls to other languages
 beside SQL and C, called [Procedural Languages](https://www.postgresql.org/docs/13/xplang.html).
 

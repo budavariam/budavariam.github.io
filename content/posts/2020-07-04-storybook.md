@@ -12,7 +12,7 @@ but styling is a whole different story.
 I've been looking for a component preview library for React,
 that is not invasive and I do not need to change my code with extra markup to make it work,
 [Storybook](https://storybook.js.org/) does exactly what I was looking for.
-
+<!--more-->
 ## What is this
 
 They summarized what their library is about in their [introduction page](https://storybook.js.org/docs/basics/introduction/).

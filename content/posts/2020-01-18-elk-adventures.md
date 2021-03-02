@@ -6,7 +6,7 @@ date: 2020-01-18
 ---
 
 I have an application that logs a lot, and during development I got tired of looking through the command line for the error logs, that were hidden by other logs (that were also necessary). So I looked around what is the preferred way of handling logs nowadays.
-
+<!--more-->
 Some years ago I've worked on a project, where we used the ELK stack to provide configurable dashboards and realtime logs for monitoring. We used it, but I was not working with it directly. It seemed like a good idea to revisit how it actually works.
 
 I already knew that I only want to play around with it so I did not need to run a production ready server for it.

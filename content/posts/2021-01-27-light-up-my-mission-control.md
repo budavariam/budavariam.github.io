@@ -10,7 +10,7 @@ I'm currently following the trends with my dev setup.
 I use dark theme in almost all of my tools.
 That make my [Mission Control](https://en.wikipedia.org/wiki/Mission_Control_(macOS)) a monochrome mess.
 Most of my tools have theming options, so a few months ago I decided to light things up.
-
+<!--more-->
 ## The Problem
 
 My general workflow in mac heavily relies on **finding** windows, and **switching** between them.

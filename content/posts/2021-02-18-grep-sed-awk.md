@@ -10,7 +10,7 @@ I usually work with \*nix systems, and I process text all the time.
 This consists of CLI tool output, config file modifications and log files scanning.
 These utilities make it easy to search and manipulate plaintext data.
 I think they're an essential part of any developer's toolbox.
-
+<!--more-->
 These commands can read either from the standard input, a single file or multiple files.
 
 ## Grep

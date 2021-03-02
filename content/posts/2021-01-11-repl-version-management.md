@@ -9,7 +9,7 @@ date: 2021-01-11
 I work with some projects that can be only used with specific versions of node/python and it's not feasible to simply dockerize them.
 Every time I switch between these projects I'd need to reinstall different versions of node/python.
 That would be plain silly... BUT there's a better way.
-
+<!--more-->
 ## Node.js
 
 For Node, there's an npm package called [n](https://www.npmjs.com/package/n).

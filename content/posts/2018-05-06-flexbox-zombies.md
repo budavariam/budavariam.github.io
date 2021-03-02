@@ -6,7 +6,7 @@ date: 2018-05-06
 ---
 
 A few days ago I've been thinking whether there's a more interactive way of learning flexbox, rather than [this great guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-
+<!--more-->
 I know the basics, the concept, read this introduction many times, but I had to look up the parameters all the time.
 
 In my not so comprehensive searching I've found 2 great interactive tutorials.

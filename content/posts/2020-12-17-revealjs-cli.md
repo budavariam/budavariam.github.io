@@ -8,7 +8,7 @@ date: 2020-12-17
 Ever since I wrote about [VSCode Reveal](/posts/2020/06/01/markdown-slideshow/),
 I wanted to have a command-line interface to generate the same output.
 I loved that well-configured behavior and did not want to start from scratch. Finally, I had the time to do it.
-
+<!--more-->
 ## Getting started
 
 The [revealjs-cli npm package](https://www.npmjs.com/package/revealjs-cli) is available here.

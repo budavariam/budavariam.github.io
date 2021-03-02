@@ -7,7 +7,7 @@ date: 2020-06-18
 
 [React Transition group](http://reactcommunity.org/react-transition-group/css-transition) is a great library for animations in react.
 I want to share my experience on how to have an appear animation on components that are mounted with an `in={false}` property.
-
+<!--more-->
 My only constraint was hat I could not use `unmountOnExit` property.
 
 When the component mounted, it showed up immediately without the fade-in effect, then when it actually should have shown, then the animation started.

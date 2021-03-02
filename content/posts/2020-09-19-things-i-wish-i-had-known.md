@@ -6,7 +6,7 @@ date: 2020-09-19
 ---
 
 A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.
-
+<!--more-->
 I started to learn programming in high school, we tackled the basics of the field, by learning sql,
 networks, logic, binary calculations, imperative programming, but we did not really learn how these are going to work in real life.
 

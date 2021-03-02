@@ -9,7 +9,7 @@ date: 2020-04-12
 In my opinion Emmet is an essential tool for web developers.
 You can code in abbreviations that you can translate into html layouts, css styles, or even xsl transformations.
 These handy shortcuts make development faster, if you know what you can use by heart.
-
+<!--more-->
 ## Basics
 
 You can find the detailed basics in the [official docs](https://docs.emmet.io/abbreviations/syntax/).

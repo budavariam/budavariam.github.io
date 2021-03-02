@@ -12,7 +12,7 @@ It has a
 [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal),
 that is intuitive to use.
 My main purpose was to create a slideshow in plaintext format, and this lib exceeded my hopes.
-
+<!--more-->
 ## VSCode plugin
 
 The plugin adds a new item to the sidebar, that shows the outline of the opened document.

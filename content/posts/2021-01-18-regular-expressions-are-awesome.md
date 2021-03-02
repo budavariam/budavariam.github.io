@@ -9,7 +9,7 @@ date: 2021-01-18
 From time to time I come across a rant on Twitter, that regular expressions are
 confusing and hard in general. I think if you know the basic building blocks of it,
 you'll see how useful they are, and you can unleash its power in your daily coding life.
-
+<!--more-->
 You do not have to know everything about them to be productive with them.
 
 ## What are regular expressions

@@ -10,7 +10,7 @@ Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
 Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
 Have you ever needed to copy the output of a program running in the terminal?
 I did, and got fed up with them almost 5 years ago, I'll show you how you can eliminate these problems.
-
+<!--more-->
 ## Clipboard History
 
 Most of my clipboard-related frustration came from the fact, that default clipboards

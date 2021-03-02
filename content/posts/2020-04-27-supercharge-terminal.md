@@ -8,7 +8,7 @@ date: 2020-04-27
 The commmand line can be your best friend during development, if you take some time to get to know its capabilities.
 But even if you know what it can help you with, you can still extend it.
 I'd like to introduce you some of my favourite tools, `fzf`, and `oh-my-zsh`. By the end of this post I hope you'll see how well they can work together with you.
-
+<!--more-->
 ## oh-my-zsh
 
 I've always enjoyed tweaking my command line configurations, but usually when I needed a functionality,

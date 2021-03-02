@@ -11,6 +11,7 @@ I have to follow logs, modify configurations and kill/start applications all at 
 I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
 On top of that my ISP had a huge traffic hit these days, and my VPN connection dropped constantly.
 I dusted off my knowledge about some tools that boosted my productivity.
+<!--more-->
 
 I usually don't like to repeat myself, and supposedly I'll have to do these modifications for many more machines.
 So as I see something is working, I take a note of the solution and create a script as I go.
