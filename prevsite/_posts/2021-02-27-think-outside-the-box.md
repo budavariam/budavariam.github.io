@@ -208,7 +208,7 @@ tmux kill-session -t session_name   # terminate session
 tmux new -As0              # attach to default session if exists
 ```
 
-![tmux layout](/assets/post/2021-02-27-think-outside-the-box-tmux.png)
+![tmux layout](/images/2021-02-27-think-outside-the-box-tmux.png)
 
 ### Byobu
 

@@ -118,11 +118,11 @@ I can pipe together operations that would be impossible to do in the GUI of the 
 I learned to code in Hungarian keyboard layout, and it's not the most coding friendly layout. In mac it's even worse,
 the special characters are spread across the keyboard with cryptic shortcuts, in order to have all accented keys easily reachable.
 
-![Hungarian QWERTZ layout](/assets/post/2020-09-19-things-i-wish-i-had-known_hu.svg)
+![Hungarian QWERTZ layout](/images/2020-09-19-things-i-wish-i-had-known_hu.svg)
 
 It might not be news for you, but I figured that English layout is much more convenient. It has all the special characters I need at most one SHIFT key away.
 
-![United states QWERTY layout](/assets/post/2020-09-19-things-i-wish-i-had-known_us.svg)
+![United states QWERTY layout](/images/2020-09-19-things-i-wish-i-had-known_us.svg)
 
 I learned touch typing by myself, when I realized that my typing speed could be enhanced.
 There are some great sites and applications for that, there are even sites that let you practice writing code.

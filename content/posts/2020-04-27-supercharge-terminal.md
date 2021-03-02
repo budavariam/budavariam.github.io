@@ -43,7 +43,7 @@ I like the recommended settings, that way it stands out, from the other lines.
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 ```
 
-![Fzf in action](/assets/post/2020-04-27-supercharge-terminal-fzf.png)
+![Fzf in action](/images/2020-04-27-supercharge-terminal-fzf.png)
 
 ## Autocomplete
 
@@ -59,7 +59,7 @@ It makes me feel super productive, when I need to use the same set of commands i
 When I start to type the commands, I can accept the suggestion with a simple right arrow click.
 If I need to search for a complex command there is a better way for that!
 
-![Fzf-autosuggestions in action](/assets/post/2020-04-27-supercharge-terminal-fzf-autosuggestions.png)
+![Fzf-autosuggestions in action](/images/2020-04-27-supercharge-terminal-fzf-autosuggestions.png)
 
 ### fzf in zsh
 
@@ -76,7 +76,7 @@ Not so long ago I've found a [great plugin](https://github.com/Aloxaf/fzf-tab) t
 
 Sometimes it might not be what you need, you have the option to toggle it temporarily with `toggle-fzf-tab`.
 
-![Fzf-tab in action](/assets/post/2020-04-27-supercharge-terminal-fzf-tab.png)
+![Fzf-tab in action](/images/2020-04-27-supercharge-terminal-fzf-tab.png)
 
 ## My zsh config
 
