@@ -14,7 +14,8 @@
 - [x] fix social icon url generation without adding the full url
 - [x] turn on searchbar
 - [ ] fix utils for this site
-- [ ] create github action for deploy to gh pages
+- [x] create github action for deploy to gh pages
 - [x] add `<!--more-->`
 - [x] fix image assets and locations like tmux
 - [ ] generate svg-s to template from here with svgomg minify as well
+- [x] add 404 page
