@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/git/</link>
+    <description>Recent content in git on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heroku</title>
+      <link>http://budavariam.github.io/posts/2020/06/14/heroku/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/06/14/heroku/</guid>
+      <description>&lt;p&gt;My favourite place to deploy simple hobby and experimental web applications
+is &lt;a href=&#34;https://www.heroku.com&#34;&gt;heroku&lt;/a&gt;.
+It has a free plan, and it&amp;rsquo;s pretty easy to
+&lt;a href=&#34;https://devcenter.heroku.com/categories/language-support&#34;&gt;get started&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Groom merge request</title>
+      <link>http://budavariam.github.io/posts/2019/04/25/groom-merge-request/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2019/04/25/groom-merge-request/</guid>
+      <description>&lt;p&gt;Imagine you want to &lt;strong&gt;submit a huge merge request&lt;/strong&gt; (&lt;em&gt;gitlab terminology&lt;/em&gt;),
+that has many changes from a bunch of commits.
+&lt;strong&gt;You realize that you don&amp;rsquo;t want to see some changes&lt;/strong&gt;,
+but these changes are not in separate commits, so they can&amp;rsquo;t be easily reverted.
+There are a lot of small changes. You don&amp;rsquo;t want to type their reverse, or copy-paste for minutes.
+You want to keep the commits, not squash them together in the end.
+&lt;strong&gt;What would you do?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

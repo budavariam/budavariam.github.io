@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Blog Theme</title>
+      <link>http://budavariam.github.io/posts/2021/03/02/new-blog-theme/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/03/02/new-blog-theme/</guid>
+      <description>&lt;p&gt;A few weeks ago I came across a post about recommended static site generators.
+I decided to reevaluate my previous choice for a blog engine.
+I used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; and
+&lt;a href=&#34;https://www.gatsbyjs.com/&#34;&gt;Gatsby.js&lt;/a&gt; before, now I wanted something new.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

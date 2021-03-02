@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>react on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/react/</link>
+    <description>Recent content in react on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React CSSTransition appear animation with in=false and without unmountOnExit</title>
+      <link>http://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://reactcommunity.org/react-transition-group/css-transition&#34;&gt;React Transition group&lt;/a&gt; is a great library for animations in react.
+I want to share my experience on how to have an appear animation on components that are mounted with an &lt;code&gt;in={false}&lt;/code&gt; property.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

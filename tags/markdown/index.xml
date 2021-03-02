@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>markdown on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reveal.js CLI</title>
+      <link>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</guid>
+      <description>&lt;p&gt;Ever since I wrote about &lt;a href=&#34;http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/&#34;&gt;VSCode Reveal&lt;/a&gt;,
+I wanted to have a command-line interface to generate the same output.
+I loved that well-configured behavior and did not want to start from scratch. Finally, I had the time to do it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Slideshow</title>
+      <link>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;ve found an awesome library, called
+&lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;,
+that lets me create slideshows in markdown format.
+It has a
+&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal&#34;&gt;VSCode plugin&lt;/a&gt;,
+that is intuitive to use.
+My main purpose was to create a slideshow in plaintext format, and this lib exceeded my hopes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plaintext Docs In Markdown</title>
+      <link>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown&lt;/a&gt; makes it easy to write formatted text quickly.
+It&amp;rsquo;s a plain text format that uses basic notations to add semantics to the document.
+The format is widely adopted, it is a very simple and efficient tool in the hands of a developer.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

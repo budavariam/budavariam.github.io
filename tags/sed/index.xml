@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sed on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/sed/</link>
+    <description>Recent content in sed on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grep Sed AWK Filters</title>
+      <link>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</guid>
+      <description>&lt;p&gt;I usually work with *nix systems, and I process text all the time.
+This consists of CLI tool output, config file modifications and log files scanning.
+These utilities make it easy to search and manipulate plaintext data.
+I think they&amp;rsquo;re an essential part of any developer&amp;rsquo;s toolbox.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

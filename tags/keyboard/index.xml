@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keyboard on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/keyboard/</link>
+    <description>Recent content in keyboard on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Wish I Had Known As a Junior</title>
+      <link>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</guid>
+      <description>&lt;p&gt;A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

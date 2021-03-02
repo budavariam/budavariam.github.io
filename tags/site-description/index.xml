@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site-description on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/site-description/</link>
+    <description>Recent content in site-description on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/site-description/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advent Of Code</title>
+      <link>http://budavariam.github.io/posts/2020/12/01/advent-of-code/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/12/01/advent-of-code/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s the time of the year when many people start to countdown with their advent calendars.
+For coders, there is a special kind of calendar
+that keeps us busy and help us prepare for the celebration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>http://budavariam.github.io/posts/2020/06/14/heroku/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/06/14/heroku/</guid>
+      <description>&lt;p&gt;My favourite place to deploy simple hobby and experimental web applications
+is &lt;a href=&#34;https://www.heroku.com&#34;&gt;heroku&lt;/a&gt;.
+It has a free plan, and it&amp;rsquo;s pretty easy to
+&lt;a href=&#34;https://devcenter.heroku.com/categories/language-support&#34;&gt;get started&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flexbox zombies</title>
+      <link>http://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</link>
+      <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</guid>
+      <description>&lt;p&gt;A few days ago I&amp;rsquo;ve been thinking whether there&amp;rsquo;s a more interactive way of learning flexbox, rather than &lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34;&gt;this great guide&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

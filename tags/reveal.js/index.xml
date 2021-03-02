@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reveal.js on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/reveal.js/</link>
+    <description>Recent content in reveal.js on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/reveal.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reveal.js CLI</title>
+      <link>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</guid>
+      <description>&lt;p&gt;Ever since I wrote about &lt;a href=&#34;http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/&#34;&gt;VSCode Reveal&lt;/a&gt;,
+I wanted to have a command-line interface to generate the same output.
+I loved that well-configured behavior and did not want to start from scratch. Finally, I had the time to do it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

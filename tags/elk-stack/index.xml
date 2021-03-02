@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elk-stack on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/elk-stack/</link>
+    <description>Recent content in elk-stack on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/elk-stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ELK adventures</title>
+      <link>http://budavariam.github.io/posts/2020/01/18/elk-adventures/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/01/18/elk-adventures/</guid>
+      <description>&lt;p&gt;I have an application that logs a lot, and during development I got tired of looking through the command line for the error logs, that were hidden by other logs (that were also necessary). So I looked around what is the preferred way of handling logs nowadays.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

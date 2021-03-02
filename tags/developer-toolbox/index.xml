@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>developer-toolbox on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/developer-toolbox/</link>
+    <description>Recent content in developer-toolbox on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/developer-toolbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Think Outside The Box</title>
+      <link>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</guid>
+      <description>&lt;p&gt;In the past few days I&amp;rsquo;ve been working in manual mode on multiple linux boxes simultaneously.
+I have to follow logs, modify configurations and kill/start applications all at once.
+I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
+On top of that my ISP had a huge traffic hit these days, and my VPN connection dropped constantly.
+I dusted off my knowledge about some tools that boosted my productivity.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grep Sed AWK Filters</title>
+      <link>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</guid>
+      <description>&lt;p&gt;I usually work with *nix systems, and I process text all the time.
+This consists of CLI tool output, config file modifications and log files scanning.
+These utilities make it easy to search and manipulate plaintext data.
+I think they&amp;rsquo;re an essential part of any developer&amp;rsquo;s toolbox.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clipboard Goodies For Productivity</title>
+      <link>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</guid>
+      <description>&lt;p&gt;Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
+Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
+Have you ever needed to copy the output of a program running in the terminal?
+I did, and got fed up with them almost 5 years ago, I&amp;rsquo;ll show you how you can eliminate these problems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions Are Awesome</title>
+      <link>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</guid>
+      <description>&lt;p&gt;From time to time I come across a rant on Twitter, that regular expressions are
+confusing and hard in general. I think if you know the basic building blocks of it,
+you&amp;rsquo;ll see how useful they are, and you can unleash its power in your daily coding life.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Node/Python Version Management</title>
+      <link>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</guid>
+      <description>&lt;p&gt;I work with some projects that can be only used with specific versions of node/python and it&amp;rsquo;s not feasible to simply dockerize them.
+Every time I switch between these projects I&amp;rsquo;d need to reinstall different versions of node/python.
+That would be plain silly&amp;hellip; BUT there&amp;rsquo;s a better way.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Things I Wish I Had Known As a Junior</title>
+      <link>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</guid>
+      <description>&lt;p&gt;A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Supercharge your command line</title>
+      <link>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
+      <description>&lt;p&gt;The commmand line can be your best friend during development, if you take some time to get to know its capabilities.
+But even if you know what it can help you with, you can still extend it.
+I&amp;rsquo;d like to introduce you some of my favourite tools, &lt;code&gt;fzf&lt;/code&gt;, and &lt;code&gt;oh-my-zsh&lt;/code&gt;. By the end of this post I hope you&amp;rsquo;ll see how well they can work together with you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Developer font</title>
+      <link>http://budavariam.github.io/posts/2020/02/08/developer-font/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/02/08/developer-font/</guid>
+      <description>&lt;p&gt;A few days ago I came across a tweet about &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;Jetbrains Mono&lt;/a&gt;,
+the new free and open source font of Jetbrains.
+I have never used custom fonts for my developer environments, so I thought it would be a good start to give it a shot.
+Long story short, it was totally worth it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plaintext Docs In Markdown</title>
+      <link>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown&lt;/a&gt; makes it easy to write formatted text quickly.
+It&amp;rsquo;s a plain text format that uses basic notations to add semantics to the document.
+The format is widely adopted, it is a very simple and efficient tool in the hands of a developer.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

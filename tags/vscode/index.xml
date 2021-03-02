@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Slideshow</title>
+      <link>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;ve found an awesome library, called
+&lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;,
+that lets me create slideshows in markdown format.
+It has a
+&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal&#34;&gt;VSCode plugin&lt;/a&gt;,
+that is intuitive to use.
+My main purpose was to create a slideshow in plaintext format, and this lib exceeded my hopes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

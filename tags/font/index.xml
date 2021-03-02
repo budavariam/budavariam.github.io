@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>font on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/font/</link>
+    <description>Recent content in font on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/font/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer font</title>
+      <link>http://budavariam.github.io/posts/2020/02/08/developer-font/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/02/08/developer-font/</guid>
+      <description>&lt;p&gt;A few days ago I came across a tweet about &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;Jetbrains Mono&lt;/a&gt;,
+the new free and open source font of Jetbrains.
+I have never used custom fonts for my developer environments, so I thought it would be a good start to give it a shot.
+Long story short, it was totally worth it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

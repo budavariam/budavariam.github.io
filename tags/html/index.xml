@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/html/</link>
+    <description>Recent content in html on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iframe zoom</title>
+      <link>http://budavariam.github.io/posts/2020/05/11/iframe-zoom/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/05/11/iframe-zoom/</guid>
+      <description>&lt;p&gt;I need to set the zoom factor in an iframe.
+I knew exactly how much space should the embedded content fit into.
+And the scale needs to be adjustable.
+Here&amp;rsquo;s how I&amp;rsquo;d do it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emmet</title>
+      <link>http://budavariam.github.io/posts/2020/04/12/emmet/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2020/04/12/emmet/</guid>
+      <description>&lt;p&gt;In my opinion Emmet is an essential tool for web developers.
+You can code in abbreviations that you can translate into html layouts, css styles, or even xsl transformations.
+These handy shortcuts make development faster, if you know what you can use by heart.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

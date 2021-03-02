@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tmux on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/tmux/</link>
+    <description>Recent content in tmux on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Think Outside The Box</title>
+      <link>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</guid>
+      <description>&lt;p&gt;In the past few days I&amp;rsquo;ve been working in manual mode on multiple linux boxes simultaneously.
+I have to follow logs, modify configurations and kill/start applications all at once.
+I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
+On top of that my ISP had a huge traffic hit these days, and my VPN connection dropped constantly.
+I dusted off my knowledge about some tools that boosted my productivity.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

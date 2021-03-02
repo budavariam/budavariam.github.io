@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regex on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/regex/</link>
+    <description>Recent content in regex on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regular Expressions Are Awesome</title>
+      <link>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</guid>
+      <description>&lt;p&gt;From time to time I come across a rant on Twitter, that regular expressions are
+confusing and hard in general. I think if you know the basic building blocks of it,
+you&amp;rsquo;ll see how useful they are, and you can unleash its power in your daily coding life.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

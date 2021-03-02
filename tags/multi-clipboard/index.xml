@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>multi-clipboard on Mátyás Budavári</title>
+    <link>http://budavariam.github.io/tags/multi-clipboard/</link>
+    <description>Recent content in multi-clipboard on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/multi-clipboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clipboard Goodies For Productivity</title>
+      <link>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</guid>
+      <description>&lt;p&gt;Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
+Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
+Have you ever needed to copy the output of a program running in the terminal?
+I did, and got fed up with them almost 5 years ago, I&amp;rsquo;ll show you how you can eliminate these problems.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
