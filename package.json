@@ -19,5 +19,8 @@
   },
   "author": "Mátyás Budavári <budavariam@gmail.com> (https://budavariam.github.io)",
   "license": "MIT",
-  "homepage": "https://github.com/budavariam/budavariam.github.io#readme"
+  "homepage": "https://github.com/budavariam/budavariam.github.io#readme",
+  "devDependencies": {
+    "svgo": "^2.2.0"
+  }
 }
