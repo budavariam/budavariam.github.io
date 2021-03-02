@@ -3,7 +3,6 @@ layout: post
 title: Node/Python Version Management
 tags: [ programming, python, node, version-manager, developer-toolbox ]
 date: 2021-01-11
-
 ---
 
 I work with some projects that can be only used with specific versions of node/python and it's not feasible to simply dockerize them.

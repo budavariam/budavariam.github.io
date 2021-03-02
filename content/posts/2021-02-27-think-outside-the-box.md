@@ -2,7 +2,6 @@
 layout: post
 title: Think Outside The Box
 tags: [ developer-toolbox, productivity, ssh, tmux, screen, byobu ]
-
 date: 2021-02-27
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: Clipboard Goodies For Productivity
 tags: [ developer-toolbox, multi-clipboard, cli, productivity ]
 date: 2021-01-20
-
 ---
 
 Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?

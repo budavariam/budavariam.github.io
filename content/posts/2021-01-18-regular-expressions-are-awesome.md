@@ -3,7 +3,6 @@ layout: post
 title: Regular Expressions Are Awesome
 tags: [ programming, regex, developer-toolbox ]
 date: 2021-01-18
-
 ---
 
 From time to time I come across a rant on Twitter, that regular expressions are

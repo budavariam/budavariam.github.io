@@ -3,7 +3,6 @@ layout: post
 title: Postgres External Python Call
 tags: [ programming, database, postgres, sql, python, docker ]
 date: 2021-01-05
-
 ---
 
 After [experiencing the awesomeness](/posts/2020/12/30/external-function-from-snowflake/)

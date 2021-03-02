@@ -3,7 +3,6 @@ layout: post
 title: Grep Sed AWK Filters
 tags: [ programming, developer-toolbox, grep, sed, AWK, cheatsheet ]
 date: 2021-02-18
-
 ---
 
 I usually work with \*nix systems, and I process text all the time.
