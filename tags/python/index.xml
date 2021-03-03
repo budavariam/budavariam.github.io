@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/tags/python/</link>
+    <link>https://budavariam.github.io/tags/python/</link>
     <description>Recent content in python on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node/Python Version Management</title>
-      <link>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</link>
+      <link>https://budavariam.github.io/posts/2021/01/11/node/python-version-management/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/11/node/python-version-management/</guid>
       <description>&lt;p&gt;I work with some projects that can be only used with specific versions of node/python and it&amp;rsquo;s not feasible to simply dockerize them.
 Every time I switch between these projects I&amp;rsquo;d need to reinstall different versions of node/python.
 That would be plain silly&amp;hellip; BUT there&amp;rsquo;s a better way.&lt;/p&gt;</description>
@@ -20,21 +20,21 @@ That would be plain silly&amp;hellip; BUT there&amp;rsquo;s a better way.&lt;/p&
     
     <item>
       <title>Postgres External Python Call</title>
-      <link>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
+      <link>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
-      <description>&lt;p&gt;After &lt;a href=&#34;http://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
+      <guid>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;https://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
 of External Calls in Snowflake
 I decided to look into the possibilities of running external snippets from Postgres.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Project Template With Cookiecutter</title>
-      <link>http://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</link>
+      <link>https://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</guid>
+      <guid>https://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</guid>
       <description>&lt;p&gt;Sometimes I work on similar projects that need so little customization
 I feel like I can just copy and paste it, and tweak some variables,
 then create a new repo for it, and start to generate the content.

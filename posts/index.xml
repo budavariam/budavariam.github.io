@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/posts/</link>
+    <link>https://budavariam.github.io/posts/</link>
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Blog Engine</title>
-      <link>http://budavariam.github.io/posts/2021/03/02/new-blog-engine/</link>
+      <link>https://budavariam.github.io/posts/2021/03/02/new-blog-engine/</link>
       <pubDate>Tue, 02 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/03/02/new-blog-engine/</guid>
+      <guid>https://budavariam.github.io/posts/2021/03/02/new-blog-engine/</guid>
       <description>&lt;p&gt;A few weeks ago I came across a post about recommended static site generators.
 I decided to reevaluate my previous choice for a blog engine.
 I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; and
@@ -21,10 +21,10 @@ I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&g
     
     <item>
       <title>Think Outside The Box</title>
-      <link>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</link>
+      <link>https://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</link>
       <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</guid>
+      <guid>https://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</guid>
       <description>&lt;p&gt;In the past few days I&amp;rsquo;ve been working in manual mode on multiple linux boxes simultaneously.
 I have to follow logs, modify configurations and kill/start applications all at once.
 I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
@@ -34,10 +34,10 @@ I dusted off my knowledge about some tools that boosted my productivity.&lt;/p&g
     
     <item>
       <title>Grep Sed AWK Filters</title>
-      <link>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</link>
+      <link>https://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</guid>
+      <guid>https://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</guid>
       <description>&lt;p&gt;I usually work with *nix systems, and I process text all the time.
 This consists of CLI tool output, config file modifications and log files scanning.
 These utilities make it easy to search and manipulate plaintext data.
@@ -46,10 +46,10 @@ I think they&amp;rsquo;re an essential part of any developer&amp;rsquo;s toolbox
     
     <item>
       <title>Light Up My Mission Control</title>
-      <link>http://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</link>
+      <link>https://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently following the trends with my dev setup.
 I use dark theme in almost all of my tools.
 That make my &lt;a href=&#34;https://en.wikipedia.org/wiki/Mission_Control_(macOS)&#34;&gt;Mission Control&lt;/a&gt; a monochrome mess.
@@ -58,10 +58,10 @@ Most of my tools have theming options, so a few months ago I decided to light th
     
     <item>
       <title>Clipboard Goodies For Productivity</title>
-      <link>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</link>
+      <link>https://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</guid>
       <description>&lt;p&gt;Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
 Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
 Have you ever needed to copy the output of a program running in the terminal?
@@ -70,10 +70,10 @@ I did, and got fed up with them almost 5 years ago, I&amp;rsquo;ll show you how 
     
     <item>
       <title>Regular Expressions Are Awesome</title>
-      <link>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</link>
+      <link>https://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/18/regular-expressions-are-awesome/</guid>
       <description>&lt;p&gt;From time to time I come across a rant on Twitter, that regular expressions are
 confusing and hard in general. I think if you know the basic building blocks of it,
 you&amp;rsquo;ll see how useful they are, and you can unleash its power in your daily coding life.&lt;/p&gt;</description>
@@ -81,10 +81,10 @@ you&amp;rsquo;ll see how useful they are, and you can unleash its power in your 
     
     <item>
       <title>Node/Python Version Management</title>
-      <link>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</link>
+      <link>https://budavariam.github.io/posts/2021/01/11/node/python-version-management/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/11/node/python-version-management/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/11/node/python-version-management/</guid>
       <description>&lt;p&gt;I work with some projects that can be only used with specific versions of node/python and it&amp;rsquo;s not feasible to simply dockerize them.
 Every time I switch between these projects I&amp;rsquo;d need to reinstall different versions of node/python.
 That would be plain silly&amp;hellip; BUT there&amp;rsquo;s a better way.&lt;/p&gt;</description>
@@ -92,42 +92,42 @@ That would be plain silly&amp;hellip; BUT there&amp;rsquo;s a better way.&lt;/p&
     
     <item>
       <title>Postgres External Python Call</title>
-      <link>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
+      <link>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
-      <description>&lt;p&gt;After &lt;a href=&#34;http://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
+      <guid>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;https://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
 of External Calls in Snowflake
 I decided to look into the possibilities of running external snippets from Postgres.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>External Function Calls From Snowflake</title>
-      <link>http://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</link>
+      <link>https://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</guid>
+      <guid>https://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</guid>
       <description>&lt;p&gt;A few months ago at work, I wrote a simple node.js snippet to calculate route distances in &lt;a href=&#34;https://docs.mapbox.com/api/navigation/#directions&#34;&gt;Mapbox&lt;/a&gt;.
 Now I&amp;rsquo;m proud, that it&amp;rsquo;s used to demonstrate how to use Mapbox calculations from &lt;a href=&#34;https://www.snowflake.com/&#34;&gt;Snowflake&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Reveal.js CLI</title>
-      <link>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</link>
+      <link>https://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</guid>
-      <description>&lt;p&gt;Ever since I wrote about &lt;a href=&#34;http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/&#34;&gt;VSCode Reveal&lt;/a&gt;,
+      <guid>https://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</guid>
+      <description>&lt;p&gt;Ever since I wrote about &lt;a href=&#34;https://budavariam.github.io/posts/2020/06/01/markdown-slideshow/&#34;&gt;VSCode Reveal&lt;/a&gt;,
 I wanted to have a command-line interface to generate the same output.
 I loved that well-configured behavior and did not want to start from scratch. Finally, I had the time to do it.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Project Template With Cookiecutter</title>
-      <link>http://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</link>
+      <link>https://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</guid>
+      <guid>https://budavariam.github.io/posts/2020/12/13/project-template-with-cookiecutter/</guid>
       <description>&lt;p&gt;Sometimes I work on similar projects that need so little customization
 I feel like I can just copy and paste it, and tweak some variables,
 then create a new repo for it, and start to generate the content.
@@ -136,10 +136,10 @@ Here is where project templates come into play.&lt;/p&gt;</description>
     
     <item>
       <title>Advent Of Code</title>
-      <link>http://budavariam.github.io/posts/2020/12/01/advent-of-code/</link>
+      <link>https://budavariam.github.io/posts/2020/12/01/advent-of-code/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/01/advent-of-code/</guid>
+      <guid>https://budavariam.github.io/posts/2020/12/01/advent-of-code/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s the time of the year when many people start to countdown with their advent calendars.
 For coders, there is a special kind of calendar
 that keeps us busy and help us prepare for the celebration.&lt;/p&gt;</description>
@@ -147,19 +147,19 @@ that keeps us busy and help us prepare for the celebration.&lt;/p&gt;</descripti
     
     <item>
       <title>Things I Wish I Had Known As a Junior</title>
-      <link>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</link>
+      <link>https://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</link>
       <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</guid>
+      <guid>https://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</guid>
       <description>&lt;p&gt;A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Storybook</title>
-      <link>http://budavariam.github.io/posts/2020/07/04/storybook/</link>
+      <link>https://budavariam.github.io/posts/2020/07/04/storybook/</link>
       <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/07/04/storybook/</guid>
+      <guid>https://budavariam.github.io/posts/2020/07/04/storybook/</guid>
       <description>&lt;p&gt;When I develop new web components I find it frustrating that I have to run the app,
 click it through until the point I find my new visual, just to see how it behaves in a real life situation.
 Unit tests are great to check whether my component does what I intended,
@@ -171,20 +171,20 @@ that is not invasive and I do not need to change my code with extra markup to ma
     
     <item>
       <title>React CSSTransition appear animation with in=false and without unmountOnExit</title>
-      <link>http://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</link>
+      <link>https://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</link>
       <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</guid>
+      <guid>https://budavariam.github.io/posts/2020/06/18/react-csstransition-appear-animation-with-infalse-and-without-unmountonexit/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://reactcommunity.org/react-transition-group/css-transition&#34;&gt;React Transition group&lt;/a&gt; is a great library for animations in react.
 I want to share my experience on how to have an appear animation on components that are mounted with an &lt;code&gt;in={false}&lt;/code&gt; property.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Heroku</title>
-      <link>http://budavariam.github.io/posts/2020/06/14/heroku/</link>
+      <link>https://budavariam.github.io/posts/2020/06/14/heroku/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/06/14/heroku/</guid>
+      <guid>https://budavariam.github.io/posts/2020/06/14/heroku/</guid>
       <description>&lt;p&gt;My favourite place to deploy simple hobby and experimental web applications
 is &lt;a href=&#34;https://www.heroku.com&#34;&gt;heroku&lt;/a&gt;.
 It has a free plan, and it&amp;rsquo;s pretty easy to
@@ -193,19 +193,19 @@ It has a free plan, and it&amp;rsquo;s pretty easy to
     
     <item>
       <title>First MakeoverMonday submission</title>
-      <link>http://budavariam.github.io/posts/2020/06/08/first-makeovermonday-submission/</link>
+      <link>https://budavariam.github.io/posts/2020/06/08/first-makeovermonday-submission/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/06/08/first-makeovermonday-submission/</guid>
+      <guid>https://budavariam.github.io/posts/2020/06/08/first-makeovermonday-submission/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve started to learn how to create Visualizations with Tableau for a few weeks now. Today I&amp;rsquo;ve submitted my solution to the recent &lt;a href=&#34;https://www.makeovermonday.co.uk/data/&#34;&gt;MakeoverMonday&lt;/a&gt; challenge (2020 #23).&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown Slideshow</title>
-      <link>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</link>
+      <link>https://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</guid>
+      <guid>https://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</guid>
       <description>&lt;p&gt;Today I&amp;rsquo;ve found an awesome library, called
 &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;,
 that lets me create slideshows in markdown format.
@@ -217,10 +217,10 @@ My main purpose was to create a slideshow in plaintext format, and this lib exce
     
     <item>
       <title>Iframe zoom</title>
-      <link>http://budavariam.github.io/posts/2020/05/11/iframe-zoom/</link>
+      <link>https://budavariam.github.io/posts/2020/05/11/iframe-zoom/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/05/11/iframe-zoom/</guid>
+      <guid>https://budavariam.github.io/posts/2020/05/11/iframe-zoom/</guid>
       <description>&lt;p&gt;I need to set the zoom factor in an iframe.
 I knew exactly how much space should the embedded content fit into.
 And the scale needs to be adjustable.
@@ -229,10 +229,10 @@ Here&amp;rsquo;s how I&amp;rsquo;d do it.&lt;/p&gt;</description>
     
     <item>
       <title>Supercharge your command line</title>
-      <link>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
+      <link>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
+      <guid>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
       <description>&lt;p&gt;The commmand line can be your best friend during development, if you take some time to get to know its capabilities.
 But even if you know what it can help you with, you can still extend it.
 I&amp;rsquo;d like to introduce you some of my favourite tools, &lt;code&gt;fzf&lt;/code&gt;, and &lt;code&gt;oh-my-zsh&lt;/code&gt;. By the end of this post I hope you&amp;rsquo;ll see how well they can work together with you.&lt;/p&gt;</description>
@@ -240,10 +240,10 @@ I&amp;rsquo;d like to introduce you some of my favourite tools, &lt;code&gt;fzf&
     
     <item>
       <title>Emmet</title>
-      <link>http://budavariam.github.io/posts/2020/04/12/emmet/</link>
+      <link>https://budavariam.github.io/posts/2020/04/12/emmet/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/04/12/emmet/</guid>
+      <guid>https://budavariam.github.io/posts/2020/04/12/emmet/</guid>
       <description>&lt;p&gt;In my opinion Emmet is an essential tool for web developers.
 You can code in abbreviations that you can translate into html layouts, css styles, or even xsl transformations.
 These handy shortcuts make development faster, if you know what you can use by heart.&lt;/p&gt;</description>
@@ -251,10 +251,10 @@ These handy shortcuts make development faster, if you know what you can use by h
     
     <item>
       <title>Developer font</title>
-      <link>http://budavariam.github.io/posts/2020/02/08/developer-font/</link>
+      <link>https://budavariam.github.io/posts/2020/02/08/developer-font/</link>
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/02/08/developer-font/</guid>
+      <guid>https://budavariam.github.io/posts/2020/02/08/developer-font/</guid>
       <description>&lt;p&gt;A few days ago I came across a tweet about &lt;a href=&#34;https://www.jetbrains.com/lp/mono/&#34;&gt;Jetbrains Mono&lt;/a&gt;,
 the new free and open source font of Jetbrains.
 I have never used custom fonts for my developer environments, so I thought it would be a good start to give it a shot.
@@ -263,19 +263,19 @@ Long story short, it was totally worth it.&lt;/p&gt;</description>
     
     <item>
       <title>ELK adventures</title>
-      <link>http://budavariam.github.io/posts/2020/01/18/elk-adventures/</link>
+      <link>https://budavariam.github.io/posts/2020/01/18/elk-adventures/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/01/18/elk-adventures/</guid>
+      <guid>https://budavariam.github.io/posts/2020/01/18/elk-adventures/</guid>
       <description>&lt;p&gt;I have an application that logs a lot, and during development I got tired of looking through the command line for the error logs, that were hidden by other logs (that were also necessary). So I looked around what is the preferred way of handling logs nowadays.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Plaintext Docs In Markdown</title>
-      <link>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</link>
+      <link>https://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</guid>
+      <guid>https://budavariam.github.io/posts/2019/05/01/plaintext-docs-in-markdown/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown&lt;/a&gt; makes it easy to write formatted text quickly.
 It&amp;rsquo;s a plain text format that uses basic notations to add semantics to the document.
 The format is widely adopted, it is a very simple and efficient tool in the hands of a developer.&lt;/p&gt;</description>
@@ -283,10 +283,10 @@ The format is widely adopted, it is a very simple and efficient tool in the hand
     
     <item>
       <title>Groom merge request</title>
-      <link>http://budavariam.github.io/posts/2019/04/25/groom-merge-request/</link>
+      <link>https://budavariam.github.io/posts/2019/04/25/groom-merge-request/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2019/04/25/groom-merge-request/</guid>
+      <guid>https://budavariam.github.io/posts/2019/04/25/groom-merge-request/</guid>
       <description>&lt;p&gt;Imagine you want to &lt;strong&gt;submit a huge merge request&lt;/strong&gt; (&lt;em&gt;gitlab terminology&lt;/em&gt;),
 that has many changes from a bunch of commits.
 &lt;strong&gt;You realize that you don&amp;rsquo;t want to see some changes&lt;/strong&gt;,
@@ -298,19 +298,19 @@ You want to keep the commits, not squash them together in the end.
     
     <item>
       <title>Flexbox zombies</title>
-      <link>http://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</link>
+      <link>https://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</link>
       <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</guid>
+      <guid>https://budavariam.github.io/posts/2018/05/06/flexbox-zombies/</guid>
       <description>&lt;p&gt;A few days ago I&amp;rsquo;ve been thinking whether there&amp;rsquo;s a more interactive way of learning flexbox, rather than &lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34;&gt;this great guide&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hello world</title>
-      <link>http://budavariam.github.io/posts/2018/03/03/hello-world/</link>
+      <link>https://budavariam.github.io/posts/2018/03/03/hello-world/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2018/03/03/hello-world/</guid>
+      <guid>https://budavariam.github.io/posts/2018/03/03/hello-world/</guid>
       <description>&lt;p&gt;I just started my &lt;a href=&#34;https://pages.github.com/&#34;&gt;github pages&lt;/a&gt;
 site supported by &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

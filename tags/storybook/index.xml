@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>storybook on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/tags/storybook/</link>
+    <link>https://budavariam.github.io/tags/storybook/</link>
     <description>Recent content in storybook on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/storybook/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/storybook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Storybook</title>
-      <link>http://budavariam.github.io/posts/2020/07/04/storybook/</link>
+      <link>https://budavariam.github.io/posts/2020/07/04/storybook/</link>
       <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/07/04/storybook/</guid>
+      <guid>https://budavariam.github.io/posts/2020/07/04/storybook/</guid>
       <description>&lt;p&gt;When I develop new web components I find it frustrating that I have to run the app,
 click it through until the point I find my new visual, just to see how it behaves in a real life situation.
 Unit tests are great to check whether my component does what I intended,

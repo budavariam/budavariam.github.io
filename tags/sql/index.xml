@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sql on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/tags/sql/</link>
+    <link>https://budavariam.github.io/tags/sql/</link>
     <description>Recent content in sql on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Postgres External Python Call</title>
-      <link>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
+      <link>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
-      <description>&lt;p&gt;After &lt;a href=&#34;http://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
+      <guid>https://budavariam.github.io/posts/2021/01/05/postgres-external-python-call/</guid>
+      <description>&lt;p&gt;After &lt;a href=&#34;https://budavariam.github.io/posts/2020/12/30/external-function-from-snowflake/&#34;&gt;experiencing the awesomeness&lt;/a&gt;
 of External Calls in Snowflake
 I decided to look into the possibilities of running external snippets from Postgres.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>External Function Calls From Snowflake</title>
-      <link>http://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</link>
+      <link>https://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</guid>
+      <guid>https://budavariam.github.io/posts/2020/12/30/external-function-calls-from-snowflake/</guid>
       <description>&lt;p&gt;A few months ago at work, I wrote a simple node.js snippet to calculate route distances in &lt;a href=&#34;https://docs.mapbox.com/api/navigation/#directions&#34;&gt;Mapbox&lt;/a&gt;.
 Now I&amp;rsquo;m proud, that it&amp;rsquo;s used to demonstrate how to use Mapbox calculations from &lt;a href=&#34;https://www.snowflake.com/&#34;&gt;Snowflake&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>theme on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/tags/theme/</link>
+    <link>https://budavariam.github.io/tags/theme/</link>
     <description>Recent content in theme on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Light Up My Mission Control</title>
-      <link>http://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</link>
+      <link>https://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</guid>
+      <guid>https://budavariam.github.io/posts/2021/01/27/light-up-my-mission-control/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently following the trends with my dev setup.
 I use dark theme in almost all of my tools.
 That make my &lt;a href=&#34;https://en.wikipedia.org/wiki/Mission_Control_(macOS)&#34;&gt;Mission Control&lt;/a&gt; a monochrome mess.

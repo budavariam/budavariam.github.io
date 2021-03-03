@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fzf on Mátyás Budavári</title>
-    <link>http://budavariam.github.io/tags/fzf/</link>
+    <link>https://budavariam.github.io/tags/fzf/</link>
     <description>Recent content in fzf on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://budavariam.github.io/tags/fzf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/fzf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supercharge your command line</title>
-      <link>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
+      <link>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
+      <guid>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
       <description>&lt;p&gt;The commmand line can be your best friend during development, if you take some time to get to know its capabilities.
 But even if you know what it can help you with, you can still extend it.
 I&amp;rsquo;d like to introduce you some of my favourite tools, &lt;code&gt;fzf&lt;/code&gt;, and &lt;code&gt;oh-my-zsh&lt;/code&gt;. By the end of this post I hope you&amp;rsquo;ll see how well they can work together with you.&lt;/p&gt;</description>
