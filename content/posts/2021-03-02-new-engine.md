@@ -59,11 +59,11 @@ For deployment Jekyll has first level support from github.
 Github actions has templates for hugo deployment, it works just fine.
 
 It kept me thinking what I did wrong when I got a 404 in the first deploy.
-`peaceiris/actions-gh-pages@v3` by default pushes to a separate `gh-pages` branch, and I needded to adjust my repo settings, to load giithub pages from that location.
+`peaceiris/actions-gh-pages@v3` by default pushes to a separate `gh-pages` branch, and I needded to adjust my repo settings, to load github pages from that location.
 
 ## New features
 
-I dedicate this chapter to the new feature I love in PaperMod, that I did not have before.
+I dedicate this chapter to the new features I love in PaperMod, that I did not have before.
 
 - sexier typography, nice looking components
 - cover images
