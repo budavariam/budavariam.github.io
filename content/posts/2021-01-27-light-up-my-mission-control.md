@@ -25,7 +25,7 @@ To make things even harder, for some reason mac **rearranges the windows** after
 With dark theme everywhere, it's pretty **hard to distingush** between the different applications,
 you have to rely on small random features.
 
-![Image of monochrome mess](/images/2021-01-27-light-up-my-mission-control-monochrome.png)
+![Image of monochrome mess](/images/2021-01-27-light-up-my-mission-control/monochrome.png)
 
 It's not fun to switch between these windows.
 
@@ -40,7 +40,7 @@ In [iterm2](https://iterm2.com/) I use **vertical tab** arrangement.
 That way more tabs can fit in the screen.
 The tabs can have custom colors.
 
-![Vertical tab custom colors](/images/2021-01-27-light-up-my-mission-control-iterm2-colorful.png)
+![Vertical tab custom colors](/images/2021-01-27-light-up-my-mission-control/iterm2-colorful.png)
 
 It might not help too much in the big picture,
 BUT at least tabs are found easily.
@@ -51,7 +51,7 @@ My main motivation is to have a bright color that can be seen from a distance.
 
 [Slack](https://slack.com/) has an option to customize its theme colors.
 
-![Slack custom color selection](/images/2021-01-27-light-up-my-mission-control-slack-themes.png)
+![Slack custom color selection](/images/2021-01-27-light-up-my-mission-control/slack-themes.png)
 
 Since themes are defined as a concactenated list of colors, 
 there are many sites that hoost combinations with custom names.
@@ -77,7 +77,7 @@ By recoloring the sidebar, I was finally able to mark the projects I needed the 
 }
 ```
 
-![VSCode sidebar](/images/2021-01-27-light-up-my-mission-control-vscode.png)
+![VSCode sidebar](/images/2021-01-27-light-up-my-mission-control/vscode.png)
 
 ### Peacock
 
@@ -96,7 +96,7 @@ I added these settings globally.
 
 It's pretty powerful tool, but my favorite part is that I can just ask it for a **random harmonic colorset**.
 
-![Surprise me](/images/2021-01-27-light-up-my-mission-control-peacock-random.png)
+![Surprise me](/images/2021-01-27-light-up-my-mission-control/peacock-random.png)
 
 It writes to the settings file, and since it modifies the embedded theme settings,
 it can work for colleagues that do not have this extension.
@@ -107,7 +107,7 @@ There is a saying, that if you mark everything, it's as efficient as not marking
 But I think this is not the case.
 I like to think of these tweaks as multiple colorful bookmarks in a huge textbook.
 
-![Final result](/images/2021-01-27-light-up-my-mission-control-colorful.png)
+![Final result](/images/2021-01-27-light-up-my-mission-control/colorful.png)
 
 I achieved my goal, I significantly reduced the time I need to look for small details,
 I can spot the colors easily and navigate to the desired app.

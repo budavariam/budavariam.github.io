@@ -25,7 +25,7 @@ Create a markdown file for the slideshow.
 
 Access info about the available features via `--help` flag.
 
-![revealjs cli help](/images/2020-12-17-revealjs-cli.png)
+![revealjs cli help](/images/2020-12-17-revealjs-cli/help.png)
 
 ## Export slides
 

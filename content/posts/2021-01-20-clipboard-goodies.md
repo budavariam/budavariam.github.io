@@ -2,6 +2,10 @@
 layout: post
 title: Clipboard Goodies For Productivity
 tags: [ developer-toolbox, multi-clipboard, cli, productivity ]
+cover: 
+    image: /images/2021-01-20-clipboard-goodies/cover.jpg
+    alt: opened book
+    hidden: false
 date: 2021-01-20
 ---
 
@@ -45,7 +49,7 @@ I love that it has a configurable
 clipboard **size**, I can **search** through the entries,
 and it has a configurable shortcut to `Show main window under mouse cursor` that can **speed up work**.
 
-![Search through clipboard entries on mac](/images/2021-01-20-cipboard-goodies-copyq-find.png)
+![Search through clipboard entries on mac](/images/2021-01-20-clipboard-goodies/copyq-find.png)
 
 In case I copy **sensitive data**, I can turn off clipboard monitoring all at once with a configurable shortcut:
 `Toggle Clipboard Storing`.

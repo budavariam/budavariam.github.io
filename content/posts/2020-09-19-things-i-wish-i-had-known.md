@@ -12,7 +12,7 @@ networks, logic, binary calculations, imperative programming, but we did not rea
 
 I collected some concepts that work for me now during my day-to-day coding, that I did not use much when I started out.
 
-- [Interpreters can help with quick calculations](#interpreters-can-help-with-quick-calculations)
+<!-- - [Interpreters can help with quick calculations](#interpreters-can-help-with-quick-calculations)
 - [Sandboxes are great to investigate problems in isolation](#sandboxes-are-great-to-investigate-problems-in-isolation)
 - [Read as much code as you can](#read-as-much-code-as-you-can)
 - [Debugger is usually easy to set up, and really useful](#debugger-is-usually-easy-to-set-up-and-really-useful)
@@ -20,7 +20,7 @@ I collected some concepts that work for me now during my day-to-day coding, that
 - [Terminal can be simpler than GUI](#terminal-can-be-simpler-than-gui)
 - [Typing is crucial](#typing-is-crucial)
 - [Write documentation what you'd like to read](#write-documentation-what-youd-like-to-read)
-- [Other advices I find helpful](#other-advices-i-find-helpful)
+- [Other advices I find helpful](#other-advices-i-find-helpful) -->
 
 ## Interpreters can help with quick calculations
 
@@ -118,11 +118,11 @@ I can pipe together operations that would be impossible to do in the GUI of the 
 I learned to code in Hungarian keyboard layout, and it's not the most coding friendly layout. In mac it's even worse,
 the special characters are spread across the keyboard with cryptic shortcuts, in order to have all accented keys easily reachable.
 
-![Hungarian QWERTZ layout](/images/2020-09-19-things-i-wish-i-had-known_hu.svg)
+![Hungarian QWERTZ layout](/images/2020-09-19-things-i-wish-i-had-known/hu.svg)
 
 It might not be news for you, but I figured that English layout is much more convenient. It has all the special characters I need at most one SHIFT key away.
 
-![United states QWERTY layout](/images/2020-09-19-things-i-wish-i-had-known_us.svg)
+![United states QWERTY layout](/images/2020-09-19-things-i-wish-i-had-known/us.svg)
 
 I learned touch typing by myself, when I realized that my typing speed could be enhanced.
 There are some great sites and applications for that, there are even sites that let you practice writing code.

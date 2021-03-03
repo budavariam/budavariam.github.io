@@ -21,7 +21,7 @@ The organizers summarized it perfectly on [data.world](https://data.world/makeov
 
 ### My reworked chart
 
-![Png version of my vizualization](/images/2020-06-08-first-makeovermonday.png)
+![Png version of my vizualization](/images/2020-06-08-first-makeovermonday/chart.png)
 
 I've [published it](https://public.tableau.com/profile/budavariam#!/vizhome/MMW23_v3/ResultTooltip) on Tableau Public.
 
