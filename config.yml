@@ -32,7 +32,7 @@ params:
     title: ExampleSite
     description: "ExampleSite description"
     author: Mátyás Budavári
-    images: ["<link or path of image for opengraph, twitter-cards>"]
+    images: []
     addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
 
     defaultTheme: auto # dark, light
