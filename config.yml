@@ -29,10 +29,10 @@ permalinks:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
+    title: Mátyás Budavári
+    description: "Developer from Szeged"
     author: Mátyás Budavári
-    images: []
+    images: [ "/avatar.png" ]
     addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
 
     defaultTheme: auto # dark, light
@@ -63,19 +63,19 @@ params:
         iconWidth: 70
 
     # profile-mode
-    profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
-        subtitle: "This is subtitle"
-        imageUrl: /avatar.png
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
+    # profileMode:
+    #     enabled: false # needs to be explicitly set
+    #     title: ExampleSite
+    #     subtitle: "This is subtitle"
+    #     imageUrl: /avatar.png
+    #     imageWidth: 120
+    #     imageHeight: 120
+    #     imageTitle: my image
+    #     buttons:
+    #         - name: Posts
+    #           url: posts
+    #         - name: Tags
+    #           url: tags
 
     # home-info mode
     homeInfoParams:
