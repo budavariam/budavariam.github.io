@@ -60,13 +60,14 @@ params:
         text: "Mátyás Budavári"
         icon: /avatar.png
         iconHeight: 70
+        iconWidth: 70
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
         title: ExampleSite
         subtitle: "This is subtitle"
-        imageUrl: "<img location>"
+        imageUrl: /avatar.png
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
