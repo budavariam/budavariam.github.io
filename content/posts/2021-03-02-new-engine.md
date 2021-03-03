@@ -7,7 +7,6 @@ cover:
     image: /images/2021-03-02-new-engine/cover.png
     alt: Footer from my previous blog engine
     hidden: false
-draft: false
 ---
 
 A few weeks ago I came across a post about recommended static site generators.
@@ -77,6 +76,8 @@ I dedicate this chapter to the new feature I love in PaperMod, that I did not ha
 - post archive
 - tags / show posts by tags
 - embed shortcodes (components) into markdown
+
+![New look and feel in dark mode](/images/2021-03-02-new-engine/new-look.png)
 
 I hope you like the new look and feel as much as I do.
 
