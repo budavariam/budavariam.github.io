@@ -8,7 +8,7 @@
     "bts": "node utils/svg-inline/base64-to-svg.js",
     "stb": "node utils/svg-inline/svg-to-base64.js",
     "new_post": "node utils/new_post",
-    "imgopt": "jpegoptim assets/static/images/*.jpg",
+    "imgopt": "jpegoptim static/images/**/*.jpg",
     "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
     "serve": "hugo serve -D",
     "start": "docker-compose up"
