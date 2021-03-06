@@ -7,7 +7,7 @@ paginate: 20
 
 enableRobotsTXT: true
 enableInlineShortcodes: true
-enableEmoji: true
+enableEmoji: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false

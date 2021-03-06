@@ -20,14 +20,14 @@ I used Jekyll for my first theme only because at that time
 (without [github actions](https://github.com/features/actions)),
 it was the simplest way to push content into
 [github pages](https://pages.github.com/)
-from a repo wthout buildng it on my machine.
+from a repo without buildng it on my machine.
 
 ## Hugo PaperMod
 
 Many people recommended [Hugo.go](https://gohugo.io/), I decided to give it a try.
 After browsing for a while in the themes [Papermod](https://themes.gohugo.io/hugo-papermod/)
 caught my eye. It has a similar minimalistic vibe, as my previous site,
-but also has many embedded features out of the box. :tada:
+but also has many embedded features out of the box. {{< emoji `:tada:` >}}
 
 ![Previous header](/images/2021-03-02-new-engine/header.png)
 
