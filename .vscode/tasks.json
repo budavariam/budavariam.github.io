@@ -2,8 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "new_post ${input:postTitle}",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "new_post", "${input:postTitle}"],
 			"problemMatcher": [],
 			"label": "npm: new_post",
 			"detail": "node utils/new_post",
