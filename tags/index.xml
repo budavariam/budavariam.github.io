@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>config</title>
+      <link>https://budavariam.github.io/tags/config/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotfiles</title>
+      <link>https://budavariam.github.io/tags/dotfiles/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/dotfiles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://budavariam.github.io/tags/git/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://budavariam.github.io/tags/shell/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://budavariam.github.io/tags/hugo/</link>
@@ -373,15 +409,6 @@
       <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/react/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://budavariam.github.io/tags/git/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/git/</guid>
       <description></description>
     </item>
     

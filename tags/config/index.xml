@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/config/</link>
+    <description>Recent content in config on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keep Your Configs Safe</title>
+      <link>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</guid>
+      <description>&lt;p&gt;A few years ago I switched between a few machines on a daily basis,
+and tweaked my environments constantly.
+It was a tedious task to update each of them one by one,
+every time I changed configs or aliases in any of them.
+I figured this has got to be easier somehow,
+and found the hidden world of dotfiles.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
