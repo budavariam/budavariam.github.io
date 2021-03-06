@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keep Your Configs Safe
-tags: [ dotfiles, shell, config, git ]
+tags: [ dotfiles, shell, config, git, productivity ]
 cover:
     image: /images/2021-03-06-keep-your-configs-safe/cover.jpg
     alt: Gold Padlock Locking Door
@@ -43,22 +43,6 @@ Many people on github has a public repository called something like `dotfiles`
 that shows their approach.
 You can learn from their approaches, and even share your way with the community.
 
-### But what about secrets
-
-It's not advised to store passwords and crucial keys in
-[VCS](https://en.wikipedia.org/wiki/Version_control) like git.
-
-You can store it in a safe vault elsewhere and reference them as regular files.
-
-I'd make sure that my configs work without those files.
-Also I wouldn't use names that store any additional info about its whereabouts, or its contents.
-
-If you accidentally pushed some keys to the git repository,
-it's not enough to revert those changes, and commit again, since it's part of the history now.
-You can follow
-[this guide](https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
-to remove it completely from the repository.
-
 ### How to get started
 
 There are different ways to create the dotfiles backups:
@@ -74,6 +58,23 @@ There are different ways to create the dotfiles backups:
 
 You can find more information with repositories, tips and tricks and other tools
 at [https://dotfiles.github.io](https://dotfiles.github.io).
+
+### But what about secrets
+
+It's not advised to store passwords and crucial keys in
+[VCS](https://en.wikipedia.org/wiki/Version_control) like git.
+
+You can store it in a safe vault elsewhere and reference them as regular files.
+You can also store them in the same folder but add them to `.gitignore`.
+
+I'd make sure that my configs work without those files.
+Also I wouldn't use names that store any additional info about its whereabouts, or its contents.
+
+If you accidentally pushed some keys to the git repository,
+it's not enough to revert those changes, and commit again, since it's part of the history now.
+You can follow
+[this guide](https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
+to remove it completely from the repository.
 
 ## My way
 
