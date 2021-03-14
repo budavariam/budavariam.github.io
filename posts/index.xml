@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim</title>
+      <link>https://budavariam.github.io/posts/2021/03/13/vim/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/03/13/vim/</guid>
+      <description>&lt;p&gt;My first memory with vim is in early 2010s, I was just learning git, and I messed up my repo badly,
+a colleague came to help, he told me seemingly random sequence of characters to type,
+and suddenly everything went back to normal. Git&amp;rsquo;s default editor was vim and I think we did an interactive rebase.
+We might have just fixed it in an other way, but still it felt powerful.
+Later on I saw vim books at the operators&#39; desks, and I got really curious of what it is and how can it help my daily work.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Keep Your Configs Safe</title>
       <link>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</link>
