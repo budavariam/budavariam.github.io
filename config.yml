@@ -144,21 +144,26 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: tags
-          name: Tags
-          url: /tags/
-          weight: 20
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 10
-        - identifier: archives
-          name: Archive
-          url: /archives/
         - identifier: about
           name: About
           url: /about/
-          weight: 10
+          weight: 1
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 2
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 3
+        - identifier: archives
+          name: Archive
+          url: /archives/
+          weight: 4
+        # - identifier: projects
+        #   name: Projects
+        #   url: /projects/
+        #   weight: 5
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:

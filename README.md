@@ -34,6 +34,24 @@ You can edit the content and changes trigger regeneration.
 - [Shortcodes](https://gohugo.io/content-management/shortcodes/)
 - [emoji support](https://gohugo.io/functions/emojify/)
   - to avoid setting emojis in sourcecoode use ```{{ emoji `:emojicode:` }}``` in content, instead of enabling it globally
+- figure
+
+  ```text
+    align
+    alt
+    attr
+    attrlink
+    caption
+    class
+    height
+    link
+    rel
+    src
+    target
+    title
+    width
+  ```
+
 - [Scratch](https://gohugo.io/functions/scratch/)
   - create a static map of values:
 
