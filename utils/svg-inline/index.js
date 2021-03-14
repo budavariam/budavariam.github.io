@@ -30,7 +30,7 @@ function regenerateCustomIcons(startDir, resultFile, done) {
             `{{ $icon_name := ( trim .name " " | lower )}}`,
             "",
         ];
-        fileData.forEach((data, index) => {
+        fileData.sort((a,b) => a.fileName.localeCompare(b.fileName)).forEach((data, index) => {
             ids.push(data.fileName);
             result.push(`{{- ${index === 0 ? ' ' : 'else '}if (eq $icon_name "${data.fileName}") -}}`);
             result.push(`${data.fileData}`);

@@ -91,6 +91,8 @@ params:
           value: budavariam
         - name: linkedin
           value: budavariam
+        - name: kofi
+          value: budavariam
         - name: codefights
           value: budavariam
         - name: stackoverflow
