@@ -28,12 +28,15 @@ permalinks:
   posts: "/posts/:year/:month/:day/:title/"
 
 params:
-    env: development # production to enable google analytics, opengraph, twitter-cards and schema.
+    env: production # production to enable google analytics, opengraph, twitter-cards and schema.
     title: Mátyás Budavári
     description: "Developer from Szeged"
     author: Mátyás Budavári
     images: [ "/avatar.png" ]
     addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
+    convertkit:
+      uid: 7d9354cde4
+      url: https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js
 
     defaultTheme: auto # dark, light
     disableThemeToggle: false
