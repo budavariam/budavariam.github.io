@@ -97,7 +97,7 @@ It is also useful to insert file name from the current subtree with `ctrl+T`.
 ### Enhance zsh tab completion with fzf
 
 As I mentioned above, zsh comes with navigatable tab completion, but unfortunately the fzf plugin do not attach in every case.
-Not so long ago I've found a great plugin, [fzf-tab](https://github.com/Aloxaf/fzf-tab) that lets you use fzf in every occasion.
+Not so long ago I've found a great plugin, [fzf-tab](https://github.com/Aloxaf/fzf-tab) that lets you use fzf in every situation.
 
 - [Install guide](https://github.com/Aloxaf/fzf-tab#install).
 
@@ -110,7 +110,7 @@ because sometimes it might not be what you need, maybe there are too many option
 
 For reference my zsh config is available [here](https://github.com/budavariam/dotfiles/blob/master/_mac/zsh/.zshrc).
 The interesting part is the plugins section.
-With only a few lines of code the plugins come alive.
+With only a few lines of code, the plugins come alive.
 
 ```bash
 # fzf configurations
