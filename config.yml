@@ -28,7 +28,7 @@ permalinks:
   posts: "/posts/:year/:month/:day/:title/"
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    env: development # production to enable google analytics, opengraph, twitter-cards and schema.
     title: Mátyás Budavári
     description: "Developer from Szeged"
     author: Mátyás Budavári
@@ -85,6 +85,8 @@ params:
     socialIcons:
         - name: gmail
           value: budavariam@gmail.com
+        - name: devto
+          value: budavariam
         - name: github
           value: budavariam
         - name: gitlab
