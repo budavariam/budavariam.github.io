@@ -37,6 +37,7 @@ params:
     convertkit:
       uid: 7d9354cde4
       url: https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js
+    disableConvertkit: false
 
     defaultTheme: auto # dark, light
     disableThemeToggle: false

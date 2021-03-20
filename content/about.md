@@ -1,10 +1,12 @@
 ---
 title: Hi
 permalink: /about/
+layout: about
 showtoc: false
 hidemeta: true
 comments: false
 disableShare: true
+disableConvertkit: true
 searchHidden: true
 ---
 
