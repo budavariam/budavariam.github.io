@@ -6,7 +6,20 @@
     <description>Recent content in dataviz on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plotly Dash Development Tips</title>
+      <link>https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/</guid>
+      <description>&lt;p&gt;Last year I was working on some dash-plotly applications/dashboards.
+It was confusing at first, I learned a lot during that time, I&amp;rsquo;d like to share my gathered experience.
+The docs already contain useful information, I do not wish to repeat them.
+There are many example pages in github, my goal is to collect my most visited pages here,
+so it&amp;rsquo;ll be easier to start out with development.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>First MakeoverMonday submission</title>
       <link>https://budavariam.github.io/posts/2020/06/08/first-makeovermonday-submission/</link>
