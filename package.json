@@ -10,7 +10,7 @@
     "new_post": "node utils/new_post",
     "imgopt": "jpegoptim static/images/**/*.jpg",
     "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
-    "serve": "hugo serve -D",
+    "serve": "hugo serve -D -F",
     "start": "docker-compose up"
   },
   "repository": {
