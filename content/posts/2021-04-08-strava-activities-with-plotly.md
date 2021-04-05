@@ -7,7 +7,7 @@ cover:
   alt: Plotly and Strava logo
   hidden: False
 date: 2021-04-08
-draft: true
+draft: false
 ---
 
 I started to run on a weekly basis in last August, I'm fascinated with the data I can collect from each run.
