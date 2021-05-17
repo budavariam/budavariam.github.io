@@ -4,7 +4,7 @@ title: Deploy With Github Actions
 tags: [github-actions, github, gatsby, react, hugo, my-solution, config]
 cover:
   image: /images/2021-05-17-deploy-with-github-actions/cover.png
-  alt: Cover
+  alt: Github Actions logo
   hidden: false
 date: 2021-05-17
 ---
