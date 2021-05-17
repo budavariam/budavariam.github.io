@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>strava on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/strava/</link>
+    <description>Recent content in strava on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/strava/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Strava Activities With Plotly</title>
+      <link>https://budavariam.github.io/posts/2021/04/08/strava-activities-with-plotly/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/04/08/strava-activities-with-plotly/</guid>
+      <description>&lt;p&gt;I started to run on a weekly basis in last August, I&amp;rsquo;m fascinated with the data I can collect from each run.
+I&amp;rsquo;ve been using Strava ever since.
+While I was preparing for my &lt;a href=&#34;https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/&#34;&gt;previous post about plotly-dash&lt;/a&gt;,
+I decided to dust off my knowledge by creating a simple app to visualize my heartrate data in different activities.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

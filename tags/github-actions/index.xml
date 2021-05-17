@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github-actions on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/github-actions/</link>
+    <description>Recent content in github-actions on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy With Github Actions</title>
+      <link>https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/</guid>
+      <description>&lt;p&gt;Recently I tried Github actions to deploy some of my static sites, and I&amp;rsquo;ve been quite happy with its capabilities.
+Let me share my configs for different kinds of setups.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Strava Activities With Plotly</title>
+      <link>https://budavariam.github.io/posts/2021/04/08/strava-activities-with-plotly/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/04/08/strava-activities-with-plotly/</guid>
+      <description>&lt;p&gt;I started to run on a weekly basis in last August, I&amp;rsquo;m fascinated with the data I can collect from each run.
+I&amp;rsquo;ve been using Strava ever since.
+While I was preparing for my &lt;a href=&#34;https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/&#34;&gt;previous post about plotly-dash&lt;/a&gt;,
+I decided to dust off my knowledge by creating a simple app to visualize my heartrate data in different activities.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
