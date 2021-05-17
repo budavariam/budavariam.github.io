@@ -152,10 +152,6 @@ popd || exit 1
 With a simple `cd activity_selector && npm run sdist:version:activated` command (after dependency installs),
 I can update the package in my app, it rewires the dependencies as well.
 
-## Plot
-
-The plot is a simple distance/heartrate scatter plot, nothing to see here.
-
 ## Dockerize environment
 
 In order to see how it looks in the deploy environment in an easily reproducible way I decided to dockerize the app.
