@@ -379,15 +379,6 @@ site supported by &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;
     </item>
     
     <item>
-      <title></title>
-      <link>https://budavariam.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Archive</title>
       <link>https://budavariam.github.io/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -404,6 +395,15 @@ site supported by &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;
       <guid>https://budavariam.github.io/about/</guid>
       <description>I&amp;rsquo;ve been working as a software developer for 6 years, mainly focusing on web development. I love every aspect of it, from frontend code to backend code, through database queries and python/bash scripts to the CI/CD pipeline of the product. During these years I&amp;rsquo;ve created many CLI tools to make development easier. I got my MSc degree in Computer Science at University of Szeged.
 In my free time, I like to extend my knowledge about technologies or tools that seems interesting.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://budavariam.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/projects/</guid>
+      <description></description>
     </item>
     
     <item>
