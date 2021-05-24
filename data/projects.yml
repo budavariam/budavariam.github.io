@@ -1,0 +1,117 @@
+categories:
+  - name: Tools
+    projects:
+      - name: asciiart-text
+        description: I created my custom figlet text
+          generator based on [this](https://patorjk.com/software/taag/#p=display&h=3&f=Rectangles&t=Type%20Something%20)
+          awesome tool.
+        github: https://github.com/budavariam/asciiart-text
+        demo_site: https://budavariam.github.io/asciiart-text
+        blogpost: /posts/2021/02/27/think-outside-the-box/
+        tech: [react]
+      - name: revealjs-cli
+        description:
+          I used VSCode-Reveal, got used to its config but I needed to create slides from the command line.
+          So I extracted its essence.
+        github: https://github.com/budavariam/revealjs-cli
+        npm: https://www.npmjs.com/package/revealjs-cli
+        blogpost: /posts/2020/12/17/reveal.js-cli/
+        tech: [js]
+      - name: workout-helper
+        github: https://github.com/budavariam/workout-helper
+        description: I regularly worked out during the 2020 pandemic,
+          I had my instructions, but struggled with timing,
+          I needed someone to let me know when I can start the next set of exercises.
+          I asked mac's embedded voice synthetizer.
+        demo_site: https://budavariam.github.io/workout-helper
+        tech: [go]
+      - name: show-code-examples
+        github: https://github.com/budavariam/show-code-examples
+        demo_site: https://budavariam.github.io/show-code-examples
+        description:
+          I needed to embed source code examples in many of my reveal.js presentations,
+          I made my initial solution general.
+        npm: https://www.npmjs.com/package/show-code-examples
+        tech: [react]
+  - name: Fun projects
+    projects:
+      - name: matytermind
+        github: https://github.com/budavariam/Matytermind
+        demo_site: https://budavariam.github.io/Matytermind
+        description: A simple mastermind implementation. Backend handles the result evaluation.
+        tech: [react, node, typescript]
+      - name: quarantine-bingo
+        github: https://github.com/budavariam/quarantine-bingo
+        demo_site: https://budavariam.github.io/quarantine-bingo
+        description: A simple 5x5 bingo table for things that happened during the 2020 pandemic.
+        tech: [js]
+      - name: makecode-happybday
+        github: https://github.com/budavariam/makecode-happybday
+        demo_site: https://budavariam.github.io/makecode-happybday
+        description: A circuit of a micro:bit plazing happy birthday with a circuit diagram.
+        tech: [makecode]
+      - name: activity-visualizer
+        github: https://github.com/budavariam/activity-visualizer
+        demo_site: https://budavariam.github.io/activity-visualizer
+        description: A plotly-dash app with authentication and strava connection showing heartrate data from runs.
+        blogpost: /posts/2021/04/08/strava-activities-with-plotly/
+        tech: [plotly-dash]
+  - name: Themes / starters
+    projects:
+      - name: gatsby-theme-classroom-blog
+        github: https://github.com/budavariam/gatsby-theme-classroom-blog
+        demo_site: https://budavariam.github.io/gatsby-theme-classroom-blog
+        description: I held some internal trainings, I created a static site theme to keep a consistent workflow.
+        npm: https://www.npmjs.com/package/gatsby-theme-classroom-blog
+        tech: [gatsby.js]
+      - name: flask-starter
+        description: At some point I created many flask applications,
+          it helped to have a simple boilerplate starter.
+        github: https://github.com/budavariam/flask-starter
+        tech: [flask]
+  - name: Learning
+    projects:
+      - name: learn-vim
+        github: https://github.com/budavariam/learn-vim
+        demo_site: https://budavariam.github.io/learn-vim
+        tech: [react]
+        description: I created a cheatsheet for learning vim.
+        blogpost: /posts/2021/03/13/vim/
+  - name: Experiments / POC
+    projects:
+      - name: css-playground
+        github: https://github.com/budavariam/css-playground
+        demo_site: https://budavariam.github.io/css-playground
+        description: A fun experiment to show that we can showcase css selector
+          effects in an editable manner without any javascript.
+        tech: [html]
+      - name: bash-git-contribution-plot
+        github: https://github.com/budavariam/bash-git-contribution-plot
+        description:
+          A fun experiment with bash terminal colors to replicate github
+          yearly contribution graphs for a single project.
+        tech: [bash]
+      - name: git-bisect-playgrund
+        description: A playground repository to show how git bisect works.
+        github: https://github.com/budavariam/git-bisect-playground
+      - name: babel-react-extract-svg
+        description: An experiment to extract svg files from React components.
+        github: https://github.com/budavariam/babel-react-extract-svg
+        tech: [babel]
+      - name: traverse_facebook_galleries
+        description: A simple selenium script that runs through a gallery until it arrives back to the start.
+        github: https://github.com/budavariam/traverse_facebook_galleries
+        tech: [selenium, python]
+  - name: Personal
+    projects:
+      - name: advent_of_code
+        github: https://github.com/budavariam/advent_of_code
+        demo_site: https://budavariam.github.io/advent_of_code
+        blogpost: /posts/2020/12/01/advent-of-code/
+        description: My solutions to the riddles of advent-of-code.
+        tech: [python, ts, js]
+      - name: dotfiles
+        github: https://github.com/budavariam/dotfiles
+        description: My general configs to have a consistent experience when I move between machines.
+        blogpost: /posts/2021/03/06/keep-your-configs-safe/
+        tech: [bash, zsh]

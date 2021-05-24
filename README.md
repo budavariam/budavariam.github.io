@@ -65,3 +65,7 @@ You can edit the content and changes trigger regeneration.
 - [printf](https://gohugo.io/functions/printf/)
   - debug values: `{{ printf "Count %#v " .Count }}`
 - [access parameters](https://gohugo.io/templates/shortcode-templates/#access-parameters)
+- custom templates
+  - create a new folder under `content` e.g: `a`
+  - create a file for the list template under `layout/section/a.html`
+  - create a folder under `layout/a` and put the files that you want to override from `_default` like `single.html`

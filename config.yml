@@ -172,10 +172,10 @@ menu:
           name: Archive
           url: /archives/
           weight: 4
-        # - identifier: projects
-        #   name: Projects
-        #   url: /projects/
-        #   weight: 5
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 5
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
