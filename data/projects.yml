@@ -23,7 +23,6 @@ categories:
           I had my instructions, but struggled with timing,
           I needed someone to let me know when I can start the next set of exercises.
           I asked mac's embedded voice synthetizer.
-        demo_site: https://budavariam.github.io/workout-helper
         tech: [go]
       - name: show-code-examples
         github: https://github.com/budavariam/show-code-examples
