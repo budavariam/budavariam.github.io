@@ -10,7 +10,7 @@ disableConvertkit: true
 searchHidden: true
 ---
 
-I've been working as a software developer for 6 years, mainly focusing on web development.
+I've been working as a software developer for 7 years, mainly focusing on web development.
 I love every aspect of it, from frontend code to backend code, through database queries and python/bash scripts to the CI/CD pipeline of the product.
 During these years I've created many CLI tools to make development easier.
 I got my MSc degree in Computer Science at University of Szeged.
