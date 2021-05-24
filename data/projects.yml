@@ -2,7 +2,7 @@ categories:
   - name: Tools
     projects:
       - name: asciiart-text
-        description: I created my custom figlet text
+        description: I created a site for a figlet text
           generator based on [this](https://patorjk.com/software/taag/#p=display&h=3&f=Rectangles&t=Type%20Something%20)
           awesome tool.
         github: https://github.com/budavariam/asciiart-text
@@ -90,7 +90,7 @@ categories:
           A fun experiment with bash terminal colors to replicate github
           yearly contribution graphs for a single project.
         tech: [bash]
-      - name: git-bisect-playgrund
+      - name: git-bisect-playground
         description: A playground repository to show how git bisect works.
         github: https://github.com/budavariam/git-bisect-playground
       - name: babel-react-extract-svg
