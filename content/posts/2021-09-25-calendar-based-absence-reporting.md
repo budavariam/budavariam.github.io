@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calendar Based Absence Reporting
-tags: []
+tags: [my-solution, javascript, google, calendar, apps-script]
 cover:
   image: /images/2021-09-25-calendar-based-absence-reporting/cover.jpg
   alt: Cover
@@ -56,6 +56,11 @@ You can find more details on the quotas at [Google Developers site](https://deve
 Currently it's a free to use, if a script reaches a quota or limitation,
 it throws an exception with a message that gives more detailed information of the problem.
 
+### Service Status
+
+In case you face an error that really should not happen, there's a chance that the service has some temporary issues.
+You can check the [outage logs](https://developers.google.com/apps-script/guides/support/outage-log) for detailed information on incidents.
+
 ### My former experience
 
 This is my second project in this platform.
@@ -67,7 +72,7 @@ I loved its simplicity and clear interface, so I decided to use it for this proj
 
 ## Getting Started
 
-1. Subscribe to the calendar that hase the Absence information in Google Calendar.
+1. Subscribe to the calendar that has the Absence information in Google Calendar.
 1. Open Google Apps Scripts [home page](https://script.google.com/u/1/home).
 1. Click on `New project` on the top left corner
 1. Update the contents of `Code.gs` from the git repo.
