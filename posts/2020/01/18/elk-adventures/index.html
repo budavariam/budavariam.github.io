@@ -19,7 +19,7 @@
 <link rel=mask-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-115499513-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
 <meta property="og:title" content="ELK adventures">
@@ -143,7 +143,7 @@ January 18, 2020&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Mátyás Budavári
 </span></code></pre></div><p>I needed to provide a config, and a volume to <code>/var/log/apps</code>.</p>
 <p>In my configuration I experimented with <a href=https://www.elastic.co/guide/en/beats/filebeat/current/multiline-examples.html>multiline configuration</a>, to avoid sending multiple entries for a single log message.</p>
 <p>I check if the line matches with the <code>^(DEBUG|INFO|WARNING|ERROR|FATAL)</code> regexp, if it does, then starts a new line, otherwise the line gets appended to the previous line.</p>
-<pre><code class=language-conf data-lang=conf>multiline.pattern: '^(DEBUG|INFO|WARNING|ERROR|FATAL)'
+<pre tabindex=0><code class=language-conf data-lang=conf>multiline.pattern: '^(DEBUG|INFO|WARNING|ERROR|FATAL)'
 multiline.negate: true
 multiline.match: after
 </code></pre><h2 id=logstash>Logstash<a hidden class=anchor aria-hidden=true href=#logstash>#</a></h2>
@@ -151,7 +151,7 @@ multiline.match: after
 <p>While I was playing around it made me realize how important it is to provide consistent and easily parsable logs to make monitoring and error research easier to track bugs.</p>
 <h3 id=split-log-message>Split log message<a hidden class=anchor aria-hidden=true href=#split-log-message>#</a></h3>
 <p>My golang code logs with a <a href=https://github.com/palette-software/go-log-targets>specific logger</a>. Logstash gave me a hard time and docs/github issue browsing until I found that golang supports nanosecond precision while elasticsearch &ldquo;only&rdquo; uses microseconds precision, so I needed to trim the last 3 digits from the timestamp.</p>
-<pre><code class=language-conf data-lang=conf>grok {
+<pre tabindex=0><code class=language-conf data-lang=conf>grok {
     match =&gt; {
         &quot;source&quot; =&gt; &quot;%{GREEDYDATA}/%{GREEDYDATA:app}.log&quot;
         &quot;message&quot; =&gt; &quot;%{LOGLEVEL:loglevel}:\s+(?&lt;timestamp&gt;%{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME})\s+%{GREEDYDATA:logmsg}&quot;
@@ -164,7 +164,7 @@ mutate {
 </code></pre><h3 id=use-log-date-as-timestamp>Use log date as @timestamp<a hidden class=anchor aria-hidden=true href=#use-log-date-as-timestamp>#</a></h3>
 <p>The next challenge that I gave myself to use log date as the elasticsearch timestamp.
 In logstash it is straightforward, I need to use the date filter to convert my data to date, it needs the source with the timestamp format and the target field.</p>
-<pre><code class=language-conf data-lang=conf>date {
+<pre tabindex=0><code class=language-conf data-lang=conf>date {
     match =&gt; [ &quot;timestamp&quot;, &quot;YYYY/MM/dd HH:mm:ss.SSS&quot; ]
     target =&gt; &quot;@timestamp&quot;
 }

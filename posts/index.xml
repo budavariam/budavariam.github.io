@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calendar Based Absence Reporting</title>
+      <link>https://budavariam.github.io/posts/2021/09/25/calendar-based-absence-reporting/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/09/25/calendar-based-absence-reporting/</guid>
+      <description>&lt;p&gt;I have access to a Google Calendar, that contains the absence of all my colleagues as full day events.
+I work with a mostly remote team, and sometimes it&amp;rsquo;s useful to know when will my teammates leave for vacation,
+even if they don&amp;rsquo;t tell me many days in advance.&lt;/p&gt;
+&lt;p&gt;I wrote a simple script, to look through the events every monday and filter the ones I&amp;rsquo;m interested in,
+then send me an email report.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Quickly test mail sending through SMTP</title>
       <link>https://budavariam.github.io/posts/2021/08/04/quickly-test-mail-sending-through-smtp/</link>
