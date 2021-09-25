@@ -32,6 +32,13 @@ categories:
           I made my initial solution general.
         npm: https://www.npmjs.com/package/show-code-examples
         tech: [react]
+      - name: absence-report
+        github: https://github.com/budavariam/absence-report
+        blogpost: /posts/2021/09/25/calendar-based-absence-reporting/
+        description:
+          I needed to see a report based on multiple Google Calendar events for the next week.
+          I was able to automate it with Google Apps Script.
+        tech: [javascript, google-apps-scripts]
   - name: Fun projects
     projects:
       - name: matytermind
