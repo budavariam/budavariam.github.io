@@ -16,7 +16,7 @@ categories:
         github: https://github.com/budavariam/revealjs-cli
         npm: https://www.npmjs.com/package/revealjs-cli
         blogpost: /posts/2020/12/17/reveal.js-cli/
-        tech: [js]
+        tech: [javascript]
       - name: workout-helper
         github: https://github.com/budavariam/workout-helper
         description: I regularly worked out during the 2020 pandemic,
@@ -50,11 +50,11 @@ categories:
         github: https://github.com/budavariam/quarantine-bingo
         demo_site: https://budavariam.github.io/quarantine-bingo
         description: A simple 5x5 bingo table for things that happened during the 2020 pandemic.
-        tech: [js]
+        tech: [javascript]
       - name: makecode-happybday
         github: https://github.com/budavariam/makecode-happybday
         demo_site: https://budavariam.github.io/makecode-happybday
-        description: A circuit of a micro:bit plazing happy birthday with a circuit diagram.
+        description: A circuit of a micro:bit playing happy birthday.
         tech: [makecode]
       - name: activity-visualizer
         github: https://github.com/budavariam/activity-visualizer
@@ -115,7 +115,7 @@ categories:
         demo_site: https://budavariam.github.io/advent_of_code
         blogpost: /posts/2020/12/01/advent-of-code/
         description: My solutions to the riddles of advent-of-code.
-        tech: [python, ts, js]
+        tech: [python, typescript, javascript, go]
       - name: dotfiles
         github: https://github.com/budavariam/dotfiles
         description: My general configs to have a consistent experience when I move between machines.
