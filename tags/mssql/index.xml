@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mssql on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/mssql/</link>
+    <description>Recent content in mssql on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/mssql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSSQL Server Basics</title>
+      <link>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</guid>
+      <description>&lt;p&gt;In the past couple of weeks I&amp;rsquo;ve started to work with Microsoft SQL Server.
+I have a pretty good founation of SQL from high school, but I&amp;rsquo;ve only used PostgreSQL so far in my carreer.
+I collect the snippets I found to be the most useful ones that helped me getting started.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

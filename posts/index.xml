@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSSQL Server Basics</title>
+      <link>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</guid>
+      <description>&lt;p&gt;In the past couple of weeks I&amp;rsquo;ve started to work with Microsoft SQL Server.
+I have a pretty good founation of SQL from high school, but I&amp;rsquo;ve only used PostgreSQL so far in my carreer.
+I collect the snippets I found to be the most useful ones that helped me getting started.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Calendar Based Absence Reporting</title>
       <link>https://budavariam.github.io/posts/2021/09/25/calendar-based-absence-reporting/</link>
