@@ -112,7 +112,6 @@ categories:
     projects:
       - name: advent_of_code
         github: https://github.com/budavariam/advent_of_code
-        demo_site: https://budavariam.github.io/advent_of_code
         blogpost: /posts/2020/12/01/advent-of-code/
         description: My solutions to the riddles of advent-of-code.
         tech: [python, typescript, javascript, go]
