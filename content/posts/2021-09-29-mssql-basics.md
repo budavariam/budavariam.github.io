@@ -249,7 +249,7 @@ where object_id = (OBJECT_ID(N'dbo.myStoredProcedureName'));
 ```
 
 ```sql
-SELECT [definition] FROM sys.sql_modules;
+select [definition] from sys.sql_modules;
 ```
 
 #### Create and Run a Stored Procedure
