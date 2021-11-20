@@ -6,7 +6,17 @@
     <description>Recent content in mssql on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/mssql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/mssql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSSQL Server Adventures</title>
+      <link>https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/</guid>
+      <description>&lt;p&gt;As I wrote in my &lt;a href=&#34;../../../../2021/09/29/mssql-server-basics/&#34;&gt;last&lt;/a&gt; post, I&amp;rsquo;ve been working closely with Microsoft SQL server for a while now.
+Since then I&amp;rsquo;ve found some more tricks that made my life easier.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MSSQL Server Basics</title>
       <link>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</link>
