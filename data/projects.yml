@@ -62,6 +62,11 @@ categories:
         description: A plotly-dash app with authentication and strava connection showing heartrate data from runs.
         blogpost: /posts/2021/04/08/strava-activities-with-plotly/
         tech: [plotly-dash]
+      - name: user-lookup-slack-bot
+        github: https://github.com/budavariam/hackathon-slack-bot
+        description: A slack bot to tell us formatted user info in a Slack slash command search.
+        blogpost: /posts/2021/12/12/starschema-hackathon-2021
+        tech: [node, slack]
   - name: Themes / starters
     projects:
       - name: gatsby-theme-classroom-blog
