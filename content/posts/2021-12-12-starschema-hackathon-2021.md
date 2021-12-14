@@ -45,10 +45,10 @@ that we would be able to finish in the remaining 4 hours.
 Sooooo a change of plans! We found another problem that affects many people,
 and we can solve it quickly with the tools we already have.
 
-When someone joins the company, it's hard to know everyone by name.
-So it's easier to follow the conversations if they can associate a face with a name.
+When someone joins the company, it's hard for them to instantly know everyone by name.
+It's better, if they can associate a face with the names.
 We already have a site for that, but it would be so much better if we could get
-that information right from Slack instead of loading the website up.
+that information right in Slack instead of loading the website up.
 We live in Slack anyways. So we started to make it happen.
 
 And by we, I mean I.
