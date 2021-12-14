@@ -5,9 +5,8 @@ tags: [security, java, log4shell, docker]
 cover:
   image: /images/2021-12-14-log4shell-check/cover.jpeg
   alt: Log4Shell logo
-  hidden: true
+  hidden: false
 date: 2021-12-14
-draft: true
 ---
 
 Unless you were under a rock for the past couple of days, I assume you've heard about log4shell.
@@ -39,3 +38,5 @@ I'm sure things will move pretty fast, and there will be uprising tools to look 
 Hopefully, we can get over it soon.
 
 Happy coding!
+
+{{< twitter_simple 1469252646745874435 >}}
