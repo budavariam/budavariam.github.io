@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/security/</link>
+    <description>Recent content in security on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Log4Shell Check</title>
+      <link>https://budavariam.github.io/posts/2021/12/14/log4shell-check/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/12/14/log4shell-check/</guid>
+      <description>&lt;p&gt;Unless you were under a rock for the past couple of days, I assume you&amp;rsquo;ve heard about log4shell.
+The &lt;a href=&#34;https://en.wikipedia.org/wiki/Arbitrary_code_execution&#34;&gt;RCE&lt;/a&gt; exploit of the popular Java logging module &lt;a href=&#34;https://logging.apache.org/log4j/2.x/&#34;&gt;log4j&lt;/a&gt;, that caused havoc all over the internet.
+I haven&amp;rsquo;t worked with Java for years, but I&amp;rsquo;m curious if my projects are vulnerable to this exploit. Let&amp;rsquo;s find out.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Log4Shell Check</title>
+      <link>https://budavariam.github.io/posts/2021/12/14/log4shell-check/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/12/14/log4shell-check/</guid>
+      <description>&lt;p&gt;Unless you were under a rock for the past couple of days, I assume you&amp;rsquo;ve heard about log4shell.
+The &lt;a href=&#34;https://en.wikipedia.org/wiki/Arbitrary_code_execution&#34;&gt;RCE&lt;/a&gt; exploit of the popular Java logging module &lt;a href=&#34;https://logging.apache.org/log4j/2.x/&#34;&gt;log4j&lt;/a&gt;, that caused havoc all over the internet.
+I haven&amp;rsquo;t worked with Java for years, but I&amp;rsquo;m curious if my projects are vulnerable to this exploit. Let&amp;rsquo;s find out.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

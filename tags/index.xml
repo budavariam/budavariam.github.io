@@ -6,40 +6,40 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>challenge</title>
-      <link>https://budavariam.github.io/tags/challenge/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <title>docker</title>
+      <link>https://budavariam.github.io/tags/docker/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://budavariam.github.io/tags/challenge/</guid>
+      <guid>https://budavariam.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>chatbot</title>
-      <link>https://budavariam.github.io/tags/chatbot/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <title>java</title>
+      <link>https://budavariam.github.io/tags/java/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://budavariam.github.io/tags/chatbot/</guid>
+      <guid>https://budavariam.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hackathon</title>
-      <link>https://budavariam.github.io/tags/hackathon/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <title>log4shell</title>
+      <link>https://budavariam.github.io/tags/log4shell/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://budavariam.github.io/tags/hackathon/</guid>
+      <guid>https://budavariam.github.io/tags/log4shell/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>slack</title>
-      <link>https://budavariam.github.io/tags/slack/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <title>security</title>
+      <link>https://budavariam.github.io/tags/security/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://budavariam.github.io/tags/slack/</guid>
+      <guid>https://budavariam.github.io/tags/security/</guid>
       <description></description>
     </item>
     
@@ -220,15 +220,6 @@
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/dataviz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://budavariam.github.io/tags/docker/</link>
-      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
@@ -499,6 +490,15 @@
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/snowflake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>challenge</title>
+      <link>https://budavariam.github.io/tags/challenge/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/challenge/</guid>
       <description></description>
     </item>
     
