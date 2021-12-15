@@ -6,7 +6,17 @@
     <description>Recent content on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OITM 2021</title>
+      <link>https://budavariam.github.io/posts/2021/12/15/oitm-2021/</link>
+      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/12/15/oitm-2021/</guid>
+      <description>&lt;p&gt;Another year has passed, and the &lt;a href=&#34;https://megmerettetes.hu/archivum/v-oitm/&#34;&gt;5th OITM&lt;/a&gt; has finished.
+&lt;a href=&#34;https://megmerettetes.hu/&#34;&gt;OITM&lt;/a&gt; is an IT championship in Hungary,  sponsored by large tech companies.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Log4Shell Check</title>
       <link>https://budavariam.github.io/posts/2021/12/14/log4shell-check/</link>
@@ -247,7 +257,7 @@ Now I&amp;rsquo;m proud, that it&amp;rsquo;s used to demonstrate how to use Mapb
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/posts/2020/12/18/oitm-2020/</guid>
-      <description>&lt;p&gt;The 4th OITM has finished.
+      <description>&lt;p&gt;The &lt;a href=&#34;https://megmerettetes.hu/archivum/iv-oitm/&#34;&gt;4th OITM&lt;/a&gt; has finished.
 &lt;a href=&#34;https://megmerettetes.hu/&#34;&gt;OITM&lt;/a&gt; is an IT championship in Hungary sponsored by large tech companies.&lt;/p&gt;</description>
     </item>
     
