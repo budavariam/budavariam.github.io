@@ -99,6 +99,8 @@ params:
           value: budavariam
         - name: gitlab
           value: budavariam
+        - name: polywork
+          value: budavariam 
         - name: linkedin
           value: budavariam
         - name: kofi
