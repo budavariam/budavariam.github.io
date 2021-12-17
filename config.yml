@@ -85,6 +85,11 @@ params:
     #         - name: Tags
     #           url: tags
 
+    editPost:
+      Text: Make it better
+      URL: https://github.com/budavariam/budavariam.github.io/blob/main/content
+      appendFilePath: true
+
     # home-info mode
     homeInfoParams:
         Title: "Hi there \U0001F44B"
