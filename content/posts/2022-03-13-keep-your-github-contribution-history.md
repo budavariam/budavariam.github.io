@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keep Your Github Contribution History
-tags: []
+tags: [ git, github, my-solution, python ]
 cover: 
     image: /images/2022-03-13-keep-your-github-contribution-history/cover.png
     alt: Cover
