@@ -1,305 +1,115 @@
-<!doctype html><html lang=en dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>MSSQL Server Adventures | Mátyás Budavári</title>
-<meta name=keywords content="microsoft,sql,mssql">
-<meta name=description content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
-Since then I&rsquo;ve found some more tricks that made my life easier.">
-<meta name=author content="Mátyás Budavári">
-<meta name=theme-color content="#317EFB">
-<link rel=canonical href=https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/>
-<meta name=google-site-verification content="ocrG4G5ZSn2awC0mgHAsgk2qlhd3IAXCACgWNrqJcwY">
-<link href=/assets/css/stylesheet.min.8992a6674f694d99a84bca35962c31e8f7c81352f54d3e95def071e7d30507dd.css integrity="sha256-iZKmZ09pTZmoS8o1liwx6PfIE1L1TT6V3vBx59MFB90=" rel="preload stylesheet" as=style>
-<script src=https://kit.fontawesome.com/68da183384.js crossorigin=anonymous></script>
-<link rel=icon href=https://budavariam.github.io/favicon/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://budavariam.github.io/favicon/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://budavariam.github.io/favicon/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png>
-<link rel=mask-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-115499513-1','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<meta property="og:title" content="MSSQL Server Adventures">
-<meta property="og:description" content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
-Since then I&rsquo;ve found some more tricks that made my life easier.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/">
-<meta property="og:image" content="https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg"><meta property="article:published_time" content="2021-11-20T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-11-20T00:00:00+00:00"><meta property="og:site_name" content="Mátyás Budavári">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg">
-<meta name=twitter:title content="MSSQL Server Adventures">
-<meta name=twitter:description content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
-Since then I&rsquo;ve found some more tricks that made my life easier.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://budavariam.github.io/posts/"},{"@type":"ListItem","position":2,"name":"MSSQL Server Adventures","item":"https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"MSSQL Server Adventures","name":"MSSQL Server Adventures","description":"As I wrote in my last post, I\u0026amp;rsquo;ve been working closely with Microsoft SQL server for a while now. Since then I\u0026amp;rsquo;ve found some more tricks that made my life easier.\n","keywords":["microsoft","sql","mssql"],"articleBody":"As I wrote in my last post, I’ve been working closely with Microsoft SQL server for a while now. Since then I’ve found some more tricks that made my life easier.\nI’ve come to realize in the past 2 months that the documentation is pretty thorough. So in this post I’ll include them in the relevant parts. I don’t plan on explaining these parts in depth, the docs do it better than I would. I’d rather share some more code that made my work simpler.\nValidate data before running a costly query In the folowing snipped I run a validation code and print a meaningful message, if it fails.\ndeclare id int = 42; if exists(select * from str_table where try_convert(float, Cost) is null and Cost is not null) begin raiserror( N'Failed to convert a Cost to number for ID: %d (for more details run: select * from huge_str_table where try_convert(decimal(18, 4), DetailLineAmt) is null and DetailLineAmt is not null)' -- Message text  ,16 -- Severity  ,1 -- State  ,@id -- Message Parameters  ); end Here I used the raiserror statements. In the it’s stated, that new applications should use throw instead of it. I used raiserror because throw does not support custom messages, but the variables that I set up with formatmessage show up as empty messages in my database query tool during development.\nThe N'' prefix at the start of the message indicates that it’s an nvarchar, so it can contain unicode characters.\nThe exists statement checks whether a given statement has any results.\nThe if statement can run a block of code that starts with begin and ends with end. It can only have a single else statment. If you need more elif branches you have to nest if-else constucts in the proper branches.\nYou can set a severity for your messages with raiserror, throw will set it automatically to 16, except if you re-throw an exception in a catch statement.\nThe State is useful if the same user-defined error is raised at multiple locations. It can be between 1-255. It can help find which section of code is raising the errors.\nThe error codes under 50000 are reserved for system errors. Throw can not send these system messages, while raiserror can.\nReusing code During this few months I’ve been investigating many questions about the data, its validity, and extracted information to business-related questions. Since we were in a hurry I often found myself running the same queries all over again. When I needed to type the same joins for at least 5 times, and they got lost in my console I stopped and tried to automate them, because I was fairly confident that they will come up again later.\nThese constructs were really helpful, their concepts were not new to me. I just want to keep their syntax over here for a quick reference and what point out what makes them different.\nWhen I created these views, functions, and procedures SSMS set me these values. I’ll exclude them from my examples, but I used them.\nSET ANSI_NULLS ON GO SET QUOTED_IDENTIFIER ON GO Views When I did not need any dynamism views were my go-to choice. You can think of views as saved sql statements.\ncreate or alter view ActiveCustomers AS select * from dbo.Customers where isDeleted  0 ; GO -- select * from ActiveCustomers; The or alter part helped me during development, because I did not need to drop and recreate the views every time.\nFunctions User defined functions (UDF) are similar to views, but they have 2 main differences that were relevant for me.\n they can receive parameters they can return scalar values instead of tabular data  create or alter function fnCheckBalanceAbove ( @lowerBound float ) returns @table table ( CalcTime datetime2(7) ,CompanyID int ) as begin insert into @table ( CalcTime ,CompanyID ) select getutcdate() [CalcTime] CompanyID from Company where Balance = @lowerBound ; return; end ; go -- select * from fnCheckBalanceAbove(50000) The function can return inline valued table by just wrapping the select into the return statement, but I find it valuable to define the columns that are going to be returned for better readability.\nYou can use multiple queries to fill the defined result table.\nDo not forget that the function must end with a return statment.\nThe huge benefit of funtions, is that their results can be joined to other queries, thus potentially simplify and shorten their code significantly.\nStored procedures When you need to run many operations, you can use stored procedures.\nYou can use parameters just like for functions, but you can do even more things:\n use a larger set of constructs like try-catch blocks call other stored procedures return multiple resultsets  You can not use them inside queries, you need to call them with exec statement.\ncreate or alter proc GetTopNCustomers ( @limit int ) as begin select top(@limit) c.ID ,c.Balance from Customer c order by Balance desc ; end ; GO -- exec GetTopNCustomers @limit = 15; I advise agains returning multiple result sets if you’d like to store the results somewhere and not just debugging data, because it’s a bit tricky to store the results from a stored procedure call with insert into. You need to have a table that you query the data into.\nSee this code for example from:\nCREATE TABLE #sp_who2 (SPID INT,Status VARCHAR(255), Login VARCHAR(255),HostName VARCHAR(255), BlkBy VARCHAR(255),DBName VARCHAR(255), Command VARCHAR(255),CPUTime INT, DiskIO INT,LastBatch VARCHAR(255), ProgramName VARCHAR(255),SPID2 INT, REQUESTID INT) INSERT INTO #sp_who2 EXEC sp_who2 SELECT * FROM #sp_who2 -- Add any filtering of the results here : WHERE 1=1 and DBName  'master' and HostName like '%' -- Add any sorting of the results here : ORDER BY DBName ASC DROP TABLE #sp_who2 Summary I hope you found this collection as useful as I did.\nHappy coding!\nCover Photo by Manuel Geissinger from Pexels\n","wordCount":"976","inLanguage":"en","image":"https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg","datePublished":"2021-11-20T00:00:00Z","dateModified":"2021-11-20T00:00:00Z","author":{"@type":"Person","name":"Mátyás Budavári"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/"},"publisher":{"@type":"Organization","name":"Mátyás Budavári","logo":{"@type":"ImageObject","url":"https://budavariam.github.io/favicon/favicon.ico"}}}</script>
-<script src=https://cdn.lr-ingest.io/LogRocket.min.js crossorigin=anonymous></script>
-<script>window.LogRocket&&window.LogRocket.init('0igxfm/budavariam-blog'),window.LogRocket.getSessionURL(function(a){ga('send',{hitType:'event',eventCategory:'LogRocket',eventAction:a})})</script>
-</head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-</noscript>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://budavariam.github.io/ title="Mátyás Budavári (Alt + H)" class=site-avatar>
-<img src=/avatar.png alt=logo aria-label=logo height=70 width=70></a>
-<div class=site-info>
-<h1 class=site-name>
-<a href=https://budavariam.github.io/ accesskey=h title="Mátyás Budavári (Alt + H)">Mátyás Budavári</a>
-</h1>
-<p class=site-description>Developer from Szeged</p>
-</div>
-</div>
-<ul id=menu onscroll=menu_on_scroll()>
-<li>
-<a href=https://budavariam.github.io/about/ title=About>
-<span>About</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/search/ title="Search (Alt + /)" accesskey=/>
-<span>Search</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/tags/ title=Tags>
-<span>Tags</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/archives/ title=Archive>
-<span>Archive</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/projects/ title=Projects>
-<span>Projects</span>
-</a>
-</li><li>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<h1 class=post-title>
-MSSQL Server Adventures
-</h1>
-<div class=post-meta>
-November 20, 2021&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Mátyás Budavári
-|&nbsp;<a class=edit-post href=https://github.com/budavariam/budavariam.github.io/blob/main/content/posts/2021-11-20-mssql-adventures.md rel="noopener noreferrer" target=_blank>Make it better</a></div>
-</header>
-<figure class=entry-cover><img src=https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg alt="Server room">
-</figure>
-<div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<div class=details>Table of Contents</div>
-</summary>
-<div class=inner><ul><li>
-<a href=#validate-data-before-running-a-costly-query aria-label="Validate data before running a costly query">Validate data before running a costly query</a></li><li>
-<a href=#reusing-code aria-label="Reusing code">Reusing code</a><ul>
-<li>
-<a href=#views aria-label=Views>Views</a></li><li>
-<a href=#functions aria-label=Functions>Functions</a></li><li>
-<a href=#stored-procedures aria-label="Stored procedures">Stored procedures</a></li></ul>
-</li><li>
-<a href=#summary aria-label=Summary>Summary</a></li></ul>
-</div>
-</details>
-</div>
-<div class=post-content>
-<p>As I wrote in my <a href=../../../../2021/09/29/mssql-server-basics/>last</a> post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
-Since then I&rsquo;ve found some more tricks that made my life easier.</p>
-<p>I&rsquo;ve come to realize in the past 2 months that the documentation is pretty thorough.
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>MSSQL Server Adventures | Mátyás Budavári</title><meta name=keywords content="microsoft,sql,mssql"><meta name=description content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
+Since then I&rsquo;ve found some more tricks that made my life easier."><meta name=author content="Mátyás Budavári"><meta name=theme-color content="#317EFB"><link rel=canonical href=https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/><meta name=google-site-verification content="ocrG4G5ZSn2awC0mgHAsgk2qlhd3IAXCACgWNrqJcwY"><link href=/assets/css/stylesheet.min.8992a6674f694d99a84bca35962c31e8f7c81352f54d3e95def071e7d30507dd.css integrity="sha256-iZKmZ09pTZmoS8o1liwx6PfIE1L1TT6V3vBx59MFB90=" rel="preload stylesheet" as=style><script src=https://kit.fontawesome.com/68da183384.js crossorigin=anonymous></script>
+<link rel=icon href=https://budavariam.github.io/favicon/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://budavariam.github.io/favicon/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://budavariam.github.io/favicon/favicon-32x32.png><link rel=apple-touch-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png><link rel=mask-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.94.2"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-115499513-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><meta property="og:title" content="MSSQL Server Adventures"><meta property="og:description" content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
+Since then I&rsquo;ve found some more tricks that made my life easier."><meta property="og:type" content="article"><meta property="og:url" content="https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/"><meta property="og:image" content="https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg"><meta property="article:published_time" content="2021-11-20T00:00:00+00:00"><meta property="article:modified_time" content="2021-11-20T00:00:00+00:00"><meta property="og:site_name" content="Mátyás Budavári"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg"><meta name=twitter:title content="MSSQL Server Adventures"><meta name=twitter:description content="As I wrote in my last post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
+Since then I&rsquo;ve found some more tricks that made my life easier."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://budavariam.github.io/posts/"},{"@type":"ListItem","position":2,"name":"MSSQL Server Adventures","item":"https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"MSSQL Server Adventures","name":"MSSQL Server Adventures","description":"As I wrote in my last post, I\u0026amp;rsquo;ve been working closely with Microsoft SQL server for a while now. Since then I\u0026amp;rsquo;ve found some more tricks that made my life easier.\n","keywords":["microsoft","sql","mssql"],"articleBody":"As I wrote in my last post, I’ve been working closely with Microsoft SQL server for a while now. Since then I’ve found some more tricks that made my life easier.\nI’ve come to realize in the past 2 months that the documentation is pretty thorough. So in this post I’ll include them in the relevant parts. I don’t plan on explaining these parts in depth, the docs do it better than I would. I’d rather share some more code that made my work simpler.\nValidate data before running a costly query In the folowing snipped I run a validation code and print a meaningful message, if it fails.\ndeclare id int = 42;  if exists(select * from str_table where try_convert(float, Cost) is null and Cost is not null) begin  raiserror(  N'Failed to convert a Cost to number for ID: %d (for more details run: select * from huge_str_table where try_convert(decimal(18, 4), DetailLineAmt) is null and DetailLineAmt is not null)' -- Message text  ,16 -- Severity  ,1 -- State  ,@id -- Message Parameters  ); end Here I used the raiserror statements. In the it’s stated, that new applications should use throw instead of it. I used raiserror because throw does not support custom messages, but the variables that I set up with formatmessage show up as empty messages in my database query tool during development.\nThe N'' prefix at the start of the message indicates that it’s an nvarchar, so it can contain unicode characters.\nThe exists statement checks whether a given statement has any results.\nThe if statement can run a block of code that starts with begin and ends with end. It can only have a single else statment. If you need more elif branches you have to nest if-else constucts in the proper branches.\nYou can set a severity for your messages with raiserror, throw will set it automatically to 16, except if you re-throw an exception in a catch statement.\nThe State is useful if the same user-defined error is raised at multiple locations. It can be between 1-255. It can help find which section of code is raising the errors.\nThe error codes under 50000 are reserved for system errors. Throw can not send these system messages, while raiserror can.\nReusing code During this few months I’ve been investigating many questions about the data, its validity, and extracted information to business-related questions. Since we were in a hurry I often found myself running the same queries all over again. When I needed to type the same joins for at least 5 times, and they got lost in my console I stopped and tried to automate them, because I was fairly confident that they will come up again later.\nThese constructs were really helpful, their concepts were not new to me. I just want to keep their syntax over here for a quick reference and what point out what makes them different.\nWhen I created these views, functions, and procedures SSMS set me these values. I’ll exclude them from my examples, but I used them.\nSET ANSI_NULLS ON GO SET QUOTED_IDENTIFIER ON GO Views When I did not need any dynamism views were my go-to choice. You can think of views as saved sql statements.\ncreate or alter view ActiveCustomers AS  select  *  from dbo.Customers  where isDeleted  0  ; GO  -- select * from ActiveCustomers; The or alter part helped me during development, because I did not need to drop and recreate the views every time.\nFunctions User defined functions (UDF) are similar to views, but they have 2 main differences that were relevant for me.\n they can receive parameters they can return scalar values instead of tabular data  create or alter function fnCheckBalanceAbove (  @lowerBound float ) returns @table table (  CalcTime datetime2(7)  ,CompanyID int ) as begin  insert into @table (  CalcTime  ,CompanyID ) select  getutcdate() [CalcTime]  CompanyID from Company where Balance = @lowerBound ;  return; end ; go -- select * from fnCheckBalanceAbove(50000) The function can return inline valued table by just wrapping the select into the return statement, but I find it valuable to define the columns that are going to be returned for better readability.\nYou can use multiple queries to fill the defined result table.\nDo not forget that the function must end with a return statment.\nThe huge benefit of funtions, is that their results can be joined to other queries, thus potentially simplify and shorten their code significantly.\nStored procedures When you need to run many operations, you can use stored procedures.\nYou can use parameters just like for functions, but you can do even more things:\n use a larger set of constructs like try-catch blocks call other stored procedures return multiple resultsets  You can not use them inside queries, you need to call them with exec statement.\ncreate or alter proc GetTopNCustomers (  @limit int ) as begin  select top(@limit)  c.ID  ,c.Balance  from Customer c  order by Balance desc  ; end ; GO  -- exec GetTopNCustomers @limit = 15; I advise agains returning multiple result sets if you’d like to store the results somewhere and not just debugging data, because it’s a bit tricky to store the results from a stored procedure call with insert into. You need to have a table that you query the data into.\nSee this code for example from:\nCREATE TABLE #sp_who2 (SPID INT,Status VARCHAR(255),  Login VARCHAR(255),HostName VARCHAR(255),  BlkBy VARCHAR(255),DBName VARCHAR(255),  Command VARCHAR(255),CPUTime INT,  DiskIO INT,LastBatch VARCHAR(255),  ProgramName VARCHAR(255),SPID2 INT,  REQUESTID INT) INSERT INTO #sp_who2 EXEC sp_who2 SELECT * FROM #sp_who2 -- Add any filtering of the results here : WHERE 1=1  and DBName  'master'  and HostName like '%' -- Add any sorting of the results here : ORDER BY DBName ASC  DROP TABLE #sp_who2 Summary I hope you found this collection as useful as I did.\nHappy coding!\nCover Photo by Manuel Geissinger from Pexels\n","wordCount":"976","inLanguage":"en","image":"https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg","datePublished":"2021-11-20T00:00:00Z","dateModified":"2021-11-20T00:00:00Z","author":{"@type":"Person","name":"Mátyás Budavári"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://budavariam.github.io/posts/2021/11/20/mssql-server-adventures/"},"publisher":{"@type":"Organization","name":"Mátyás Budavári","logo":{"@type":"ImageObject","url":"https://budavariam.github.io/favicon/favicon.ico"}}}</script><script src=https://cdn.lr-ingest.io/LogRocket.min.js crossorigin=anonymous></script>
+<script>window.LogRocket&&window.LogRocket.init("0igxfm/budavariam-blog"),window.LogRocket.getSessionURL(function(e){ga("send",{hitType:"event",eventCategory:"LogRocket",eventAction:e})})</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><noscript><style type=text/css>#theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://budavariam.github.io/ title="Mátyás Budavári (Alt + H)" class=site-avatar><img src=/avatar.png alt=logo aria-label=logo height=70 width=70></a><div class=site-info><h1 class=site-name><a href=https://budavariam.github.io/ accesskey=h title="Mátyás Budavári (Alt + H)">Mátyás Budavári</a></h1><p class=site-description>Developer from Szeged</p></div></div><ul id=menu onscroll=menu_on_scroll()><li><a href=https://budavariam.github.io/about/ title=About><span>About</span></a></li><li><a href=https://budavariam.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://budavariam.github.io/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://budavariam.github.io/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://budavariam.github.io/projects/ title=Projects><span>Projects</span></a></li><li><span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>MSSQL Server Adventures</h1><div class=post-meta>November 20, 2021&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Mátyás Budavári
+|&nbsp;<a class=edit-post href=https://github.com/budavariam/budavariam.github.io/blob/main/content/posts/2021-11-20-mssql-adventures.md rel="noopener noreferrer" target=_blank>Make it better</a></div></header><figure class=entry-cover><img src=https://budavariam.github.io/images/2021-11-20-mssql-server-adventures/cover.jpg alt="Server room"></figure><div class=toc><details><summary accesskey=c title="(Alt + C)"><div class=details>Table of Contents</div></summary><div class=inner><ul><li><a href=#validate-data-before-running-a-costly-query aria-label="Validate data before running a costly query">Validate data before running a costly query</a></li><li><a href=#reusing-code aria-label="Reusing code">Reusing code</a><ul><li><a href=#views aria-label=Views>Views</a></li><li><a href=#functions aria-label=Functions>Functions</a></li><li><a href=#stored-procedures aria-label="Stored procedures">Stored procedures</a></li></ul></li><li><a href=#summary aria-label=Summary>Summary</a></li></ul></div></details></div><div class=post-content><p>As I wrote in my <a href=../../../../2021/09/29/mssql-server-basics/>last</a> post, I&rsquo;ve been working closely with Microsoft SQL server for a while now.
+Since then I&rsquo;ve found some more tricks that made my life easier.</p><p>I&rsquo;ve come to realize in the past 2 months that the documentation is pretty thorough.
 So in this post I&rsquo;ll include them in the relevant parts.
 I don&rsquo;t plan on explaining these parts in depth, the docs do it better than I would.
-I&rsquo;d rather share some more code that made my work simpler.</p>
-<h2 id=validate-data-before-running-a-costly-query>Validate data before running a costly query<a hidden class=anchor aria-hidden=true href=#validate-data-before-running-a-costly-query>#</a></h2>
-<p>In the folowing snipped I run a validation code and print a meaningful message, if it fails.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>declare</span> id int <span style=color:#f92672>=</span> <span style=color:#ae81ff>42</span>;
-
-<span style=color:#66d9ef>if</span> <span style=color:#66d9ef>exists</span>(<span style=color:#66d9ef>select</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>from</span> str_table <span style=color:#66d9ef>where</span> try_convert(float, Cost) <span style=color:#66d9ef>is</span> <span style=color:#66d9ef>null</span> <span style=color:#66d9ef>and</span> Cost <span style=color:#66d9ef>is</span> <span style=color:#66d9ef>not</span> <span style=color:#66d9ef>null</span>)
-<span style=color:#66d9ef>begin</span>
-  raiserror(
-    N<span style=color:#e6db74>&#39;Failed to convert a Cost to number for ID: %d (for more details run: select * from huge_str_table where try_convert(decimal(18, 4), DetailLineAmt) is null and DetailLineAmt is not null)&#39;</span> <span style=color:#75715e>-- Message text
-</span><span style=color:#75715e></span>    ,<span style=color:#ae81ff>16</span>  <span style=color:#75715e>-- Severity
-</span><span style=color:#75715e></span>    ,<span style=color:#ae81ff>1</span>   <span style=color:#75715e>-- State
-</span><span style=color:#75715e></span>    ,<span style=color:#f92672>@</span>id <span style=color:#75715e>-- Message Parameters
-</span><span style=color:#75715e></span>  );
-<span style=color:#66d9ef>end</span>
-</code></pre></div><p>Here I used the <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql>raiserror</a> statements. In the it&rsquo;s stated, that new applications should use <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/throw-transact-sql>throw</a> instead of it.
-I used <code>raiserror</code> because <code>throw</code> does not support custom messages, but the variables that I set up with formatmessage show up as empty messages in my database query tool during development.</p>
-<p>The <code>N''</code> prefix at the start of the message indicates that it&rsquo;s an nvarchar, so it can contain unicode characters.</p>
-<p>The <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/exists-transact-sql>exists</a> statement checks whether a given statement has any results.</p>
-<p>The <code>if</code> statement can run a block of code that starts with <code>begin</code> and ends with <code>end</code>. It can only have a single <code>else</code> statment.
-If you need more elif branches you have to nest <code>if-else</code> constucts in the proper branches.</p>
-<p>You can set a <a href=https://docs.microsoft.com/en-us/sql/relational-databases/errors-events/database-engine-error-severities>severity</a> for your messages with raiserror, throw will set it automatically to 16, except if you re-throw an exception in a catch statement.</p>
-<p>The <code>State</code> is useful if the same user-defined error is raised at multiple locations. It can be between 1-255. It can help find which section of code is raising the errors.</p>
-<p>The <a href=https://docs.microsoft.com/en-us/sql/relational-databases/errors-events/database-engine-events-and-errors>error codes</a> under 50000 are reserved for system errors. <code>Throw</code> can not send these system messages, while <code>raiserror</code> can.</p>
-<h2 id=reusing-code>Reusing code<a hidden class=anchor aria-hidden=true href=#reusing-code>#</a></h2>
-<p>During this few months I&rsquo;ve been investigating many questions about the data, its validity,
+I&rsquo;d rather share some more code that made my work simpler.</p><h2 id=validate-data-before-running-a-costly-query>Validate data before running a costly query<a hidden class=anchor aria-hidden=true href=#validate-data-before-running-a-costly-query>#</a></h2><p>In the folowing snipped I run a validation code and print a meaningful message, if it fails.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>declare</span> id int <span style=color:#f92672>=</span> <span style=color:#ae81ff>42</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#66d9ef>exists</span>(<span style=color:#66d9ef>select</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>from</span> str_table <span style=color:#66d9ef>where</span> try_convert(float, Cost) <span style=color:#66d9ef>is</span> <span style=color:#66d9ef>null</span> <span style=color:#66d9ef>and</span> Cost <span style=color:#66d9ef>is</span> <span style=color:#66d9ef>not</span> <span style=color:#66d9ef>null</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>begin</span>
+</span></span><span style=display:flex><span>  raiserror(
+</span></span><span style=display:flex><span>    N<span style=color:#e6db74>&#39;Failed to convert a Cost to number for ID: %d (for more details run: select * from huge_str_table where try_convert(decimal(18, 4), DetailLineAmt) is null and DetailLineAmt is not null)&#39;</span> <span style=color:#75715e>-- Message text
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ,<span style=color:#ae81ff>16</span>  <span style=color:#75715e>-- Severity
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ,<span style=color:#ae81ff>1</span>   <span style=color:#75715e>-- State
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ,<span style=color:#f92672>@</span>id <span style=color:#75715e>-- Message Parameters
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  );
+</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
+</span></span></code></pre></div><p>Here I used the <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/raiserror-transact-sql>raiserror</a> statements. In the it&rsquo;s stated, that new applications should use <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/throw-transact-sql>throw</a> instead of it.
+I used <code>raiserror</code> because <code>throw</code> does not support custom messages, but the variables that I set up with formatmessage show up as empty messages in my database query tool during development.</p><p>The <code>N''</code> prefix at the start of the message indicates that it&rsquo;s an nvarchar, so it can contain unicode characters.</p><p>The <a href=https://docs.microsoft.com/en-us/sql/t-sql/language-elements/exists-transact-sql>exists</a> statement checks whether a given statement has any results.</p><p>The <code>if</code> statement can run a block of code that starts with <code>begin</code> and ends with <code>end</code>. It can only have a single <code>else</code> statment.
+If you need more elif branches you have to nest <code>if-else</code> constucts in the proper branches.</p><p>You can set a <a href=https://docs.microsoft.com/en-us/sql/relational-databases/errors-events/database-engine-error-severities>severity</a> for your messages with raiserror, throw will set it automatically to 16, except if you re-throw an exception in a catch statement.</p><p>The <code>State</code> is useful if the same user-defined error is raised at multiple locations. It can be between 1-255. It can help find which section of code is raising the errors.</p><p>The <a href=https://docs.microsoft.com/en-us/sql/relational-databases/errors-events/database-engine-events-and-errors>error codes</a> under 50000 are reserved for system errors. <code>Throw</code> can not send these system messages, while <code>raiserror</code> can.</p><h2 id=reusing-code>Reusing code<a hidden class=anchor aria-hidden=true href=#reusing-code>#</a></h2><p>During this few months I&rsquo;ve been investigating many questions about the data, its validity,
 and extracted information to business-related questions.
 Since we were in a hurry I often found myself running the same queries all over again.
 When I needed to type the same joins for at least 5 times, and they got lost in my console I stopped and tried to automate them,
-because I was fairly confident that they will come up again later.</p>
-<p>These constructs were really helpful, their concepts were not new to me.
-I just want to keep their syntax over here for a quick reference and what point out what makes them different.</p>
-<p>When I created these views, functions, and procedures SSMS set me these values. I&rsquo;ll exclude them from my examples, but I used them.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>SET</span> ANSI_NULLS <span style=color:#66d9ef>ON</span>
-<span style=color:#66d9ef>GO</span>
-<span style=color:#66d9ef>SET</span> QUOTED_IDENTIFIER <span style=color:#66d9ef>ON</span>
-<span style=color:#66d9ef>GO</span>
-</code></pre></div><h3 id=views>Views<a hidden class=anchor aria-hidden=true href=#views>#</a></h3>
-<p>When I did not need any dynamism <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql>views</a> were my go-to choice.
-You can think of views as saved sql statements.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> <span style=color:#66d9ef>view</span> ActiveCustomers
-<span style=color:#66d9ef>AS</span>
-    <span style=color:#66d9ef>select</span>
-        <span style=color:#f92672>*</span>
-    <span style=color:#66d9ef>from</span> dbo.Customers
-    <span style=color:#66d9ef>where</span> isDeleted <span style=color:#f92672>&lt;&gt;</span> <span style=color:#ae81ff>0</span>
-    ;
-<span style=color:#66d9ef>GO</span>
-
-<span style=color:#75715e>-- select * from ActiveCustomers;
-</span></code></pre></div><p>The <code>or alter</code> part helped me during development, because I did not need to drop and recreate the views every time.</p>
-<h3 id=functions>Functions<a hidden class=anchor aria-hidden=true href=#functions>#</a></h3>
-<p>User defined <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-function-transact-sql>functions</a> (UDF) are similar to views, but they have 2 main differences that were relevant for me.</p>
-<ul>
-<li>they can receive parameters</li>
-<li>they can return scalar values instead of tabular data</li>
-</ul>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> <span style=color:#66d9ef>function</span> fnCheckBalanceAbove
-(
-   <span style=color:#f92672>@</span>lowerBound float
-)
-<span style=color:#66d9ef>returns</span> <span style=color:#f92672>@</span><span style=color:#66d9ef>table</span> <span style=color:#66d9ef>table</span> (
-     CalcTime datetime2(<span style=color:#ae81ff>7</span>)
-    ,CompanyID int
-)
-<span style=color:#66d9ef>as</span>
-<span style=color:#66d9ef>begin</span>
-
-<span style=color:#66d9ef>insert</span> <span style=color:#66d9ef>into</span> <span style=color:#f92672>@</span><span style=color:#66d9ef>table</span> (
-     CalcTime
-    ,CompanyID
-)
-<span style=color:#66d9ef>select</span>
-    getutcdate() [CalcTime]
-    CompanyID
-<span style=color:#66d9ef>from</span> Company
-<span style=color:#66d9ef>where</span> Balance <span style=color:#f92672>&gt;=</span> <span style=color:#f92672>@</span>lowerBound
-;
-
-<span style=color:#66d9ef>return</span>;
-<span style=color:#66d9ef>end</span>
-;
-<span style=color:#66d9ef>go</span>
-<span style=color:#75715e>-- select * from fnCheckBalanceAbove(50000)
-</span></code></pre></div><p>The function can return inline valued table by just wrapping the select into the <code>return</code> statement,
-but I find it valuable to define the columns that are going to be returned for better readability.</p>
-<p>You can use multiple queries to fill the defined result table.</p>
-<p>Do not forget that the function must end with a <code>return</code> statment.</p>
-<p>The huge benefit of funtions, is that their results can be joined to other queries, thus potentially simplify and shorten their code significantly.</p>
-<h3 id=stored-procedures>Stored procedures<a hidden class=anchor aria-hidden=true href=#stored-procedures>#</a></h3>
-<p>When you need to run many operations,
-you can use <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-procedure-transact-sql>stored procedures</a>.</p>
-<p>You can use parameters just like for functions, but you can do even more things:</p>
-<ul>
-<li>use a larger set of constructs like <code>try-catch</code> blocks</li>
-<li>call other stored procedures</li>
-<li>return multiple resultsets</li>
-</ul>
-<p>You can not use them inside queries, you need to call them with <code>exec</code> statement.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> proc GetTopNCustomers (
-   <span style=color:#f92672>@</span><span style=color:#66d9ef>limit</span> int
-)
-<span style=color:#66d9ef>as</span>
-<span style=color:#66d9ef>begin</span>
-    <span style=color:#66d9ef>select</span> top(<span style=color:#f92672>@</span><span style=color:#66d9ef>limit</span>)
-         <span style=color:#66d9ef>c</span>.ID
-        ,<span style=color:#66d9ef>c</span>.Balance
-    <span style=color:#66d9ef>from</span> Customer <span style=color:#66d9ef>c</span>
-    <span style=color:#66d9ef>order</span> <span style=color:#66d9ef>by</span> Balance <span style=color:#66d9ef>desc</span>
-    ;
-<span style=color:#66d9ef>end</span>
-;
-<span style=color:#66d9ef>GO</span>
-
-<span style=color:#75715e>-- exec GetTopNCustomers @limit = 15;
-</span></code></pre></div><p>I advise agains returning multiple result sets if you&rsquo;d like to store the results somewhere and not just debugging data, because it&rsquo;s a bit tricky to store the results from a stored procedure call with <code>insert into</code>.
-You need to have a table that you query the data into.</p>
-<p>See this code for example <a href=https://www.sqlmatters.com/Articles/sp_who2%20-%20filtering%20and%20sorting%20the%20results.aspx>from</a>:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#f92672>#</span>sp_who2 (SPID INT,Status VARCHAR(<span style=color:#ae81ff>255</span>),
-      Login  VARCHAR(<span style=color:#ae81ff>255</span>),HostName  VARCHAR(<span style=color:#ae81ff>255</span>),
-      BlkBy  VARCHAR(<span style=color:#ae81ff>255</span>),DBName  VARCHAR(<span style=color:#ae81ff>255</span>),
-      Command VARCHAR(<span style=color:#ae81ff>255</span>),CPUTime INT,
-      DiskIO INT,LastBatch VARCHAR(<span style=color:#ae81ff>255</span>),
-      ProgramName VARCHAR(<span style=color:#ae81ff>255</span>),SPID2 INT,
-      REQUESTID INT)
-<span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> <span style=color:#f92672>#</span>sp_who2 <span style=color:#66d9ef>EXEC</span> sp_who2
-<span style=color:#66d9ef>SELECT</span>      <span style=color:#f92672>*</span>
-<span style=color:#66d9ef>FROM</span>        <span style=color:#f92672>#</span>sp_who2
-<span style=color:#75715e>-- Add any filtering of the results here :
-</span><span style=color:#75715e></span><span style=color:#66d9ef>WHERE</span>       <span style=color:#ae81ff>1</span><span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>and</span> DBName <span style=color:#f92672>&lt;&gt;</span> <span style=color:#e6db74>&#39;master&#39;</span> 
-    <span style=color:#66d9ef>and</span> HostName <span style=color:#66d9ef>like</span> <span style=color:#e6db74>&#39;%&#39;</span>
-<span style=color:#75715e>-- Add any sorting of the results here :
-</span><span style=color:#75715e></span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span>    DBName <span style=color:#66d9ef>ASC</span>
-
-<span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#f92672>#</span>sp_who2
-</code></pre></div><h2 id=summary>Summary<a hidden class=anchor aria-hidden=true href=#summary>#</a></h2>
-<p>I hope you found this collection as useful as I did.</p>
-<p>Happy coding!</p>
-<p>Cover Photo by <a href=https://www.pexels.com/@artunchained>Manuel Geissinger</a> from <a href=https://www.pexels.com/photo/black-server-racks-on-a-room-325229/>Pexels</a></p>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-<li><a href=https://budavariam.github.io/tags/microsoft/>microsoft</a></li>
-<li><a href=https://budavariam.github.io/tags/sql/>sql</a></li>
-<li><a href=https://budavariam.github.io/tags/mssql/>mssql</a></li>
-</ul>
-<div class=share-buttons>
-<div class=addthis_inline_share_toolbox></div>
-<script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"></script>
-</div>
-</div>
-</footer>
-<script async data-uid=7d9354cde4 src=https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js></script>
-<div id=disqus_thread></div>
-<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//budavariam.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</article>
-</main><footer class=footer>
-<span>&copy; 2022 <a href=https://budavariam.github.io/>Mátyás Budavári</a></span>
+because I was fairly confident that they will come up again later.</p><p>These constructs were really helpful, their concepts were not new to me.
+I just want to keep their syntax over here for a quick reference and what point out what makes them different.</p><p>When I created these views, functions, and procedures SSMS set me these values. I&rsquo;ll exclude them from my examples, but I used them.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SET</span> ANSI_NULLS <span style=color:#66d9ef>ON</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>GO</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>SET</span> QUOTED_IDENTIFIER <span style=color:#66d9ef>ON</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>GO</span>
+</span></span></code></pre></div><h3 id=views>Views<a hidden class=anchor aria-hidden=true href=#views>#</a></h3><p>When I did not need any dynamism <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql>views</a> were my go-to choice.
+You can think of views as saved sql statements.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> <span style=color:#66d9ef>view</span> ActiveCustomers
+</span></span><span style=display:flex><span><span style=color:#66d9ef>AS</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>select</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>from</span> dbo.Customers
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>where</span> isDeleted <span style=color:#f92672>&lt;&gt;</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    ;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>GO</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- select * from ActiveCustomers;
+</span></span></span></code></pre></div><p>The <code>or alter</code> part helped me during development, because I did not need to drop and recreate the views every time.</p><h3 id=functions>Functions<a hidden class=anchor aria-hidden=true href=#functions>#</a></h3><p>User defined <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-function-transact-sql>functions</a> (UDF) are similar to views, but they have 2 main differences that were relevant for me.</p><ul><li>they can receive parameters</li><li>they can return scalar values instead of tabular data</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> <span style=color:#66d9ef>function</span> fnCheckBalanceAbove
+</span></span><span style=display:flex><span>(
+</span></span><span style=display:flex><span>   <span style=color:#f92672>@</span>lowerBound float
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>returns</span> <span style=color:#f92672>@</span><span style=color:#66d9ef>table</span> <span style=color:#66d9ef>table</span> (
+</span></span><span style=display:flex><span>     CalcTime datetime2(<span style=color:#ae81ff>7</span>)
+</span></span><span style=display:flex><span>    ,CompanyID int
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>as</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>begin</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>insert</span> <span style=color:#66d9ef>into</span> <span style=color:#f92672>@</span><span style=color:#66d9ef>table</span> (
+</span></span><span style=display:flex><span>     CalcTime
+</span></span><span style=display:flex><span>    ,CompanyID
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>select</span>
+</span></span><span style=display:flex><span>    getutcdate() [CalcTime]
+</span></span><span style=display:flex><span>    CompanyID
+</span></span><span style=display:flex><span><span style=color:#66d9ef>from</span> Company
+</span></span><span style=display:flex><span><span style=color:#66d9ef>where</span> Balance <span style=color:#f92672>&gt;=</span> <span style=color:#f92672>@</span>lowerBound
+</span></span><span style=display:flex><span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>return</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
+</span></span><span style=display:flex><span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>go</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- select * from fnCheckBalanceAbove(50000)
+</span></span></span></code></pre></div><p>The function can return inline valued table by just wrapping the select into the <code>return</code> statement,
+but I find it valuable to define the columns that are going to be returned for better readability.</p><p>You can use multiple queries to fill the defined result table.</p><p>Do not forget that the function must end with a <code>return</code> statment.</p><p>The huge benefit of funtions, is that their results can be joined to other queries, thus potentially simplify and shorten their code significantly.</p><h3 id=stored-procedures>Stored procedures<a hidden class=anchor aria-hidden=true href=#stored-procedures>#</a></h3><p>When you need to run many operations,
+you can use <a href=https://docs.microsoft.com/en-us/sql/t-sql/statements/create-procedure-transact-sql>stored procedures</a>.</p><p>You can use parameters just like for functions, but you can do even more things:</p><ul><li>use a larger set of constructs like <code>try-catch</code> blocks</li><li>call other stored procedures</li><li>return multiple resultsets</li></ul><p>You can not use them inside queries, you need to call them with <code>exec</code> statement.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>create</span> <span style=color:#66d9ef>or</span> <span style=color:#66d9ef>alter</span> proc GetTopNCustomers (
+</span></span><span style=display:flex><span>   <span style=color:#f92672>@</span><span style=color:#66d9ef>limit</span> int
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>as</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>begin</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>select</span> top(<span style=color:#f92672>@</span><span style=color:#66d9ef>limit</span>)
+</span></span><span style=display:flex><span>         <span style=color:#66d9ef>c</span>.ID
+</span></span><span style=display:flex><span>        ,<span style=color:#66d9ef>c</span>.Balance
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>from</span> Customer <span style=color:#66d9ef>c</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>order</span> <span style=color:#66d9ef>by</span> Balance <span style=color:#66d9ef>desc</span>
+</span></span><span style=display:flex><span>    ;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
+</span></span><span style=display:flex><span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>GO</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- exec GetTopNCustomers @limit = 15;
+</span></span></span></code></pre></div><p>I advise agains returning multiple result sets if you&rsquo;d like to store the results somewhere and not just debugging data, because it&rsquo;s a bit tricky to store the results from a stored procedure call with <code>insert into</code>.
+You need to have a table that you query the data into.</p><p>See this code for example <a href=https://www.sqlmatters.com/Articles/sp_who2%20-%20filtering%20and%20sorting%20the%20results.aspx>from</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#f92672>#</span>sp_who2 (SPID INT,Status VARCHAR(<span style=color:#ae81ff>255</span>),
+</span></span><span style=display:flex><span>      Login  VARCHAR(<span style=color:#ae81ff>255</span>),HostName  VARCHAR(<span style=color:#ae81ff>255</span>),
+</span></span><span style=display:flex><span>      BlkBy  VARCHAR(<span style=color:#ae81ff>255</span>),DBName  VARCHAR(<span style=color:#ae81ff>255</span>),
+</span></span><span style=display:flex><span>      Command VARCHAR(<span style=color:#ae81ff>255</span>),CPUTime INT,
+</span></span><span style=display:flex><span>      DiskIO INT,LastBatch VARCHAR(<span style=color:#ae81ff>255</span>),
+</span></span><span style=display:flex><span>      ProgramName VARCHAR(<span style=color:#ae81ff>255</span>),SPID2 INT,
+</span></span><span style=display:flex><span>      REQUESTID INT)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> <span style=color:#f92672>#</span>sp_who2 <span style=color:#66d9ef>EXEC</span> sp_who2
+</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span>      <span style=color:#f92672>*</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span>        <span style=color:#f92672>#</span>sp_who2
+</span></span><span style=display:flex><span><span style=color:#75715e>-- Add any filtering of the results here :
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>WHERE</span>       <span style=color:#ae81ff>1</span><span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>and</span> DBName <span style=color:#f92672>&lt;&gt;</span> <span style=color:#e6db74>&#39;master&#39;</span> 
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>and</span> HostName <span style=color:#66d9ef>like</span> <span style=color:#e6db74>&#39;%&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- Add any sorting of the results here :
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span>    DBName <span style=color:#66d9ef>ASC</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#f92672>#</span>sp_who2
+</span></span></code></pre></div><h2 id=summary>Summary<a hidden class=anchor aria-hidden=true href=#summary>#</a></h2><p>I hope you found this collection as useful as I did.</p><p>Happy coding!</p><p>Cover Photo by <a href=https://www.pexels.com/@artunchained>Manuel Geissinger</a> from <a href=https://www.pexels.com/photo/black-server-racks-on-a-room-325229/>Pexels</a></p></div><footer class=post-footer><ul class=post-tags><li><a href=https://budavariam.github.io/tags/microsoft/>microsoft</a></li><li><a href=https://budavariam.github.io/tags/sql/>sql</a></li><li><a href=https://budavariam.github.io/tags/mssql/>mssql</a></li></ul><div class=share-buttons><div class=addthis_inline_share_toolbox></div><script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"></script></div></div></footer><script async data-uid=7d9354cde4 src=https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js></script><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//budavariam.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2022 <a href=https://budavariam.github.io/>Mátyás Budavári</a></span>
 <span>&#183;</span>
-<wbr>
-<span>Powered&nbsp;by&nbsp;<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
+<wbr><span>Powered&nbsp;by&nbsp;<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<wbr>
-<span>Theme&nbsp;<a href=https://github.com/budavariam/hugo-PaperMod/tree/budavariam rel=noopener target=_blank>PaperMod&nbsp;(custom)</a></span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
-</a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script defer src=/assets/js/copybtn.min.3d17062805a1198a8a849f5a026b60ed842595e6574a6ecf2a1fc1c4d5dd5ceb.js integrity="sha256-PRcGKAWhGYqKhJ9aAmtg7YQlleZXSm7PKh/BxNXdXOs="></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+<wbr><span>Theme&nbsp;<a href=https://github.com/budavariam/hugo-PaperMod/tree/budavariam rel=noopener target=_blank>PaperMod&nbsp;(custom)</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script defer src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<script defer src=/assets/js/copybtn.min.4ca2683e6d39c944ce34447501348e9b7c2805874fc5f1023f9534ecd3dd2b59.js integrity="sha256-TKJoPm05yUTONER1ATSOm3woBYdPxfECP5U07NPdK1k="></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

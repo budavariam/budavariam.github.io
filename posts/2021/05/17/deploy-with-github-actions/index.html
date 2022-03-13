@@ -1,205 +1,25 @@
-<!doctype html><html lang=en dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>Deploy With Github Actions | Mátyás Budavári</title>
-<meta name=keywords content="github-actions,github,gatsby,react,hugo,my-solution,config">
-<meta name=description content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
-Let me share my configs for different kinds of setups.">
-<meta name=author content="Mátyás Budavári">
-<meta name=theme-color content="#317EFB">
-<link rel=canonical href=https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/>
-<meta name=google-site-verification content="ocrG4G5ZSn2awC0mgHAsgk2qlhd3IAXCACgWNrqJcwY">
-<link href=/assets/css/stylesheet.min.8992a6674f694d99a84bca35962c31e8f7c81352f54d3e95def071e7d30507dd.css integrity="sha256-iZKmZ09pTZmoS8o1liwx6PfIE1L1TT6V3vBx59MFB90=" rel="preload stylesheet" as=style>
-<script src=https://kit.fontawesome.com/68da183384.js crossorigin=anonymous></script>
-<link rel=icon href=https://budavariam.github.io/favicon/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://budavariam.github.io/favicon/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://budavariam.github.io/favicon/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png>
-<link rel=mask-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.1">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-115499513-1','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<meta property="og:title" content="Deploy With Github Actions">
-<meta property="og:description" content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
-Let me share my configs for different kinds of setups.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/">
-<meta property="og:image" content="https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png"><meta property="article:published_time" content="2021-05-17T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-05-17T00:00:00+00:00"><meta property="og:site_name" content="Mátyás Budavári">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png">
-<meta name=twitter:title content="Deploy With Github Actions">
-<meta name=twitter:description content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
-Let me share my configs for different kinds of setups.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://budavariam.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Deploy With Github Actions","item":"https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Deploy With Github Actions","name":"Deploy With Github Actions","description":"Recently I tried Github actions to deploy some of my static sites, and I\u0026amp;rsquo;ve been quite happy with its capabilities. Let me share my configs for different kinds of setups.\n","keywords":["github-actions","github","gatsby","react","hugo","my-solution","config"],"articleBody":"Recently I tried Github actions to deploy some of my static sites, and I’ve been quite happy with its capabilities. Let me share my configs for different kinds of setups.\nWhat is Github Actions Github Actions is an embedded CI/CD pipeline of Github. You need to define the workflow files in yml files under .github folder in the repository root folder, and you can unleash its true power.\nIts main benefit is that it’s a Github service embedded in, and you can use it for free until (at the time of writing) 2000 build minutes per month. More info about pricing here.\nCreate React App on Github Pages Create React App is a popular starter project for react.js applications.\nExample repo\n #gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob-wrapper.data, #gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob.readme { max-height: 300px; overflow: auto; }    The tricky part is that if you use your Github pages site without a domain, it will serve your site in a subpath, BUT by default, Create-React-App assumes you serve it from the root.\nIn package.json, you need to set the \"homepage\" property to the name of the repository, starting with a forward slash.\nFor example, in my asciiart-text site, I needed to add:\n{ \"homepage\": \"/asciiart-text\" } Hugo site on Github Pages Hugo claims to be the fastest static site generator, and I can not agree more.\nExample repo\n #gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob-wrapper.data, #gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob.readme { max-height: 300px; overflow: auto; }    I publish my blog to Github pages built with Hugo.\nGatsby Static site on Github Pages Gatsby is an incredible static site generator based on react.\nExample repo\n #gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob-wrapper.data, #gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob.readme { max-height: 300px; overflow: auto; }    There are different predefined workflows for many static site generators, and I found one for gatsby. It worked fine, but I could not make it publish from a subdirectory, though it said in the docs. I spent a little time investigating, only to figure that the owner did not release the last version, so I forked it and fixed it for me.\nDisclaimer I have no affiliation with Github, and I just wanted to share my experience and collect my configs for future reference.\n","wordCount":"359","inLanguage":"en","image":"https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png","datePublished":"2021-05-17T00:00:00Z","dateModified":"2021-05-17T00:00:00Z","author":{"@type":"Person","name":"Mátyás Budavári"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/"},"publisher":{"@type":"Organization","name":"Mátyás Budavári","logo":{"@type":"ImageObject","url":"https://budavariam.github.io/favicon/favicon.ico"}}}</script>
-<script src=https://cdn.lr-ingest.io/LogRocket.min.js crossorigin=anonymous></script>
-<script>window.LogRocket&&window.LogRocket.init('0igxfm/budavariam-blog'),window.LogRocket.getSessionURL(function(a){ga('send',{hitType:'event',eventCategory:'LogRocket',eventAction:a})})</script>
-</head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-</noscript>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://budavariam.github.io/ title="Mátyás Budavári (Alt + H)" class=site-avatar>
-<img src=/avatar.png alt=logo aria-label=logo height=70 width=70></a>
-<div class=site-info>
-<h1 class=site-name>
-<a href=https://budavariam.github.io/ accesskey=h title="Mátyás Budavári (Alt + H)">Mátyás Budavári</a>
-</h1>
-<p class=site-description>Developer from Szeged</p>
-</div>
-</div>
-<ul id=menu onscroll=menu_on_scroll()>
-<li>
-<a href=https://budavariam.github.io/about/ title=About>
-<span>About</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/search/ title="Search (Alt + /)" accesskey=/>
-<span>Search</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/tags/ title=Tags>
-<span>Tags</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/archives/ title=Archive>
-<span>Archive</span>
-</a>
-</li>
-<li>
-<a href=https://budavariam.github.io/projects/ title=Projects>
-<span>Projects</span>
-</a>
-</li><li>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<h1 class=post-title>
-Deploy With Github Actions
-</h1>
-<div class=post-meta>
-May 17, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Mátyás Budavári
-|&nbsp;<a class=edit-post href=https://github.com/budavariam/budavariam.github.io/blob/main/content/posts/2021-05-17-deploy-with-github-actions.md rel="noopener noreferrer" target=_blank>Make it better</a></div>
-</header>
-<figure class=entry-cover><img src=https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png alt="Github Actions logo">
-</figure>
-<div class=toc>
-<details>
-<summary accesskey=c title="(Alt + C)">
-<div class=details>Table of Contents</div>
-</summary>
-<div class=inner><ul><li>
-<a href=#what-is-github-actions aria-label="What is Github Actions">What is Github Actions</a></li><li>
-<a href=#create-react-app-on-github-pages aria-label="Create React App on Github Pages">Create React App on Github Pages</a></li><li>
-<a href=#hugo-site-on-github-pages aria-label="Hugo site on Github Pages">Hugo site on Github Pages</a></li><li>
-<a href=#gatsby-static-site-on-github-pages aria-label="Gatsby Static site on Github Pages">Gatsby Static site on Github Pages</a></li><li>
-<a href=#disclaimer aria-label=Disclaimer>Disclaimer</a></li></ul>
-</div>
-</details>
-</div>
-<div class=post-content>
-<p>Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
-Let me share my configs for different kinds of setups.</p>
-<h2 id=what-is-github-actions>What is Github Actions<a hidden class=anchor aria-hidden=true href=#what-is-github-actions>#</a></h2>
-<p><a href=https://github.com/features/actions>Github Actions</a> is an embedded CI/CD pipeline of Github.
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Deploy With Github Actions | Mátyás Budavári</title><meta name=keywords content="github-actions,github,gatsby,react,hugo,my-solution,config"><meta name=description content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
+Let me share my configs for different kinds of setups."><meta name=author content="Mátyás Budavári"><meta name=theme-color content="#317EFB"><link rel=canonical href=https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/><meta name=google-site-verification content="ocrG4G5ZSn2awC0mgHAsgk2qlhd3IAXCACgWNrqJcwY"><link href=/assets/css/stylesheet.min.8992a6674f694d99a84bca35962c31e8f7c81352f54d3e95def071e7d30507dd.css integrity="sha256-iZKmZ09pTZmoS8o1liwx6PfIE1L1TT6V3vBx59MFB90=" rel="preload stylesheet" as=style><script src=https://kit.fontawesome.com/68da183384.js crossorigin=anonymous></script>
+<link rel=icon href=https://budavariam.github.io/favicon/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://budavariam.github.io/favicon/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://budavariam.github.io/favicon/favicon-32x32.png><link rel=apple-touch-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png><link rel=mask-icon href=https://budavariam.github.io/favicon/apple-icon-180x180.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.94.2"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-115499513-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><meta property="og:title" content="Deploy With Github Actions"><meta property="og:description" content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
+Let me share my configs for different kinds of setups."><meta property="og:type" content="article"><meta property="og:url" content="https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/"><meta property="og:image" content="https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png"><meta property="article:published_time" content="2021-05-17T00:00:00+00:00"><meta property="article:modified_time" content="2021-05-17T00:00:00+00:00"><meta property="og:site_name" content="Mátyás Budavári"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png"><meta name=twitter:title content="Deploy With Github Actions"><meta name=twitter:description content="Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
+Let me share my configs for different kinds of setups."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://budavariam.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Deploy With Github Actions","item":"https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Deploy With Github Actions","name":"Deploy With Github Actions","description":"Recently I tried Github actions to deploy some of my static sites, and I\u0026amp;rsquo;ve been quite happy with its capabilities. Let me share my configs for different kinds of setups.\n","keywords":["github-actions","github","gatsby","react","hugo","my-solution","config"],"articleBody":"Recently I tried Github actions to deploy some of my static sites, and I’ve been quite happy with its capabilities. Let me share my configs for different kinds of setups.\nWhat is Github Actions Github Actions is an embedded CI/CD pipeline of Github. You need to define the workflow files in yml files under .github folder in the repository root folder, and you can unleash its true power.\nIts main benefit is that it’s a Github service embedded in, and you can use it for free until (at the time of writing) 2000 build minutes per month. More info about pricing here.\nCreate React App on Github Pages Create React App is a popular starter project for react.js applications.\nExample repo\n #gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob-wrapper.data, #gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob.readme { max-height: 300px; overflow: auto; }    The tricky part is that if you use your Github pages site without a domain, it will serve your site in a subpath, BUT by default, Create-React-App assumes you serve it from the root.\nIn package.json, you need to set the \"homepage\" property to the name of the repository, starting with a forward slash.\nFor example, in my asciiart-text site, I needed to add:\n{  \"homepage\": \"/asciiart-text\" } Hugo site on Github Pages Hugo claims to be the fastest static site generator, and I can not agree more.\nExample repo\n #gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob-wrapper.data, #gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob.readme { max-height: 300px; overflow: auto; }    I publish my blog to Github pages built with Hugo.\nGatsby Static site on Github Pages Gatsby is an incredible static site generator based on react.\nExample repo\n #gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob-wrapper.data, #gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob.readme { max-height: 300px; overflow: auto; }    There are different predefined workflows for many static site generators, and I found one for gatsby. It worked fine, but I could not make it publish from a subdirectory, though it said in the docs. I spent a little time investigating, only to figure that the owner did not release the last version, so I forked it and fixed it for me.\nDisclaimer I have no affiliation with Github, and I just wanted to share my experience and collect my configs for future reference.\n","wordCount":"359","inLanguage":"en","image":"https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png","datePublished":"2021-05-17T00:00:00Z","dateModified":"2021-05-17T00:00:00Z","author":{"@type":"Person","name":"Mátyás Budavári"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/"},"publisher":{"@type":"Organization","name":"Mátyás Budavári","logo":{"@type":"ImageObject","url":"https://budavariam.github.io/favicon/favicon.ico"}}}</script><script src=https://cdn.lr-ingest.io/LogRocket.min.js crossorigin=anonymous></script>
+<script>window.LogRocket&&window.LogRocket.init("0igxfm/budavariam-blog"),window.LogRocket.getSessionURL(function(e){ga("send",{hitType:"event",eventCategory:"LogRocket",eventAction:e})})</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><noscript><style type=text/css>#theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://budavariam.github.io/ title="Mátyás Budavári (Alt + H)" class=site-avatar><img src=/avatar.png alt=logo aria-label=logo height=70 width=70></a><div class=site-info><h1 class=site-name><a href=https://budavariam.github.io/ accesskey=h title="Mátyás Budavári (Alt + H)">Mátyás Budavári</a></h1><p class=site-description>Developer from Szeged</p></div></div><ul id=menu onscroll=menu_on_scroll()><li><a href=https://budavariam.github.io/about/ title=About><span>About</span></a></li><li><a href=https://budavariam.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://budavariam.github.io/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://budavariam.github.io/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://budavariam.github.io/projects/ title=Projects><span>Projects</span></a></li><li><span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Deploy With Github Actions</h1><div class=post-meta>May 17, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Mátyás Budavári
+|&nbsp;<a class=edit-post href=https://github.com/budavariam/budavariam.github.io/blob/main/content/posts/2021-05-17-deploy-with-github-actions.md rel="noopener noreferrer" target=_blank>Make it better</a></div></header><figure class=entry-cover><img src=https://budavariam.github.io/images/2021-05-17-deploy-with-github-actions/cover.png alt="Github Actions logo"></figure><div class=toc><details><summary accesskey=c title="(Alt + C)"><div class=details>Table of Contents</div></summary><div class=inner><ul><li><a href=#what-is-github-actions aria-label="What is Github Actions">What is Github Actions</a></li><li><a href=#create-react-app-on-github-pages aria-label="Create React App on Github Pages">Create React App on Github Pages</a></li><li><a href=#hugo-site-on-github-pages aria-label="Hugo site on Github Pages">Hugo site on Github Pages</a></li><li><a href=#gatsby-static-site-on-github-pages aria-label="Gatsby Static site on Github Pages">Gatsby Static site on Github Pages</a></li><li><a href=#disclaimer aria-label=Disclaimer>Disclaimer</a></li></ul></div></details></div><div class=post-content><p>Recently I tried Github actions to deploy some of my static sites, and I&rsquo;ve been quite happy with its capabilities.
+Let me share my configs for different kinds of setups.</p><h2 id=what-is-github-actions>What is Github Actions<a hidden class=anchor aria-hidden=true href=#what-is-github-actions>#</a></h2><p><a href=https://github.com/features/actions>Github Actions</a> is an embedded CI/CD pipeline of Github.
 You need to define the workflow files in yml files under <code>.github</code>
 folder in the repository root folder,
-and you can unleash its true power.</p>
-<p>Its main benefit is that it&rsquo;s a Github service embedded in,
-and you can use it for free until (at the time of writing) 2000 build minutes per month. More info about <a href=https://github.com/pricing>pricing</a> here.</p>
-<h2 id=create-react-app-on-github-pages>Create React App on Github Pages<a hidden class=anchor aria-hidden=true href=#create-react-app-on-github-pages>#</a></h2>
-<p><a href=https://create-react-app.dev/>Create React App</a> is a popular starter project
-for <a href=https://reactjs.org/>react.js</a> applications.</p>
-<p><a href=https://github.com/budavariam/asciiart-text/>Example repo</a></p>
-<style>#gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob-wrapper.data,#gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob.readme{max-height:300px;overflow:auto}</style>
-<div id=gist-a8d0dc999fe8cd43585aa05eecf828aa>
-<script type=application/javascript src=https://gist.github.com/budavariam/a8d0dc999fe8cd43585aa05eecf828aa.js></script>
-</div>
-<p>The tricky part is that if you use your Github pages site without a domain,
-it will serve your site in a subpath, BUT by default, Create-React-App assumes you serve it from the root.</p>
-<p>In <code>package.json</code>, you need to set the <code>"homepage"</code> property to the name of the repository,
-starting with a forward slash.</p>
-<p>For example, in my <a href=https://budavariam.github.io/asciiart-text/>asciiart-text</a> site, I needed to add:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
-  <span style=color:#f92672>&#34;homepage&#34;</span>: <span style=color:#e6db74>&#34;/asciiart-text&#34;</span>
-}
-</code></pre></div><h2 id=hugo-site-on-github-pages>Hugo site on Github Pages<a hidden class=anchor aria-hidden=true href=#hugo-site-on-github-pages>#</a></h2>
-<p><a href=https://gohugo.io/>Hugo</a> claims to be the fastest static site generator, and I can not agree more.</p>
-<p><a href=https://github.com/budavariam/budavariam.github.io/>Example repo</a></p>
-<style>#gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob-wrapper.data,#gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob.readme{max-height:300px;overflow:auto}</style>
-<div id=gist-ac739a72e8a034ff8b7df82b39d7b57d>
-<script type=application/javascript src=https://gist.github.com/budavariam/ac739a72e8a034ff8b7df82b39d7b57d.js></script>
-</div>
-<p>I publish my blog to Github pages built with Hugo.</p>
-<h2 id=gatsby-static-site-on-github-pages>Gatsby Static site on Github Pages<a hidden class=anchor aria-hidden=true href=#gatsby-static-site-on-github-pages>#</a></h2>
-<p><a href=https://www.gatsbyjs.com/>Gatsby</a> is an incredible static site generator based on react.</p>
-<p><a href=https://github.com/budavariam/gatsby-theme-classroom-blog/>Example repo</a></p>
-<style>#gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob-wrapper.data,#gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob.readme{max-height:300px;overflow:auto}</style>
-<div id=gist-0260cf038f147d0e0a1f167509164ef5>
-<script type=application/javascript src=https://gist.github.com/budavariam/0260cf038f147d0e0a1f167509164ef5.js></script>
-</div>
-<p>There are different predefined workflows for many static site generators, and I found one for gatsby. It worked fine, but I could not make it publish from a subdirectory, though it said in the docs. I spent a little time investigating, only to figure that the owner did not release the last version, so I forked it and fixed it for me.</p>
-<h2 id=disclaimer>Disclaimer<a hidden class=anchor aria-hidden=true href=#disclaimer>#</a></h2>
-<p>I have no affiliation with Github, and I just wanted to share my experience and collect my configs for future reference.</p>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-<li><a href=https://budavariam.github.io/tags/github-actions/>github-actions</a></li>
-<li><a href=https://budavariam.github.io/tags/github/>github</a></li>
-<li><a href=https://budavariam.github.io/tags/gatsby/>gatsby</a></li>
-<li><a href=https://budavariam.github.io/tags/react/>react</a></li>
-<li><a href=https://budavariam.github.io/tags/hugo/>hugo</a></li>
-<li><a href=https://budavariam.github.io/tags/my-solution/>my-solution</a></li>
-<li><a href=https://budavariam.github.io/tags/config/>config</a></li>
-</ul>
-<div class=share-buttons>
-<div class=addthis_inline_share_toolbox></div>
-<script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"></script>
-</div>
-</div>
-</footer>
-<script async data-uid=7d9354cde4 src=https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js></script>
-<div id=disqus_thread></div>
-<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//budavariam.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</article>
-</main><footer class=footer>
-<span>&copy; 2022 <a href=https://budavariam.github.io/>Mátyás Budavári</a></span>
+and you can unleash its true power.</p><p>Its main benefit is that it&rsquo;s a Github service embedded in,
+and you can use it for free until (at the time of writing) 2000 build minutes per month. More info about <a href=https://github.com/pricing>pricing</a> here.</p><h2 id=create-react-app-on-github-pages>Create React App on Github Pages<a hidden class=anchor aria-hidden=true href=#create-react-app-on-github-pages>#</a></h2><p><a href=https://create-react-app.dev/>Create React App</a> is a popular starter project
+for <a href=https://reactjs.org/>react.js</a> applications.</p><p><a href=https://github.com/budavariam/asciiart-text/>Example repo</a></p><style>#gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob-wrapper.data,#gist-a8d0dc999fe8cd43585aa05eecf828aa .gist .blob.readme{max-height:300px;overflow:auto}</style><div id=gist-a8d0dc999fe8cd43585aa05eecf828aa><script type=application/javascript src=https://gist.github.com/budavariam/a8d0dc999fe8cd43585aa05eecf828aa.js></script></div><p>The tricky part is that if you use your Github pages site without a domain,
+it will serve your site in a subpath, BUT by default, Create-React-App assumes you serve it from the root.</p><p>In <code>package.json</code>, you need to set the <code>"homepage"</code> property to the name of the repository,
+starting with a forward slash.</p><p>For example, in my <a href=https://budavariam.github.io/asciiart-text/>asciiart-text</a> site, I needed to add:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;homepage&#34;</span>: <span style=color:#e6db74>&#34;/asciiart-text&#34;</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=hugo-site-on-github-pages>Hugo site on Github Pages<a hidden class=anchor aria-hidden=true href=#hugo-site-on-github-pages>#</a></h2><p><a href=https://gohugo.io/>Hugo</a> claims to be the fastest static site generator, and I can not agree more.</p><p><a href=https://github.com/budavariam/budavariam.github.io/>Example repo</a></p><style>#gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob-wrapper.data,#gist-ac739a72e8a034ff8b7df82b39d7b57d .gist .blob.readme{max-height:300px;overflow:auto}</style><div id=gist-ac739a72e8a034ff8b7df82b39d7b57d><script type=application/javascript src=https://gist.github.com/budavariam/ac739a72e8a034ff8b7df82b39d7b57d.js></script></div><p>I publish my blog to Github pages built with Hugo.</p><h2 id=gatsby-static-site-on-github-pages>Gatsby Static site on Github Pages<a hidden class=anchor aria-hidden=true href=#gatsby-static-site-on-github-pages>#</a></h2><p><a href=https://www.gatsbyjs.com/>Gatsby</a> is an incredible static site generator based on react.</p><p><a href=https://github.com/budavariam/gatsby-theme-classroom-blog/>Example repo</a></p><style>#gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob-wrapper.data,#gist-0260cf038f147d0e0a1f167509164ef5 .gist .blob.readme{max-height:300px;overflow:auto}</style><div id=gist-0260cf038f147d0e0a1f167509164ef5><script type=application/javascript src=https://gist.github.com/budavariam/0260cf038f147d0e0a1f167509164ef5.js></script></div><p>There are different predefined workflows for many static site generators, and I found one for gatsby. It worked fine, but I could not make it publish from a subdirectory, though it said in the docs. I spent a little time investigating, only to figure that the owner did not release the last version, so I forked it and fixed it for me.</p><h2 id=disclaimer>Disclaimer<a hidden class=anchor aria-hidden=true href=#disclaimer>#</a></h2><p>I have no affiliation with Github, and I just wanted to share my experience and collect my configs for future reference.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://budavariam.github.io/tags/github-actions/>github-actions</a></li><li><a href=https://budavariam.github.io/tags/github/>github</a></li><li><a href=https://budavariam.github.io/tags/gatsby/>gatsby</a></li><li><a href=https://budavariam.github.io/tags/react/>react</a></li><li><a href=https://budavariam.github.io/tags/hugo/>hugo</a></li><li><a href=https://budavariam.github.io/tags/my-solution/>my-solution</a></li><li><a href=https://budavariam.github.io/tags/config/>config</a></li></ul><div class=share-buttons><div class=addthis_inline_share_toolbox></div><script type=text/javascript src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"></script></div></div></footer><script async data-uid=7d9354cde4 src=https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js></script><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//budavariam.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2022 <a href=https://budavariam.github.io/>Mátyás Budavári</a></span>
 <span>&#183;</span>
-<wbr>
-<span>Powered&nbsp;by&nbsp;<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
+<wbr><span>Powered&nbsp;by&nbsp;<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<wbr>
-<span>Theme&nbsp;<a href=https://github.com/budavariam/hugo-PaperMod/tree/budavariam rel=noopener target=_blank>PaperMod&nbsp;(custom)</a></span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
-</a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script defer src=/assets/js/copybtn.min.3d17062805a1198a8a849f5a026b60ed842595e6574a6ecf2a1fc1c4d5dd5ceb.js integrity="sha256-PRcGKAWhGYqKhJ9aAmtg7YQlleZXSm7PKh/BxNXdXOs="></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+<wbr><span>Theme&nbsp;<a href=https://github.com/budavariam/hugo-PaperMod/tree/budavariam rel=noopener target=_blank>PaperMod&nbsp;(custom)</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script defer src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<script defer src=/assets/js/copybtn.min.4ca2683e6d39c944ce34447501348e9b7c2805874fc5f1023f9534ecd3dd2b59.js integrity="sha256-TKJoPm05yUTONER1ATSOm3woBYdPxfECP5U07NPdK1k="></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

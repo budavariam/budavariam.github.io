@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/tags/cli/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/javascript/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/node/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/posts/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</loc>

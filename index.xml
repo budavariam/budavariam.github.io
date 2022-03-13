@@ -6,7 +6,16 @@
     <description>Recent content on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keep Your Github Contribution History</title>
+      <link>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</guid>
+      <description>&lt;p&gt;Have you ever been in a situation where you work for a few repositories over a prolonged time, and all of a sudden, you&amp;rsquo;re notified that you&amp;rsquo;ll no longer have access to these repos in a few weeks?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Process *nix pipe with a script</title>
       <link>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</link>
@@ -141,7 +150,7 @@ so it&amp;rsquo;ll be easier to start out with development.&lt;/p&gt;</descripti
 a colleague came to help, he told me seemingly random sequence of characters to type,
 and suddenly everything went back to normal. Git&amp;rsquo;s default editor was vim and I think we did an interactive rebase.
 We might have just fixed it in an other way, but still it felt powerful.
-Later on I saw vim books at the operators&#39; desks, and I got really curious of what it is and how can it help my daily work.&lt;/p&gt;</description>
+Later on I saw vim books at the operators&amp;rsquo; desks, and I got really curious of what it is and how can it help my daily work.&lt;/p&gt;</description>
     </item>
     
     <item>
