@@ -6,7 +6,16 @@
     <description>Recent content in git on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keep Your Github Contribution History</title>
+      <link>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</guid>
+      <description>&lt;p&gt;Have you ever been in a situation where you work for a few repositories over a prolonged time, and all of a sudden, you&amp;rsquo;re notified that you&amp;rsquo;ll no longer have access to these repos in a few weeks?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Keep Your Configs Safe</title>
       <link>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</link>

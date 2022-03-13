@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/tags/git/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/github/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/my-solution/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/python/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/cli/</loc>
@@ -21,12 +36,6 @@
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/python/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/challenge/</loc>
@@ -95,9 +104,6 @@
     <loc>https://budavariam.github.io/tags/google/</loc>
     <lastmod>2021-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/tags/my-solution/</loc>
-    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/email/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -117,9 +123,6 @@
     <lastmod>2021-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/gatsby/</loc>
-    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/github/</loc>
     <lastmod>2021-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/github-actions/</loc>
@@ -162,9 +165,6 @@
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/dotfiles/</loc>
-    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/git/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</loc>
