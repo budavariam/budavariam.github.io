@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tailwind.css on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/tailwind.css/</link>
+    <description>Recent content in tailwind.css on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/tailwind.css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Battle Showcase</title>
+      <link>https://budavariam.github.io/posts/2022/03/14/css-battle-showcase/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/03/14/css-battle-showcase/</guid>
+      <description>&lt;p&gt;I came across &lt;a href=&#34;https://cssbattle.dev&#34;&gt;CSS Battle&lt;/a&gt; last year. I tried code golfs before, but this is a whole new level.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
