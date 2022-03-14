@@ -102,6 +102,12 @@ categories:
           A fun experiment with bash terminal colors to replicate github
           yearly contribution graphs for a single project.
         tech: [bash]
+      - name: keep-git-activity-graph
+        github: https://gist.github.com/budavariam/e946ecde50dee226ed2ec218e0c497d2#file-keep-git-activity-graph-py
+        description:
+          Keep your git commit activity history even if you lose access to the repos, by creating new commits without sensitive data
+        blogpost: /posts/2022/03/13/keep-your-github-contribution-history
+        tech: [python, git-cli]
       - name: git-bisect-playground
         description: A playground repository to show how git bisect works.
         github: https://github.com/budavariam/git-bisect-playground
