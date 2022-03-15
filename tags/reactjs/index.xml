@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>react.js on Mátyás Budavári</title>
-    <link>https://budavariam.github.io/tags/react.js/</link>
-    <description>Recent content in react.js on Mátyás Budavári</description>
+    <title>reactjs on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/reactjs/</link>
+    <description>Recent content in reactjs on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/react.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSS Battle Showcase</title>
       <link>https://budavariam.github.io/posts/2022/03/14/css-battle-showcase/</link>

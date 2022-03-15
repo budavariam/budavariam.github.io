@@ -6,7 +6,16 @@
     <description>Recent content in javascript on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS Battle Showcase</title>
+      <link>https://budavariam.github.io/posts/2022/03/14/css-battle-showcase/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/03/14/css-battle-showcase/</guid>
+      <description>&lt;p&gt;I came across &lt;a href=&#34;https://cssbattle.dev&#34;&gt;CSS Battle&lt;/a&gt; last year. I tried code golfs before, but this is a whole new level.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Process *nix pipe with a script</title>
       <link>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</link>
