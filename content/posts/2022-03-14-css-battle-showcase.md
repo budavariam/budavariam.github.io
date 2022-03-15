@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS Battle Showcase
-tags: [css-battle, css, javascript, next.js, reactjs, tailwind.css, my-solution]
+tags: [css-battle, css, javascript, next.js, react, tailwind.css, my-solution]
 cover:
     image: /images/2022-03-14-css-battle-showcase/cover.png
     alt: CSS Battle Showcase on the solution of Ukulele
