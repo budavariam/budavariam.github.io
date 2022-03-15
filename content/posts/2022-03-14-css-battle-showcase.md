@@ -1,10 +1,10 @@
 ---
 layout: post
 title: CSS Battle Showcase
-tags: [css-battle, css, next.js, react.js, tailwind.css]
-cover: 
+tags: [css-battle, css, javascript, next.js, reactjs, tailwind.css, my-solution]
+cover:
     image: /images/2022-03-14-css-battle-showcase/cover.png
-    alt: Cover
+    alt: CSS Battle Showcase on the solution of Ukulele
     hidden: false
 date: 2022-03-14
 ---
@@ -13,7 +13,9 @@ I came across [CSS Battle](https://cssbattle.dev) last year. I tried code golfs 
 
 <!--more-->
 
-It reminds me of [suicide chess](https://en.wikipedia.org/wiki/Losing_chess). You have the same building blocks, as the original but you have to think in reverse, in a completely different way.
+It reminds me of [suicide chess](https://en.wikipedia.org/wiki/Losing_chess).
+You have the same building blocks, as the original but you have to think in reverse,
+in a completely different way.
 
 What makes your code beautiful and readable are a burden in this game.
 
@@ -21,13 +23,16 @@ What makes your code beautiful and readable are a burden in this game.
 
 >The objective of the game is to write HTML/CSS to replicate the given target image in the least code possible.
 
-It sounds simple, isn't it. They restrict using JavaScript, SVG-s, images, canvas, or anything that would make it simple to draw shapes. You need to rely on basics CSS and HTML to make your playground get a 100% pixel perfect match with their given image.
+It sounds simple, isn't it. They restrict using JavaScript, SVG-s, images, canvas,
+or anything that would make it simple to draw shapes.
+You need to rely on basics CSS and HTML to make your playground get a 100% pixel perfect match with their given image.
 
 ## It sounds horrible, what is good in it?
 
 Some say you need to break things to get to know them better.
 
-You can learn more about different shorthand syntaxes and makes you dive deeper into the inner mechanics of how CSS and HTML really works.
+You can learn more about different shorthand syntaxes and makes you
+dive deeper into the inner mechanics of how CSS and HTML really works.
 
 You have to know the rules so that you can break them.
 
@@ -65,9 +70,11 @@ I decided to create a showcase site for it. I took this opportunity to get start
 
 It shows the original image, renders my solution and prints it with syntax [highlight.js](https://highlightjs.org/).
 
-I might add some thoughts on the different tasks, wth some details on how I approached the problems.
-The code contains mdx renderer, so I can add my thoughts easily next to the code in a moslty generic way.
-I like the dark/light mode integration with the code highlghter, andd tailwind's support of it.
+I might add some thoughts on the different tasks, with some details on how I approached the problems.
+The code contains [MDX renderer](https://nextjs.org/docs/advanced-features/using-mdx),
+so I can add my thoughts without having to write HTML.
+I like the dark/light mode integration with the code highlghter, and tailwind's support with
+[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
 
 You can reach the [DEMO](https://budavariam.github.io/css-battle-showcase/) site here.
 
@@ -81,9 +88,11 @@ Or browse [my solutions](https://github.com/budavariam/css-battle-showcase/tree/
 
 ## Summary
 
-When I first found this game I thought of creating a tool to minify my code. I don't know if I'm going to get better at this game first or make the tool happen.
+When I first found this game I thought of creating a tool to minify my code.
+I don't know if I'm going to get better at this game first or make the tool happen.
 
 I enjoyed creating the next.js site. Tailwind is simpler than I first imagined.
-I'd like to thank [ChangoMan](https://github.com/ChangoMan/nextjs-typescript-mdx-blog) for the starter code, that contained what I imagined to get started.
+I'd like to thank [ChangoMan](https://github.com/ChangoMan/nextjs-typescript-mdx-blog)
+for the starter code, that contained what I imagined to get started with next.js.
 
 Happy coding!

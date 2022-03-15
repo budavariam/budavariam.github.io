@@ -4,7 +4,7 @@ title: Keep Your Github Contribution History
 tags: [ git, github, my-solution, python ]
 cover: 
     image: /images/2022-03-13-keep-your-github-contribution-history/cover.png
-    alt: Cover
+    alt: My current github activty chart
     hidden: false
 date: 2022-03-13
 ---
