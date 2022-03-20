@@ -50,9 +50,9 @@ Some reminders and tips that I read, or figured out myself that made my solution
   - For directional items 1 repeats for all, 2 stands for (y,x) axis from top to bottom, left to right
 - `padding` can be used for size instead of: `width`/`height`
 - `margin`/`inset` can be used for positioning instead of: `top`/`right`/`bottom`/`left`
-- You can omit units, it will be `px`
-- You can omit quotes
-- You can omit values, mostly it will be what the property name is.
+- You can omit units in css, the default is `px`
+- You can omit quotes in HTML
+- You can omit values of HTML boolean properties, if the name is present it's true
 - You can omit the last `;` from CSS rules
 - You don't always have to use closing tags in HTML
 - You don't need to write `class`-es:
@@ -80,13 +80,14 @@ You can reach the [DEMO](https://budavariam.github.io/css-battle-showcase/) site
 
 Or browse [my solutions](https://github.com/budavariam/css-battle-showcase/tree/main/public/solutions) over here on Github.
 
-## Resources for CSS
+## Resources
 
 - [web.dev: learn CSS](https://web.dev/learn/css/). An awesome and detailed css course.
-- [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS). The best webdev reources.
+- [MDN CSS docs](https://developer.mozilla.org/en-US/docs/Web/CSS). The best webdev reources.
 - [CSS Specification as of 2021](https://www.w3.org/TR/css-2021/). The source of thruth.
+- [HTML Standard](https://html.spec.whatwg.org) 
 
-## Summary
+## Closing notes
 
 When I first found this game I thought of creating a tool to minify my code.
 I don't know if I'm going to get better at this game first or make the tool happen.
