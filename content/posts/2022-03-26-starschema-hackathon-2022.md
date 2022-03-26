@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Starschema Hackathon 2022
-tags: [hacathon, my-solution, react, javascript]
+tags: [hackathon, my-solution, react, javascript, challenge]
 cover: 
     image: /images/2022-03-26-starschema-hackathon-2022/cover.jpg
     alt: Inside of empty aircraft before departure
