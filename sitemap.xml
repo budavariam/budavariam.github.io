@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/tags/hacathon/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/javascript/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/my-solution/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/react/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/2022/03/26/starschema-hackathon-2022/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
+    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/tags/css/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,25 +35,7 @@
     <loc>https://budavariam.github.io/tags/css-battle/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/tags/javascript/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/my-solution/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/next.js/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/posts/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/react/</loc>
-    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/tailwind.css/</loc>
