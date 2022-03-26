@@ -7,7 +7,7 @@ cover:
     alt: Inside of empty aircraft before departure
     hidden: false
 date: 2022-03-26
-draft: true
+draft: false
 ---
 
 New Year, new transferred working day. Luckily we had the opportunity to do something fun in a Saturday instead of just extending our work week. So we had another Hackathon! {{< emoji `:tada:` >}}
@@ -85,3 +85,5 @@ We had much fun, I really liked how everyone was into our idea, and we were able
 I'm looking forward to the next Hackathon.
 
 Happy coding!
+
+Cover Photo by [Kelly L](https://www.pexels.com/@kelly-l-1179532/) from [Pexels](https://www.pexels.com/photo/inside-of-empty-aircraft-before-departure-3861783/)
