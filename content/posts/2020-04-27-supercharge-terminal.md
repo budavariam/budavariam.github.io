@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supercharge your command line
-tags: [programming, my-opinion, command-line, fzf, zsh, developer-toolbox]
+tags: [programming, my-opinion, cli, fzf, zsh, developer-toolbox]
 cover:
   image: /images/2020-04-27-supercharge-terminal/fzf.png
   alt: fzf in action
