@@ -64,9 +64,15 @@ categories:
         tech: [plotly-dash]
       - name: user-lookup-slack-bot
         github: https://github.com/budavariam/hackathon-slack-bot
-        description: A slack bot to tell us formatted user info in a Slack slash command search.
+        description: A slack bot to tell us formatted user info in a Slack slash command search. Created for Starschema Hackathon 2021.
         blogpost: /posts/2021/12/12/starschema-hackathon-2021
         tech: [node, slack]
+      - name: seat-booker
+        github: https://github.com/budavariam/hackathon-seat-booker
+        description: Airplane seat booker like app for the office seats. Created for Starschema Hackathon 2022.
+        blogpost: /posts/2022/03/26/starschema-hackathon-2022
+        demo_site: https://budavariam.github.io/hackathon-seat-booker
+        tech: [react]
   - name: Themes / starters
     projects:
       - name: gatsby-theme-classroom-blog
@@ -104,8 +110,7 @@ categories:
         tech: [bash]
       - name: keep-git-activity-graph
         github: https://gist.github.com/budavariam/e946ecde50dee226ed2ec218e0c497d2#file-keep-git-activity-graph-py
-        description:
-          Keep your git commit activity history even if you lose access to the repos, by creating new commits without sensitive data
+        description: Keep your git commit activity history even if you lose access to the repos, by creating new commits without sensitive data
         blogpost: /posts/2022/03/13/keep-your-github-contribution-history
         tech: [python, git-cli]
       - name: git-bisect-playground
