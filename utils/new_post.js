@@ -64,5 +64,6 @@ fs.appendFile(
 );
 
 fs.mkdir(path.join("static", postImageFolderPath), {}, () => {
+    fs.closeSync(fs.openSync(path.join("static", postImageFolderPath, ".gitkeep"), 'w'));
     console.log("DONE")
 })
