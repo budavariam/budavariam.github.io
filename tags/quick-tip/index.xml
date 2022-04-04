@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dotfiles on Mátyás Budavári</title>
-    <link>https://budavariam.github.io/tags/dotfiles/</link>
-    <description>Recent content in dotfiles on Mátyás Budavári</description>
+    <title>quick-tip on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/quick-tip/</link>
+    <description>Recent content in quick-tip on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/dotfiles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/quick-tip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organization Specific Git Config</title>
       <link>https://budavariam.github.io/posts/2022/04/04/organization-specific-git-config/</link>
@@ -18,20 +18,6 @@ When I work on a client&amp;rsquo;s own github, and they provide me an email add
 it&amp;rsquo;s more professional, &lt;em&gt;and most of the time a requirement&lt;/em&gt;, to use it to identify myself.
 Git, by default lets me specify configuration globally, or per repository.
 However, with a little trick I can set it on any abstraction level I need.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Keep Your Configs Safe</title>
-      <link>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/posts/2021/03/06/keep-your-configs-safe/</guid>
-      <description>&lt;p&gt;A few years ago I switched between a few machines on a daily basis,
-and tweaked my environments constantly.
-It was a tedious task to update each of them one by one,
-every time I changed configs or aliases in any of them.
-I figured this has got to be easier somehow,
-and found the hidden world of dotfiles.&lt;/p&gt;</description>
     </item>
     
   </channel>

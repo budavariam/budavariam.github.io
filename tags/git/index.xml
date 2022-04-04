@@ -6,7 +6,20 @@
     <description>Recent content in git on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organization Specific Git Config</title>
+      <link>https://budavariam.github.io/posts/2022/04/04/organization-specific-git-config/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/04/04/organization-specific-git-config/</guid>
+      <description>&lt;p&gt;I often need to present myself differently in git per project.
+When I work on a client&amp;rsquo;s own github, and they provide me an email address,
+it&amp;rsquo;s more professional, &lt;em&gt;and most of the time a requirement&lt;/em&gt;, to use it to identify myself.
+Git, by default lets me specify configuration globally, or per repository.
+However, with a little trick I can set it on any abstraction level I need.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Keep Your Github Contribution History</title>
       <link>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</link>
