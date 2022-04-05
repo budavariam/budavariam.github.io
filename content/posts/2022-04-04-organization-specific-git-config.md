@@ -23,9 +23,9 @@ However, with a little trick I can set it on any abstraction level I need.
 Take the simplest example, that I need to change my email address across different git repositories.
 Imagine I have a folder structure:
 
-- One folder per each clients
-- Personal sandbox
-- Company level internal development
+- Personal sandbox: where I'd like to use my personal address
+- Company level internal development: where I'd like to use my company address
+- One folder per each clients: where I'd like to use my vendor addresses
 
 Each of these folders can contain many repositories, and the git config depends on the top level folder.
 
@@ -63,7 +63,9 @@ You need to do 2 things:
        path = ~/project_dir/personal/.gitconfig
    ```
 
-### Say what?
+> After this, every git repository anywhere under `~/project_dir/personal/` will see your email address as `personal_address@example.com`, based on `~/project_dir/personal/.gitconfig`.
+
+### See what's happening
 
 You need to add an `includeIf` directive to your global git config file.
 
