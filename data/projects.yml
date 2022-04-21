@@ -9,6 +9,11 @@ categories:
         demo_site: https://budavariam.github.io/asciiart-text
         blogpost: /posts/2021/02/27/think-outside-the-box/
         tech: [react]
+      - name: timesheet-helper
+        description: I have to fill my timesheets for work, I thought it would be beneficial if I had a tool to help me balance my daily chaos.
+        github: https://github.com/budavariam/timesheet-helper
+        demo_site: https://budavariam.github.io/timesheet-helper
+        tech: [react, toggl-api]
       - name: revealjs-cli
         description:
           I used VSCode-Reveal, got used to its config but I needed to create slides from the command line.
