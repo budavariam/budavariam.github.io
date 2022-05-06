@@ -121,6 +121,9 @@ categories:
       - name: git-bisect-playground
         description: A playground repository to show how git bisect works.
         github: https://github.com/budavariam/git-bisect-playground
+      - name: docker-arg-env-playground
+        description: A playground repository to show how docker ARG and ENV work.
+        github: https://github.com/budavariam/docker-arg-env-playground
       - name: babel-react-extract-svg
         description: An experiment to extract svg files from React components.
         github: https://github.com/budavariam/babel-react-extract-svg
