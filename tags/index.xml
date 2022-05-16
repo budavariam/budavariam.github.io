@@ -6,7 +6,61 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cli</title>
+      <link>https://budavariam.github.io/tags/cli/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer-toolbox</title>
+      <link>https://budavariam.github.io/tags/developer-toolbox/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/developer-toolbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diagram</title>
+      <link>https://budavariam.github.io/tags/diagram/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/diagram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://budavariam.github.io/tags/github/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://budavariam.github.io/tags/javascript/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>https://budavariam.github.io/tags/mermaid/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>config</title>
       <link>https://budavariam.github.io/tags/config/</link>
@@ -58,15 +112,6 @@
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/hackathon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://budavariam.github.io/tags/javascript/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -125,29 +170,11 @@
     </item>
     
     <item>
-      <title>github</title>
-      <link>https://budavariam.github.io/tags/github/</link>
-      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>python</title>
       <link>https://budavariam.github.io/tags/python/</link>
       <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cli</title>
-      <link>https://budavariam.github.io/tags/cli/</link>
-      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/cli/</guid>
       <description></description>
     </item>
     
@@ -373,15 +400,6 @@
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/strava/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>developer-toolbox</title>
-      <link>https://budavariam.github.io/tags/developer-toolbox/</link>
-      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/developer-toolbox/</guid>
       <description></description>
     </item>
     

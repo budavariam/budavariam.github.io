@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/tags/cli/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/diagram/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/github/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/javascript/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/mermaid/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/2022/05/16/mermaid-diagrams/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
+    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/tags/config/</loc>
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,28 +41,16 @@
     <loc>https://budavariam.github.io/tags/git/</loc>
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/</loc>
-    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/posts/2022/04/04/organization-specific-git-config/</loc>
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/posts/</loc>
-    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/quick-tip/</loc>
-    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/challenge/</loc>
     <lastmod>2022-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/hackathon/</loc>
-    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/javascript/</loc>
     <lastmod>2022-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/my-solution/</loc>
@@ -59,17 +77,11 @@
     <loc>https://budavariam.github.io/tags/tailwind.css/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/tags/github/</loc>
-    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/posts/2022/03/13/keep-your-github-contribution-history/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/python/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/cli/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/node/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
@@ -178,9 +190,6 @@
   </url><url>
     <loc>https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/</loc>
     <lastmod>2021-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
-    <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/text-editor/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>

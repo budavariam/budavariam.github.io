@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mermaid on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/mermaid/</link>
+    <description>Recent content in mermaid on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mermaid Diagrams</title>
+      <link>https://budavariam.github.io/posts/2022/05/16/mermaid-diagrams/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/05/16/mermaid-diagrams/</guid>
+      <description>&lt;p&gt;A picture is worth a thousand words. It&amp;rsquo;s easier to explain the architecture and data flows with diagrams, than with lengthy paragraps.&lt;/p&gt;
+&lt;p&gt;Developers like to stick to their text editors.
+&lt;a href=&#34;https://mermaid-js.github.io/mermaid/&#34;&gt;Mermaid&lt;/a&gt; lets them create flowcharts, sequence diagrams, pie charts and many more diagrams in a declarative way.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
