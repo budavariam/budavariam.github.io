@@ -506,4 +506,13 @@ dash-html-components: 1.1.2
 
 I was not asked for this post, I'm not affiliated with plotly in any way.
 
+## Moving forward
+
+Did you find what you were looking for?
+
+- In the [top of the page](#useful-links-for-getting-started) there are many useful links
+- I wrote about a [demo plotly-dash app](/posts/2021/04/08/strava-activities-with-plotly/) with an example on [github](https://github.com/budavariam/activity-visualizer)
+
+If it's still not enough, feel free to leave a comment below or reach out via [email](mailto:budavariam@gmail.com?subject=Plotly%20blog%20post).
+
 Happy coding!
