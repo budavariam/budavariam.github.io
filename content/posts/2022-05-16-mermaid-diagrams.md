@@ -27,7 +27,7 @@ It was the first time I heard about this library,
 I've been wanting to try it eeveer since.
 Now I finally got a chance to draw some flowcharts.
 
-{{< adsense >}}
+{{< adarticle >}}
 
 ## Flowchart
 
@@ -93,7 +93,7 @@ mmdc -i input.mmd -o output.svg
 mmdc -i input.mmd -o output.png -t dark -b transparent
 ```
 
-{{< adsense >}}
+{{< adarticle >}}
 
 ## Summary
 

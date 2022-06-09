@@ -11,49 +11,16 @@ I just started to try out AdSense. Here's my playground to try out ads.
 
 ## AdDisplay
 
-{{< rawhtml >}}
-    <!-- ad-display -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="{{- .Site.Params.adsense.clientID -}}"
-        data-ad-slot="{{- .Site.Params.adsense.slotDisplay -}}"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-{{< /rawhtml >}}
+{{< addisplay >}}
 
 ## AdMultiplex
 
-{{< rawhtml >}}
-    <!-- ad-multiplex -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="autorelaxed"
-        data-ad-client="{{- .Site.Params.adsense.clientID -}}"
-        data-ad-slot="{{- .Site.Params.adsense.slotMultiplex -}}"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-{{< /rawhtml >}}
+{{< admulti >}}
 
 ## AdInFeed
 
-{{< rawhtml >}}
-    <!-- ad-in-feed -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="fluid"
-        data-ad-layout-key="-gw-3+1f-3d+2z"
-        data-ad-client="{{- .Site.Params.adsense.clientID -}}"
-        data-ad-slot="{{- .Site.Params.adsense.slotInFeed -}}"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-{{< /rawhtml >}}
+{{< adfeed >}}
 
 ## AdInArticle
 
-{{< adsense >}}
-
+{{< adarticle >}}
