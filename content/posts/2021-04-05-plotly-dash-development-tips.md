@@ -192,6 +192,8 @@ plotlyGraph.on("plotly_animationinterrupted", (a) =>
 );
 ```
 
+{{< adarticle >}}
+
 ## State vs Input
 
 Docs: [forum post](https://community.plotly.com/t/what-is-the-difference-between-input-and-state/35219)
@@ -322,6 +324,8 @@ ctx_msg = json.dumps({
     'inputs': ctx.inputs
 }, indent=2)
 ```
+
+{{< adarticle >}}
 
 ## Custom components
 
@@ -490,6 +494,8 @@ I looked for solutions to common problems online, but many times they were not s
 It helped me a lot to get to know the components in github source.
 You can see the installed python packages as well. They follow the same format, and are self-documented.
 It's easy to see which properties were available on the installed versions.
+
+{{< adarticle >}}
 
 ### Used versions
 
