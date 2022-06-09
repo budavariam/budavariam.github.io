@@ -43,7 +43,11 @@ params:
       name: budavariam-blog
     disableLogrocket: false
     adsense:
-      url: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2860273667237650
+      clientID: ca-pub-2860273667237650
+      slotInArticle: "5152120642"
+      slotDisplay: "4554931251"
+      slotMultiplex: "9564264093"
+      slotInFeed: "5164896229"
       name: budavariam.github.io
     disableadsense: false
 

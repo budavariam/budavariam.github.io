@@ -27,6 +27,8 @@ It was the first time I heard about this library,
 I've been wanting to try it eeveer since.
 Now I finally got a chance to draw some flowcharts.
 
+{{< adsense >}}
+
 ## Flowchart
 
 Mermaid docs defines the [basic syntax](https://mermaid-js.github.io/mermaid/#/./flowchart?id=flowcharts-basic-syntax) with simple examples.
@@ -90,6 +92,8 @@ mmdc -i input.mmd -o output.svg
 # Create A PNG With A Dark Theme And Transparent Background
 mmdc -i input.mmd -o output.png -t dark -b transparent
 ```
+
+{{< adsense >}}
 
 ## Summary
 
