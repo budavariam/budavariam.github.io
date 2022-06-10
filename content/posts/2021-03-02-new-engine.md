@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Blog Engine
-tags: [ template, hugo ]
+tags: [ site-updates, template, hugo ]
 date: 2021-03-02
 cover:
     image: /images/2021-03-02-new-engine/cover.png

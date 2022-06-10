@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello world
-tags: [ template ]
+tags: [ site-updates, template ]
 date: 2018-03-03
 ---
 
