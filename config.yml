@@ -48,6 +48,7 @@ params:
       slotDisplay: "4554931251"
       slotMultiplex: "9564264093"
       slotInFeed: "5164896229"
+      slotInFeedDark: "7168382651"
       name: budavariam.github.io
     disableadsense: false
 
