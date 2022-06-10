@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on Mátyás Budavári</title>
-    <link>https://budavariam.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on Mátyás Budavári</description>
+    <title>site-updates on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/site-updates/</link>
+    <description>Recent content in site-updates on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/site-updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sticky Table Of Contents Navigation in Hugo</title>
       <link>https://budavariam.github.io/posts/2022/06/10/sticky-table-of-contents-navigation-in-hugo/</link>
@@ -14,16 +14,6 @@
       
       <guid>https://budavariam.github.io/posts/2022/06/10/sticky-table-of-contents-navigation-in-hugo/</guid>
       <description>&lt;p&gt;Nowadays it&amp;rsquo;s pretty common to have the Table Of Contents on the side, that follows the user&amp;rsquo;s scrolling. I&amp;rsquo;ve decided to see what it takes to add it to my Hugo blog.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Deploy With Github Actions</title>
-      <link>https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/</link>
-      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/posts/2021/05/17/deploy-with-github-actions/</guid>
-      <description>&lt;p&gt;Recently I tried Github actions to deploy some of my static sites, and I&amp;rsquo;ve been quite happy with its capabilities.
-Let me share my configs for different kinds of setups.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,6 +26,16 @@ Let me share my configs for different kinds of setups.&lt;/p&gt;</description>
 I decided to reevaluate my previous choice for a blog engine.
 I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; and
 &lt;a href=&#34;https://www.gatsbyjs.com/&#34;&gt;Gatsby.js&lt;/a&gt; before, now I wanted something new.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello world</title>
+      <link>https://budavariam.github.io/posts/2018/03/03/hello-world/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2018/03/03/hello-world/</guid>
+      <description>&lt;p&gt;I just started my &lt;a href=&#34;https://pages.github.com/&#34;&gt;github pages&lt;/a&gt;
+site supported by &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
