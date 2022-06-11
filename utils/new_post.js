@@ -24,9 +24,9 @@ const getDate = () => {
     const day = pad(today.getDate())
     return `${year}-${month}-${day}`
 }
-const getFileName = (title, date) => {
-    return `${date}-${title}.md`
-}
+// const getFileName = (title, date) => {
+//     return `${date}-${title}.md`
+// }
 const getPostFolderName = (title, date) => {
     return `${date}-${title}`
 }
@@ -51,7 +51,7 @@ draft: true
 const newPostTitle = commandLineArgs[0]
 const formattedCurrentDate = getDate()
 const postLocation = ["content", "posts", getPostFolderName(newPostTitle, formattedCurrentDate)]
-const newFilePath = path.join(...postLocation, getFileName(newPostTitle, formattedCurrentDate))
+const newFilePath = path.join(...postLocation, "index.md")
 const postParentPath = path.join(...postLocation)
 
 fs.mkdir(postParentPath, {}, () => {
