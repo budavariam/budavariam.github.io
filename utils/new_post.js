@@ -27,7 +27,7 @@ const getDate = () => {
 const getFileName = (title, date) => {
     return `${date}-${title}.md`
 }
-const getImageFolderName = (title, date) => {
+const getPostFolderName = (title, date) => {
     return `${date}-${title}`
 }
 
@@ -35,10 +35,12 @@ const getDefaultContent = (title) => `---
 layout: post
 title: ${title.split("-").map(capitalize).join(" ")}
 tags: []
-cover: 
-    image: /${postImageFolderPath}/cover.png
+cover:
     alt: Cover
     hidden: true
+resources:
+  - name: cover
+    src: cover.png
 date: ${formattedCurrentDate}
 draft: true
 ---
@@ -46,24 +48,23 @@ draft: true
 <!--more-->
 `
 
-const postLocation = ["content", "posts"]
 const newPostTitle = commandLineArgs[0]
 const formattedCurrentDate = getDate()
+const postLocation = ["content", "posts", getPostFolderName(newPostTitle, formattedCurrentDate)]
 const newFilePath = path.join(...postLocation, getFileName(newPostTitle, formattedCurrentDate))
-const postImageFolderPath = path.join("images", getImageFolderName(newPostTitle, formattedCurrentDate))
+const postParentPath = path.join(...postLocation)
 
-fs.appendFile(
-    newFilePath,
-    getDefaultContent(newPostTitle, postImageFolderPath),
-    (err) => {
-        if (err) {
-            throw err
+fs.mkdir(postParentPath, {}, () => {
+    fs.appendFile(
+        newFilePath,
+        getDefaultContent(newPostTitle),
+        (err) => {
+            if (err) {
+                throw err
+            }
+            console.log(`New post created @ '%s'`, newFilePath);
         }
-        console.log(`New post created @ '%s'`, newFilePath);
-    }
-);
+    );
 
-fs.mkdir(path.join("static", postImageFolderPath), {}, () => {
-    fs.closeSync(fs.openSync(path.join("static", postImageFolderPath, ".gitkeep"), 'w'));
     console.log("DONE")
 })
