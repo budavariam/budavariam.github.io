@@ -12,6 +12,7 @@ resources:
     src: cover.jpeg
 featured:
   - "home"
+featured_weight: 2
 date: 2021-03-13
 ---
 
