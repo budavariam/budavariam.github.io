@@ -139,6 +139,9 @@ Here's the list of all available events extracted from the source code:
 
 #### My extraction method
 
+I cloned the plotly.js [git repo](https://github.com/plotly/plotly.js/).
+Then run a search for all unique occurances of the plotly events that were sent with `emit` by using [ag, the silver seracher](https://github.com/ggreer/the_silver_searcher).
+
 ```bash
 git clone git@github.com:plotly/plotly.js.git
 cd plotly.js
