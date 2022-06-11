@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/featured/home/</link>
+    <description>Recent content in home on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/featured/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starschema Hackathon 2021</title>
+      <link>https://budavariam.github.io/posts/2021/12/12/starschema-hackathon-2021/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/12/12/starschema-hackathon-2021/</guid>
+      <description>&lt;p&gt;In Hungary, around the end of the year, we usually have some mandatory transferred workdays,
+when we have to work on Saturdays instead of the days around holidays.
+It&amp;rsquo;s not unusual for companies to let their workers spend their time in a more fun way,
+that&amp;rsquo;s what we did with an optional hackathon.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MSSQL Server Basics</title>
+      <link>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/09/29/mssql-server-basics/</guid>
+      <description>&lt;p&gt;In the past couple of weeks I&amp;rsquo;ve started to work with Microsoft SQL Server.
+I have a pretty good founation of SQL from high school, but I&amp;rsquo;ve only used PostgreSQL so far in my carreer.
+I collect the snippets I found to be the most useful ones that helped me getting started.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plotly Dash Development Tips</title>
+      <link>https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/04/05/plotly-dash-development-tips/</guid>
+      <description>&lt;p&gt;Last year I was working on some dash-plotly applications/dashboards.
+It was confusing at first, I learned a lot during that time, I&amp;rsquo;d like to share my gathered experience.
+The docs already contain useful information, I do not wish to repeat them.
+There are many example pages in github, my goal is to collect my most visited pages here,
+so it&amp;rsquo;ll be easier to start out with development.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Think Outside The Box</title>
+      <link>https://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/02/27/think-outside-the-box/</guid>
+      <description>&lt;p&gt;In the past few days I&amp;rsquo;ve been working in manual mode on multiple linux boxes simultaneously.
+I have to follow logs, modify configurations and kill/start applications all at once.
+I got confused pretty fast of what server am I connected to in a certain console pane, and where are my operations.
+On top of that my ISP had a huge traffic hit these days, and my VPN connection dropped constantly.
+I dusted off my knowledge about some tools that boosted my productivity.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Clipboard Goodies For Productivity</title>
+      <link>https://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2021/01/20/clipboard-goodies-for-productivity/</guid>
+      <description>&lt;p&gt;Have you ever typed ctrl-c instead of ctrl-v and had to recopy again?
+Have you ever needed to copy and paste multiple entries at once from a page causing you to switch back and forth?
+Have you ever needed to copy the output of a program running in the terminal?
+I did, and got fed up with them almost 5 years ago, I&amp;rsquo;ll show you how you can eliminate these problems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Things I Wish I Had Known As a Junior</title>
+      <link>https://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2020/09/19/things-i-wish-i-had-known-as-a-junior/</guid>
+      <description>&lt;p&gt;A few days ago I read a question in twitter, what is the thing that you wish you had known when you started to code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Supercharge your command line</title>
+      <link>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</guid>
+      <description>&lt;p&gt;The commmand line can be your best friend during development, if you take some time to get to know its capabilities.
+But even if you know what it can help you with, you can still extend it.
+I&amp;rsquo;d like to introduce you some of my favourite tools, &lt;code&gt;fzf&lt;/code&gt;, and &lt;code&gt;oh-my-zsh&lt;/code&gt;.
+By the end of this post I hope you&amp;rsquo;ll see how well they can work together with you.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
