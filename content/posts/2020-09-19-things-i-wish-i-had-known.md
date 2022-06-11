@@ -2,6 +2,12 @@
 layout: post
 title: Things I Wish I Had Known As a Junior
 tags: [ programming, my-advice, keyboard, developer-toolbox ]
+cover: 
+    image: /images/2020-09-19-things-i-wish-i-had-known/cover.jpg
+    alt: Black and Gray Laptop Computer Turned on Doing Computer Codes
+    hidden: false
+featured:
+  - "home"
 date: 2020-09-19
 ---
 
@@ -178,3 +184,5 @@ It takes effort to keep the docs up to date, but if you handle them as the main 
 ...
 
 Happz coding$
+
+Cover Photo by [Christina Morillo](https://www.pexels.com/@divinetechygirl) from [Pexels](https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/)

@@ -6,6 +6,8 @@ cover:
   image: /images/2020-04-27-supercharge-terminal/fzf.png
   alt: fzf in action
   hidden: false
+featured:
+  - "home"
 date: 2020-04-27
 ---
 

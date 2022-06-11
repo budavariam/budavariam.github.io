@@ -52,6 +52,7 @@ You can edit the content and changes trigger regeneration.
     width
   ```
 
+- [Taxonomies](https://gohugo.io/content-management/taxonomies/) are awesome to create custom lists of posts
 - [Scratch](https://gohugo.io/functions/scratch/)
   - create a static map of values:
 

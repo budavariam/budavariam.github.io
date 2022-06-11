@@ -6,6 +6,8 @@ cover:
     image: /images/2021-01-20-clipboard-goodies/cover.jpg
     alt: opened book
     hidden: false
+featured:
+  - "home"
 date: 2021-01-20
 ---
 

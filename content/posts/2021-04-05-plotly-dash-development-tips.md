@@ -7,6 +7,8 @@ cover:
   alt: Cover photo from https://plotly.com/dash/
   hidden: false
 date: 2021-04-05
+featured:
+  - "home"
 draft: false
 ---
 

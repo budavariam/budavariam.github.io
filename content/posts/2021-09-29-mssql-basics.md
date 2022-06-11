@@ -6,6 +6,9 @@ cover:
   image: /images/2021-09-29-mssql-server-basics/cover.jpg
   alt: Server room
   hidden: false
+featured:
+  - "home"
+featured_weight: 1
 date: 2021-09-29
 draft: false
 ---

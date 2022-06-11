@@ -6,6 +6,8 @@ cover:
   image: /images/2021-12-12-starschema-hackathon-2021/cover.jpg
   alt: close up view of system hacking in a monitor
   hidden: false
+featured:
+  - "home"
 date: 2021-12-12
 draft: false
 ---
