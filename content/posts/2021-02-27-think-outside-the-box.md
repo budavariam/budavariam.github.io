@@ -2,6 +2,13 @@
 layout: post
 title: Think Outside The Box
 tags: [ developer-toolbox, productivity, ssh, tmux, screen, byobu ]
+cover: 
+    image: /images/2021-02-27-think-outside-the-box/cover.jpg
+    alt: Data Codes through Eyeglasses
+    hidden: false
+featured:
+  - "home"
+featured_weight: 2
 date: 2021-02-27
 ---
 
@@ -253,3 +260,5 @@ byobu-tmux    # any screen options can be given
 > Note that Byobu can use the underlying backend's keybindings as well.
 
 Happy coding!
+
+Cover Photo by [Kevin Ku](https://www.pexels.com/@kevin-ku-92347/) from [Pexels](https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/)

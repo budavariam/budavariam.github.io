@@ -102,7 +102,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "Hi there \U0001F44B"
-        Content: I like to post about the tools I use, and the productivity hacks I come across. I hope you'll enjoy my content.
+        Content: I like to post about the [tools I use](/tags/developer-toolbox/), and the [productivity hacks](/tags/productivity/) I come across. You can see links to my public profiles below, and some of my favourite posts. I hope you'll enjoy my content.
 
     socialIcons:
         - name: gmail
