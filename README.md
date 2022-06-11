@@ -70,3 +70,12 @@ You can edit the content and changes trigger regeneration.
   - create a new folder under `content` e.g: `a`
   - create a file for the list template under `layout/section/a.html`
   - create a folder under `layout/a` and put the files that you want to override from `_default` like `single.html`
+
+```gotemplate
+{{ with .Resources.GetMatch "img.png" }}
+  <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}">
+{{ end }}
+
+{{- $images := .Resources.Match "*" -}}
+{{ printf "IMAGES %#v " ( len $images ) }}
+```
