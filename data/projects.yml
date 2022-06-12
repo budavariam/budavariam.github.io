@@ -2,6 +2,7 @@ categories:
   - name: Tools
     projects:
       - name: asciiart-text
+        image: asciiart-text.png
         description: I created a site for a figlet text
           generator based on [this](https://patorjk.com/software/taag/#p=display&h=3&f=Rectangles&t=Type%20Something%20)
           awesome tool.
@@ -10,11 +11,13 @@ categories:
         blogpost: /posts/2021/02/27/think-outside-the-box/
         tech: [react]
       - name: timesheet-helper
+        image: timesheet-helper.png
         description: I have to fill my timesheets for work, I thought it would be beneficial if I had a tool to help me balance my daily chaos.
         github: https://github.com/budavariam/timesheet-helper
         demo_site: https://budavariam.github.io/timesheet-helper
         tech: [react, toggl-api]
       - name: revealjs-cli
+        image: revealjs-cli.png
         description:
           I used VSCode-Reveal, got used to its config but I needed to create slides from the command line.
           So I extracted its essence.
@@ -23,6 +26,7 @@ categories:
         blogpost: /posts/2020/12/17/reveal.js-cli/
         tech: [javascript]
       - name: workout-helper
+        image: workout-helper.png
         github: https://github.com/budavariam/workout-helper
         description: I regularly worked out during the 2020 pandemic,
           I had my instructions, but struggled with timing,
@@ -30,6 +34,7 @@ categories:
           I asked mac's embedded voice synthetizer.
         tech: [go]
       - name: show-code-examples
+        image: show-code-examples.png
         github: https://github.com/budavariam/show-code-examples
         demo_site: https://budavariam.github.io/show-code-examples
         description:
@@ -38,6 +43,7 @@ categories:
         npm: https://www.npmjs.com/package/show-code-examples
         tech: [react]
       - name: absence-report
+        image: absence-report.png
         github: https://github.com/budavariam/absence-report
         blogpost: /posts/2021/09/25/calendar-based-absence-reporting/
         description:
@@ -47,32 +53,38 @@ categories:
   - name: Fun projects
     projects:
       - name: matytermind
+        image: matytermind.png
         github: https://github.com/budavariam/Matytermind
         demo_site: http://matytermind.herokuapp.com/
         description: A simple mastermind implementation. Backend handles the result evaluation.
         tech: [react, node, typescript]
       - name: quarantine-bingo
+        image: quarantine-bingo.png
         github: https://github.com/budavariam/quarantine-bingo
         demo_site: https://budavariam.github.io/quarantine-bingo
         description: A simple 5x5 bingo table for things that happened during the 2020 pandemic.
         tech: [javascript]
       - name: makecode-happybday
+        image: makecode-happybday.png
         github: https://github.com/budavariam/makecode-happybday
         demo_site: https://budavariam.github.io/makecode-happybday
         description: A circuit of a micro:bit playing happy birthday.
         tech: [makecode]
       - name: activity-visualizer
+        image: activity-visualizer.png
         github: https://github.com/budavariam/activity-visualizer
         demo_site: https://budavariam.github.io/activity-visualizer
         description: A plotly-dash app with authentication and strava connection showing heartrate data from runs.
         blogpost: /posts/2021/04/08/strava-activities-with-plotly/
         tech: [plotly-dash]
       - name: user-lookup-slack-bot
+        image: user-lookup-slack-bot.png
         github: https://github.com/budavariam/hackathon-slack-bot
         description: A slack bot to tell us formatted user info in a Slack slash command search. Created for Starschema Hackathon 2021.
         blogpost: /posts/2021/12/12/starschema-hackathon-2021
         tech: [node, slack]
       - name: seat-booker
+        image: seat-booker.png
         github: https://github.com/budavariam/hackathon-seat-booker
         description: Airplane seat booker like app for the office seats. Created for Starschema Hackathon 2022.
         blogpost: /posts/2022/03/26/starschema-hackathon-2022
@@ -81,12 +93,14 @@ categories:
   - name: Themes / starters
     projects:
       - name: gatsby-theme-classroom-blog
+        image: gatsby-theme-classroom-blog.png
         github: https://github.com/budavariam/gatsby-theme-classroom-blog
         demo_site: https://budavariam.github.io/gatsby-theme-classroom-blog
         description: I held some internal trainings, I created a static site theme to keep a consistent workflow.
         npm: https://www.npmjs.com/package/gatsby-theme-classroom-blog
         tech: [gatsby.js]
       - name: flask-starter
+        image: flask-starter.png
         description: At some point I created many flask applications,
           it helped to have a simple boilerplate starter.
         github: https://github.com/budavariam/flask-starter
@@ -94,6 +108,7 @@ categories:
   - name: Learning
     projects:
       - name: learn-vim
+        image: learn-vim.png
         github: https://github.com/budavariam/learn-vim
         demo_site: https://budavariam.github.io/learn-vim
         tech: [react]
@@ -121,9 +136,11 @@ categories:
       - name: git-bisect-playground
         description: A playground repository to show how git bisect works.
         github: https://github.com/budavariam/git-bisect-playground
+        tech: [git]
       - name: docker-arg-env-playground
         description: A playground repository to show how docker ARG and ENV work.
         github: https://github.com/budavariam/docker-arg-env-playground
+        tech: [docker]
       - name: babel-react-extract-svg
         description: An experiment to extract svg files from React components.
         github: https://github.com/budavariam/babel-react-extract-svg
@@ -135,17 +152,20 @@ categories:
   - name: Personal
     projects:
       - name: advent_of_code
+        image: aoc.png
         github: https://github.com/budavariam/advent_of_code
         blogpost: /posts/2020/12/01/advent-of-code/
         description: My solutions to the riddles of advent-of-code.
         tech: [python, typescript, javascript, go]
       - name: css-battle-showcase
+        image: cssbattle.png
         github: https://github.com/budavariam/css-battle-showcase
         blogpost: /posts/2022/03/14/css-battle-showcase/
         description: My solutions to [CSS Battle](https://cssbattle.dev) code golf.
         demo_site: https://budavariam.github.io/css-battle-showcase/
         tech: [css, react.js, next.js, tailwind.css]
       - name: dotfiles
+        image: dotfiles.png
         github: https://github.com/budavariam/dotfiles
         description: My general configs to have a consistent experience when I move between machines.
         blogpost: /posts/2021/03/06/keep-your-configs-safe/
