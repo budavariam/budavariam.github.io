@@ -135,17 +135,20 @@ categories:
   - name: Personal
     projects:
       - name: advent_of_code
+        image: aoc.png
         github: https://github.com/budavariam/advent_of_code
         blogpost: /posts/2020/12/01/advent-of-code/
         description: My solutions to the riddles of advent-of-code.
         tech: [python, typescript, javascript, go]
       - name: css-battle-showcase
+        image: cssbattle.png
         github: https://github.com/budavariam/css-battle-showcase
         blogpost: /posts/2022/03/14/css-battle-showcase/
         description: My solutions to [CSS Battle](https://cssbattle.dev) code golf.
         demo_site: https://budavariam.github.io/css-battle-showcase/
         tech: [css, react.js, next.js, tailwind.css]
       - name: dotfiles
+        image: dotfiles.png
         github: https://github.com/budavariam/dotfiles
         description: My general configs to have a consistent experience when I move between machines.
         blogpost: /posts/2021/03/06/keep-your-configs-safe/
