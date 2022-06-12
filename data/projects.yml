@@ -2,6 +2,7 @@ categories:
   - name: Tools
     projects:
       - name: asciiart-text
+        image: asciiart-text.png
         description: I created a site for a figlet text
           generator based on [this](https://patorjk.com/software/taag/#p=display&h=3&f=Rectangles&t=Type%20Something%20)
           awesome tool.
@@ -10,11 +11,13 @@ categories:
         blogpost: /posts/2021/02/27/think-outside-the-box/
         tech: [react]
       - name: timesheet-helper
+        image: timesheet-helper.png
         description: I have to fill my timesheets for work, I thought it would be beneficial if I had a tool to help me balance my daily chaos.
         github: https://github.com/budavariam/timesheet-helper
         demo_site: https://budavariam.github.io/timesheet-helper
         tech: [react, toggl-api]
       - name: revealjs-cli
+        image: revealjs-cli.png
         description:
           I used VSCode-Reveal, got used to its config but I needed to create slides from the command line.
           So I extracted its essence.
@@ -23,6 +26,7 @@ categories:
         blogpost: /posts/2020/12/17/reveal.js-cli/
         tech: [javascript]
       - name: workout-helper
+        image: workout-helper.png
         github: https://github.com/budavariam/workout-helper
         description: I regularly worked out during the 2020 pandemic,
           I had my instructions, but struggled with timing,
@@ -30,6 +34,7 @@ categories:
           I asked mac's embedded voice synthetizer.
         tech: [go]
       - name: show-code-examples
+        image: show-code-examples.png
         github: https://github.com/budavariam/show-code-examples
         demo_site: https://budavariam.github.io/show-code-examples
         description:
@@ -38,6 +43,7 @@ categories:
         npm: https://www.npmjs.com/package/show-code-examples
         tech: [react]
       - name: absence-report
+        image: absence-report.png
         github: https://github.com/budavariam/absence-report
         blogpost: /posts/2021/09/25/calendar-based-absence-reporting/
         description:
