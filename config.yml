@@ -22,8 +22,6 @@ disqusShortname: budavariam
 
 # Enter your AddThis script url
 
-# ga v3
-# googleAnalytics: UA-115499513-1
 # ga v4
 googleAnalytics: G-H96FB8VYL2
 
@@ -37,6 +35,7 @@ params:
     author: Mátyás Budavári
     images: [ "/logo.png" ]
     addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
+    googleAnalyticsUA: UA-115499513-1
     convertkit:
       uid: 7d9354cde4
       url: https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js
