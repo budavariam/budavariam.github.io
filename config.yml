@@ -22,7 +22,10 @@ disqusShortname: budavariam
 
 # Enter your AddThis script url
 
-googleAnalytics: UA-115499513-1
+# ga v3
+# googleAnalytics: UA-115499513-1
+# ga v4
+googleAnalytics: G-H96FB8VYL2
 
 permalinks: 
   posts: "/posts/:year/:month/:day/:title/"
