@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pnpm on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/pnpm/</link>
+    <description>Recent content in pnpm on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/pnpm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Save Disk Space with pnpm</title>
+      <link>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</guid>
+      <description>&lt;p&gt;I like to write my projects in JavaScript.
+Since I don&amp;rsquo;t have time to juggle between all of them, it&amp;rsquo;s inevitable that they&amp;rsquo;re abandoned after a while and left as they were last touched for eternity.
+I bet this story feels familiar.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

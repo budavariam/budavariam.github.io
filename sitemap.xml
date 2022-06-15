@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://budavariam.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/javascript/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/</loc>
-    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/node/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/pnpm/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/programming/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
+    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/hugo/</loc>
     <lastmod>2022-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/site-updates/</loc>
@@ -17,22 +38,13 @@
     <loc>https://budavariam.github.io/posts/2022/06/10/sticky-table-of-contents-navigation-in-hugo/</loc>
     <lastmod>2022-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
-    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/cli/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/diagram/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/github/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/javascript/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/mermaid/</loc>
@@ -91,9 +103,6 @@
   </url><url>
     <loc>https://budavariam.github.io/tags/python/</loc>
     <lastmod>2022-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/node/</loc>
-    <lastmod>2022-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</loc>
     <lastmod>2022-01-02T00:00:00+00:00</lastmod>
@@ -252,9 +261,6 @@
     <lastmod>2021-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2021/02/18/grep-sed-awk-filters/</loc>
-    <lastmod>2021-02-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/programming/</loc>
     <lastmod>2021-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/sed/</loc>

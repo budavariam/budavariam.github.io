@@ -6,7 +6,18 @@
     <description>Recent content in node on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Save Disk Space with pnpm</title>
+      <link>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</guid>
+      <description>&lt;p&gt;I like to write my projects in JavaScript.
+Since I don&amp;rsquo;t have time to juggle between all of them, it&amp;rsquo;s inevitable that they&amp;rsquo;re abandoned after a while and left as they were last touched for eternity.
+I bet this story feels familiar.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Process *nix pipe with a script</title>
       <link>https://budavariam.github.io/posts/2022/01/02/process-nix-pipe-with-a-script/</link>
