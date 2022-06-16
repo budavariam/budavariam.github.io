@@ -34,7 +34,7 @@ Npm has a *huge* downside illustrated below.
     align="center"
 >}}
 
-For every project that you're woking on, it'll create a new **sparate** `node_modules` folder, downloading all dependencies and pack it into a single tree structure.
+For every project that you're woking on, it'll create a new **separate** `node_modules` folder, downloading all dependencies and pack it into a single tree structure.
 This `node_modules` folder can quickly grow to hundreds of megabytes even if you only use a small set of dependencies.
 That's because your dependencies most likely depend on other projects, and so on...
 
