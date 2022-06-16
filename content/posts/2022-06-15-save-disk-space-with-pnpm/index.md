@@ -62,7 +62,7 @@ In the end I managed to save up around 20GB of space... I let it sink in. 20GB.
 ### How to solve it
 
 At first I thought about moving to docker for all frontend related development.
-I could use development images, build the code there and movee the problem away with one level of abstraction.
+I could use development images, build the code there and move the problem away with one level of abstraction.
 
 I already have a preferred way to clean up dangling images,
 but I felt like there must be a better way to solve the space problem globally.
@@ -80,6 +80,9 @@ It's really pleasing.
 I also like that it can coexist with npm, if you have some special needs that it can not yet solve with pnpm.
 
 The project has similar [motivation](https://pnpm.io/motivation) than my needs, even it's name stands for [performant npm](https://pnpm.io/faq#what-does-pnpm-stand-for).
+
+<!-- https://twitter.com/HemSays/status/1434921646083563525 -->
+{{< twitter HemSays 1434921646083563525 >}}
 
 ## Getting started with pnpm
 
