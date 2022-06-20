@@ -21,6 +21,6 @@
   "license": "MIT",
   "homepage": "https://github.com/budavariam/budavariam.github.io#readme",
   "devDependencies": {
-    "svgo": "^2.2.0"
+    "svgo": "^2.8.0"
   }
 }
