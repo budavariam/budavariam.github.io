@@ -30,8 +30,9 @@ I fired up AdSense and started to learn more about Google Analytics.
   - [Analytics Docs](https://developers.google.com/analytics)
 - [Google AdSense](https://www.google.com/adsense/).
   - [AdSense Getting Started](https://www.google.com/adsense/start/)
-- [Google Search console](https://search.google.com/search-console?utm_source=about-page&resource_id=https://budavariam.github.io/). 
+- [Google Search console](https://search.google.com/search-console?utm_source=about-page&resource_id=https://budavariam.github.io/).
   - [Google Search Central Docs](https://developers.google.com/search)
+  - [Searh Console Insights](https://search.google.com/search-console/insights/u/0?resource_id=https://budavariam.github.io/)
 
 ## AD Layout Test
 
