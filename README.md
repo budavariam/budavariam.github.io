@@ -79,3 +79,19 @@ You can edit the content and changes trigger regeneration.
 {{- $images := .Resources.Match "*" -}}
 {{ printf "IMAGES %#v " ( len $images ) }}
 ```
+
+- Debug partials whether they show up or not
+
+  ```html
+  <style>body{background:red!important;}</style>
+  ```
+
+- [Page variables](https://gohugo.io/variables/page/)
+
+  ```html
+  {{ printf "File: %s" .File }}<br/>
+  {{ printf "Content: %s" .Content }}<br/>
+  {{ printf "Data: %s" .Data }}<br/>
+  {{ printf "IsPage: %s" .IsPage }}<br/>
+  {{ printf "Kind: %s" .Kind }}<br/>
+  ```
