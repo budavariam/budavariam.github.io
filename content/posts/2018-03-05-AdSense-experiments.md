@@ -34,38 +34,6 @@ I fired up AdSense and started to learn more about Google Analytics.
   - [Google Search Central Docs](https://developers.google.com/search)
   - [Searh Console Insights](https://search.google.com/search-console/insights/u/0?resource_id=https://budavariam.github.io/)
 
-## AD Layout Test
-
-Here's my playground to try out how the ads look like.
-I like to have a centralized place to see how dark mode behaves.
-How width, height, borders and custom colors when I modify them in the website.
-
-Feel free to move on...
-
-### AdDisplay
-
-How ads look like as display.
-
-{{< addisplay >}}
-
-### AdMultiplex
-
-How ads look like in a multiplex style.
-
-{{< admulti >}}
-
-How ads look like in the feed.
-
-### AdInFeed
-
-{{< adfeed >}}
-
-### AdInArticle
-
-How ads look like in the articles.
-
-{{< adarticle >}}
-
 ## Summary
 
 Happy coding!
