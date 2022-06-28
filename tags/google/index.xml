@@ -6,7 +6,16 @@
     <description>Recent content in google on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AdSense Experiments</title>
+      <link>https://budavariam.github.io/posts/2022/06/09/adsense-experiments/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/06/09/adsense-experiments/</guid>
+      <description>&lt;p&gt;I just started to get to know how ads work, I&amp;rsquo;m going to experimnt with the different capabilities of Google AdSense and how it can be connected with Google Analytics.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Calendar Based Absence Reporting</title>
       <link>https://budavariam.github.io/posts/2021/09/25/calendar-based-absence-reporting/</link>
