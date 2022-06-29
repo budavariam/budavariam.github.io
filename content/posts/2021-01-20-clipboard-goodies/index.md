@@ -127,6 +127,21 @@ echo "Text to copy" > /dev/clipboard
 cat /dev/clipboard
 ```
 
+### oh-my-zsh
+
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) has a clever way to detect the OS capabilities.
+You can use its `clipcopy` and `clippaste` functions out of the box in most systems.
+
+```bash
+# copy text to clipboard by piping to `clipcopy`
+echo "Text to copy" | clipcopy
+
+# paste text from clipboard by piping from `clippaste`
+clippaste | less
+```
+
+{{< hgist 300px budavariam 128e90b9278ea89f979c6a6cdd8630e1 >}}
+
 ## Web Browsers
 
 In web browsers you can use the modern
