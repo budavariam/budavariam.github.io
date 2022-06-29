@@ -5,12 +5,13 @@ tags: [ SEO, ads, adsense, google ]
 date: 2022-06-09
 ---
 
-I just started to get to know how ads work, I'm going to experimnt with the different capabilities of Google AdSense and how it can be connected with Google Analytics.
+I just started to get to know how ads work, I'm going to experiment with the different capabilities of Google AdSense and how it can be connected with Google Analytics.
 
 <!--more-->
 
 I fired up AdSense and started to learn more about Google Analytics v4.
-I've used Google Analytics v3 (Universal Analytics) before, but it's [going to be deprecated](https://support.google.com/analytics/answer/11583528?hl=en) next year. They wrote a [blog post](https://blog.google/products/marketingplatform/analytics/prepare-for-future-with-google-analytics-4/?utm_campaign=2022-q1-gbl-all-gafree) about it as well.
+I've used Google Analytics v3 (Universal Analytics) before, but it's [going to be deprecated](https://support.google.com/analytics/answer/11583528?hl=en) next year.
+They wrote a [blog post](https://blog.google/products/marketingplatform/analytics/prepare-for-future-with-google-analytics-4/?utm_campaign=2022-q1-gbl-all-gafree) about it as well.
 
 ## Libs I Use for my Site
 
@@ -36,13 +37,13 @@ I've used Google Analytics v3 (Universal Analytics) before, but it's [going to b
 ### Google Tag Manager
 
 - [Home page](https://tagmanager.google.com/)
-- [Tag preview with Tag Assistent](https://tagassistant.google.com/)
+- [Tag preview with Tag Assistant](https://tagassistant.google.com/)
 
 ### Google Search Console
 
-- [Google Search console](https://search.google.com/search-console?utm_source=about-page&resource_id=https://budavariam.github.io/).
+- [Google Search Console](https://search.google.com/search-console?utm_source=about-page&resource_id=https://budavariam.github.io/).
 - [Google Search Central Docs](https://developers.google.com/search)
-- [Searh Console Insights](https://search.google.com/search-console/insights/u/0?resource_id=https://budavariam.github.io/)
+- [Search Console Insights](https://search.google.com/search-console/insights/u/0?resource_id=https://budavariam.github.io/)
 
 ## Summary
 
