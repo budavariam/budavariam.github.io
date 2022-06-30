@@ -170,4 +170,10 @@ copy($0.value)
 copy(window.myGlobalObject)
 ```
 
+## Closing Words
+
+I hope you've found it useful.
+
+Cover Photo by [Negative Space](https://www.pexels.com/@negativespace/) from [Pexels](https://www.pexels.com/photo/coffee-notebook-writing-computer-34601/)
+
 Happy coding!
