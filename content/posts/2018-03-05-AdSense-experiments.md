@@ -40,6 +40,7 @@ They wrote a [blog post](https://blog.google/products/marketingplatform/analytic
 - [Home page](https://tagmanager.google.com/)
 - [Tag preview with Tag Assistant](https://tagassistant.google.com/)
 - [Recommended events](https://support.google.com/analytics/answer/9267735?hl=en)
+- [Enhanced measurement events](https://support.google.com/analytics/answer/9216061?hl=en)
 
 ### Google Search Console
 
