@@ -23,7 +23,7 @@ disqusShortname: budavariam
 # Enter your AddThis script url
 
 # ga v4
-# googleAnalytics: "SETUP VIA TAGMANAGER"
+googleAnalytics: G-H96FB8VYL2
 
 permalinks: 
   posts: "/posts/:year/:month/:day/:title/"
