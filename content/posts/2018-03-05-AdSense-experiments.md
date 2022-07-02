@@ -29,6 +29,7 @@ They wrote a [blog post](https://blog.google/products/marketingplatform/analytic
 
 - [Google Analytics](https://analytics.google.com/analytics/web/).
 - [Analytics Docs](https://developers.google.com/analytics)
+- [Demo Accounts](https://support.google.com/analytics/answer/6367342?hl=en#zippy=%2Cin-this-article)
 
 ### Google AdSense
 
