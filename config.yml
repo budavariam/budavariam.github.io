@@ -23,7 +23,7 @@ disqusShortname: budavariam
 # Enter your AddThis script url
 
 # ga v4
-googleAnalytics: G-H96FB8VYL2
+# googleAnalytics: "SETUP VIA TAGMANAGER"
 
 permalinks: 
   posts: "/posts/:year/:month/:day/:title/"
@@ -36,6 +36,7 @@ params:
     images: [ "/logo.png" ]
     addthisurl: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-602c2f70bcebfd93"
     googleAnalyticsUA: UA-115499513-1
+    googleTagManager: GTM-NB9Q2MT
     convertkit:
       uid: 7d9354cde4
       url: https://fabulous-experimenter-1073.ck.page/7d9354cde4/index.js
