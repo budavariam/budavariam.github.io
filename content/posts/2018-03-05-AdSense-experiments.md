@@ -31,6 +31,8 @@ They wrote a [blog post](https://blog.google/products/marketingplatform/analytic
 - [Analytics Docs](https://developers.google.com/analytics)
 - [Demo Accounts](https://support.google.com/analytics/answer/6367342?hl=en#zippy=%2Cin-this-article)
 
+{{< youtube  id="cN1Jcfxi4qs" title="Google Analytics 4 Tutorial for Beginners (2022)" >}}
+
 ### Google AdSense
 
 - [AdSense Getting Started](https://www.google.com/adsense/start/)
@@ -41,6 +43,9 @@ They wrote a [blog post](https://blog.google/products/marketingplatform/analytic
 - [Tag preview with Tag Assistant](https://tagassistant.google.com/)
 - [Recommended events](https://support.google.com/analytics/answer/9267735?hl=en)
 - [Enhanced measurement events](https://support.google.com/analytics/answer/9216061?hl=en)
+- [Gtag.js reference at Google Developers](https://developers.google.com/tag-platform/gtagjs/configure)
+
+{{< youtube id="u_x5lVJMKZ0" title="Google Tag Manager Tutorial for Beginners (2022)" >}}
 
 ### Google Search Console
 

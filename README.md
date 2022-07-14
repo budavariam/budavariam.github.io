@@ -95,3 +95,5 @@ You can edit the content and changes trigger regeneration.
   {{ printf "IsPage: %s" .IsPage }}<br/>
   {{ printf "Kind: %s" .Kind }}<br/>
   ```
+
+- [Default shortcodes](https://gohugo.io/content-management/shortcodes/#youtube)
