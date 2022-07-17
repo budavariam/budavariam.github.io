@@ -114,6 +114,11 @@ categories:
         tech: [react]
         description: I created a cheatsheet for learning vim.
         blogpost: /posts/2021/03/13/vim/
+      - name: learning-spanish
+        github: https://github.com/budavariam/learning-spanish
+        demo_site: https://budavariam.github.io/learning-spanish
+        tech: [11ty]
+        description: I log my journey on learning spanish
   - name: Experiments / POC
     projects:
       - name: css-playground
@@ -151,6 +156,11 @@ categories:
         tech: [selenium, python]
   - name: Personal
     projects:
+      - name: 100-days-of-code
+        github: https://github.com/budavariam/100-days-of-code
+        demo_site: https://budavariam.github.io/100-days-of-code/log.html
+        description: My [100 days of code](https://www.100daysofcode.com/) journal
+        tech: [markdown]
       - name: advent_of_code
         image: aoc.png
         github: https://github.com/budavariam/advent_of_code
