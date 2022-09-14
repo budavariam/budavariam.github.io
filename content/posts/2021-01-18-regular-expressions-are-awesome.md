@@ -25,7 +25,7 @@ Char | Description
 ---- | ----
 `[`*characters*`]`| Matches any character in *characters* (can be an interval)
 `[^`*characters*`]`| Negation: Matches any character that is **not** in *characters*
-&#124; | Matches any **one element** separated by the pipe (&#124;) character. For example: a&#124;b&#124;c` matches one of **a**, **b** or **c**.
+&#124; | Matches any **one element** separated by the pipe (&#124;) character. For example: a&#124;b&#124;c matches one of **a**, **b** or **c**.
 `.` | Match any 1 character (except linebreaks)
 `?` | Matches the previous element zero or one time
 `*` | Matches the previous element zero or more times (greedy, it matches as much as it possibly can)
