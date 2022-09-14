@@ -24,8 +24,8 @@ You can imagine a regular expression as a machine, that checks whether the input
 Char | Description
 ---- | ----
 `[`*characters*`]`| Matches any character in *characters* (can be an interval)
-`[^`*characters*`]`| Negation: Matches any character that is not in *characters*
-`|` | Matches any one element separated by the pipe (`|`) character
+`[^`*characters*`]`| Negation: Matches any character that is **not** in *characters*
+`|` | Matches any **one element** separated by the pipe (`|`) character. For example: `a|b|c` matches one of **a**, **b** or **c**.
 `.` | Match any 1 character (except linebreaks)
 `?` | Matches the previous element zero or one time
 `*` | Matches the previous element zero or more times (greedy, it matches as much as it possibly can)
@@ -33,6 +33,7 @@ Char | Description
 `()`| Creates a capture group, that can be extracted, or checked for repeating, assigns a number for it starting from 1
 `^` | Marks the start of the line
 `$` | Marks the end of the line
+`\` | If you'd like to use any of the characters above without their special meaning outside `[]`-s, you need to [escape](https://en.wikipedia.org/wiki/Escape_sequence) them. For example: `\.` means a literal dot character.
 
 You can build many patterns out of these simple building blocks. Here are a few examples.
 
