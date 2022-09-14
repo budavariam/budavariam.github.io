@@ -33,7 +33,7 @@ Char | Description
 `()`| Creates a capture group, that can be extracted, or checked for repeating, assigns a number for it starting from 1
 `^` | Marks the start of the line
 `$` | Marks the end of the line
-`\` | If you'd like to use any of the characters above without their special meaning outside `[]`-s, you need to [escape](https://en.wikipedia.org/wiki/Escape_sequence) them. For example: `\.` means a literal dot character.
+`\`*character* | If you'd like to use any of the characters above in this list without their special meaning, (outside `[]`-s), you'll need to [escape](https://en.wikipedia.org/wiki/Escape_sequence) them. For example: `\.` means a literal dot character.
 
 You can build many patterns out of these simple building blocks. Here are a few examples.
 
