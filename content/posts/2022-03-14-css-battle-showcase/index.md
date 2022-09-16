@@ -50,7 +50,7 @@ Some reminders and tips that I read, or figured out myself that made my solution
 - Shorthand syntax is your friend:
   - The `inset` is shorthand for `top`/`right`/`bottom`/`left`.
   - For directional items 1 repeats for all, 2 stands for (y,x) axis from top to bottom, left to right
-- `padding` can be used for size instead of: `width`/`height`
+- `padding` can be used for size instead of: `height`/`width`
 - `margin`/`inset` can be used for positioning instead of: `top`/`right`/`bottom`/`left`
 - You can omit units in css, the default is `px`
 - You can omit quotes in HTML
