@@ -62,6 +62,7 @@ Some reminders and tips that I read, or figured out myself that made my solution
   - `<a id=b>` can be matched with `#b{}`
 - `<body bgcolor=111111>` is shorter than `body { background-color: "#111111"; }`
 - You can target all items with `*`
+- For top level positioning `fixed` is shorter than `absolute`
 - `::before`/`::after` and `border` are good building blocks
   - In case you need to `transform: rotate` you might face into different bugs in separate browsers.
   Here are some separate ideas how to tackle them:
