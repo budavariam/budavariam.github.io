@@ -48,7 +48,7 @@ Some reminders and tips that I read, or figured out myself that made my solution
 - You don't need to write valid xHTML, it just need to render. e.g: the `<p>` tags are working fine without closing tags
 - You have a fixed sized layout, you can use magic numbers
 - Shorthand syntax is your friend:
-  - The `inset` is shorthand for `top`/`right`/`bottom`/`left`.
+  - The `inset` can be a shorthand for `top`/`right`/`bottom`/`left`.
   - For directional items 1 repeats for all, 2 stands for (y,x) axis from top to bottom, left to right
   - You can use `background` shorthand instead of `background-color`. (Stands for these in order: `background-color`, `background-image`, `background-repeat`, `background-attachment`, `background-position`)
 - `padding` can be used for size instead of: `height`/`width`
@@ -64,6 +64,24 @@ Some reminders and tips that I read, or figured out myself that made my solution
 - `<body bgcolor=111111>` is shorter than `body { background-color: "#111111"; }`
 - You can target all items with `*`
 - For top level positioning `fixed` is shorter than `absolute`
+- You can use `box-shadow` to "copy" items, it gets `currentcolor` as its default color.
+- If you need to set background-color multiple times (5+), you can set it to `currentcolor` once, and use `color:` in the next occurrances.
+  
+  ```css
+  p{background:currentcolor} /* `background:currentcolor`: constant 23char */
+  p[a]{color:red} /* color: 5char */
+  p[b]{color:fff}
+  ...
+  p[z]{color:0}
+
+  vs.
+
+  p[a]{background:red} /* background: 10char */
+  p[b]{background:fff}
+  ...
+  p[z]{background:0}
+  ```
+
 - `::before`/`::after` and `border` are good building blocks
   - In case you need to `transform: rotate` you might face into different bugs in separate browsers.
   Here are some separate ideas how to tackle them:
@@ -71,6 +89,20 @@ Some reminders and tips that I read, or figured out myself that made my solution
     - `-webkit-backface-visibility: hidden;`
     - `outline: 1px solid transparent;`
     - `box-shadow: 0 0 1px rgba(255,255,255,0);`
+- You can create a starter code to help you over time with your favourite patterns e.g:
+
+  ```html
+  <body bgcolor=0><p>
+  <style>
+  body{padding: 60 50}
+  p{position:fixed;
+    background:red;
+    padding:10 30;
+    margin:10 20
+  }
+  ```
+
+- You might find more useful tips at [css-battle](https://cssbattle.dev/tips) page.
 
 ## Showcase Application
 
