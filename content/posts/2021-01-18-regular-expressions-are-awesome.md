@@ -42,7 +42,7 @@ You can build many patterns out of these simple building blocks. Here are a few 
 - `th[ae]n` matches *than* OR *then*
 - `winter|spring|summer|autumn` matches one of 4 seasons
 - `^line$` matches a line that only contains the text *line*
-- `[^02-9][8-9][1-4][0-9]` matches numbers between 1810-1840 OR 1910-1940
+- `[^02-9][8-9][1-4][0-9]` matches numbers between 1810-1849 OR 1910-1949
 - `(key)?board` matches *keyboard* OR *board*
 - `(https?|ftp)://` matches *http://*, *https://*, *ftp://*
 
