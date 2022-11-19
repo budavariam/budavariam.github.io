@@ -65,6 +65,8 @@ Some reminders and tips that I read, or figured out myself that made my solution
 - You can target all items with `*`
 - For top level positioning `fixed` is shorter than `absolute`
 - You can use `box-shadow` to "copy" items, it gets `currentcolor` as its default color.
+  - `filter: drop-shadow(...);` can copy single borders
+- [radial-gradient](https://www.freecodecamp.org/news/css-radial-gradient/) is good for repeating patterns
 - If you need to set background-color multiple times (5+), you can set it to `currentcolor` once, and use `color:` in the next occurrances.
   
   ```css

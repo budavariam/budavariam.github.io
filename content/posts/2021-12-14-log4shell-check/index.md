@@ -41,4 +41,4 @@ Hopefully, we can get over it soon.
 
 Happy coding!
 
-{{< twitter_simple GossiTheDog 1469252646745874435 >}}
+<!-- twitter_simple GossiTheDog 1469252646745874435 -->
