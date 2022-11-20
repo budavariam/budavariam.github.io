@@ -9,7 +9,7 @@ resources:
   - name: cover
     src: cover.jpg
 date: 2022-10-15
-draft: true
+draft: false
 ---
 
 Luckily this year had another transferred working day, and the tradition continues: our company gifted us with an opportunity to work on some fun projects in this Saturday working day.
