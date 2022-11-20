@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Development Tips</title>
+      <link>https://budavariam.github.io/posts/2022/07/14/hugo-development-tips/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/07/14/hugo-development-tips/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve &lt;a href=&#34;https://budavariam.github.io/posts/2021/03/02/new-blog-engine/&#34;&gt;moved my blog content build to hugo&lt;/a&gt; more than a year ago, but I still forget how to achieve some basic things in &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; or where to find them in the docs. I&amp;rsquo;ve put together this cheatsheet to help me later on. I hope it&amp;rsquo;ll benefit you as well.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Save Disk Space with pnpm</title>
       <link>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</link>

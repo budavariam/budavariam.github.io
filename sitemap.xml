@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/tags/cheatsheet/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/go/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/hugo/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/2022/07/14/hugo-development-tips/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/javascript/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/node/</loc>
@@ -17,20 +35,11 @@
     <loc>https://budavariam.github.io/tags/pnpm/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/posts/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/programming/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2022/06/15/save-disk-space-with-pnpm/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/site-updates/</loc>
     <lastmod>2022-06-10T00:00:00+00:00</lastmod>
@@ -264,9 +273,6 @@
     <lastmod>2021-02-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/awk/</loc>
-    <lastmod>2021-02-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/cheatsheet/</loc>
     <lastmod>2021-02-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/grep/</loc>
