@@ -9,7 +9,7 @@ resources:
   - name: cover
     src: cover.jpg
 date: 2022-07-14
-draft: true
+draft: false
 ---
 
 I've [moved my blog content build to hugo](/posts/2021/03/02/new-blog-engine/) more than a year ago, but I still forget how to achieve some basic things in [Hugo](https://gohugo.io/) or where to find them in the docs. I've put together this cheatsheet to help me later on. I hope it'll benefit you as well.
@@ -22,15 +22,17 @@ I've [moved my blog content build to hugo](/posts/2021/03/02/new-blog-engine/) m
 
 ## Hugo Templating Basics
 
+[Getting started guide](https://gohugo.io/templates/introduction/)
+
 Access parameters with [.Get](https://gohugo.io/templates/shortcode-templates/#access-parameters)
 
 ### Custom templates
   
-- create a new folder under `content` e.g: `a`
-- create a file for the list template under `layout/section/a.html`
-- create a folder under `layout/a` and put the files that you want to override from `_default` like `single.html`
+- Create a new folder under `content` e.g: `a`
+- Create a file for the list template under `layout/section/a.html`
+- Create a folder under `layout/a` and put the files that you want to override from `_default` like `single.html`
 
-## Embed Content Into Makdown Files
+## Embed Content Into Markdown Files
 
 ### ShortCodes
 
@@ -40,8 +42,13 @@ Access parameters with [.Get](https://gohugo.io/templates/shortcode-templates/#a
 
 [emoji support](https://gohugo.io/functions/emojify/)
 
-I suggest you not to enable emoji parsing globally, because it can mess up source odes.
+I suggest you not to enable emoji parsing globally, because it can mess up source codes.
 I'd prefer to use ```{{ emoji `:emojicode:` }}``` in markdown content.
+
+```go
+// Add this shortcode definition to e.g: `layouts/shortcodes/emoji.html` in order to use it
+{{ .Get 0 | emojify }}
+```
 
 ### Figure
 
