@@ -52,6 +52,7 @@ I earned these badges, that are currently visible on [my profile](https://app.me
 - 1x Category champion (Cloud BI)
 - 60/119 rounds I scored over the average point of all participants
 - 56/119 rounds I finished earlier than the average of all participants
+- 12/119 flawless rounds
 
 Here are what I know about my results as of now for this year ordered by Percentage:
 
