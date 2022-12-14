@@ -4,7 +4,7 @@ title: OITM 2022
 tags: [oitm, competition, challenge]
 cover:
   alt: OITM 2022 Logo
-  hidden: true
+  hidden: false
 resources:
   - name: cover
     src: cover.png
@@ -50,15 +50,16 @@ I liked that there was a new category for `Excel`, and that now many categories 
 I earned these badges, that are currently visible on [my profile](https://app.megmerettetes.hu/adatlap/36f5d827-d986-4f64-ad08-7387a2274e50).
 
 - 1x Category champion (Cloud BI)
-- 60/119 rounds I scored over the average point of all participants
-- 56/119 rounds I finished earlier than the average of all participants
-- 12/119 flawless rounds
+- 70/119 rounds I scored over the average point of all participants
+- 61/119 rounds I finished earlier than the average of all participants
+- 15/119 flawless rounds
+- 1 Elite Club membership
 
 Here are what I know about my results as of now for this year ordered by Percentage:
 
 | Category name                            |  {{< emoji `:100:` >}}  | Percentage |   Exact   |
 | ---------------------------------------- | :---------------------: | :--------: | :-------: |
-| Python in cloud                          | {{< emoji `:three:` >}} |   Top 25   |  ? / 313  |
+| Python in cloud                          | {{< emoji `:four:` >}}  |   Top 25   |  ? / 313  |
 | Language-independent programming         |                         |   11.16%   | 74 / 663  |
 | React                                    | {{< emoji `:three:` >}} |   11.58%   | 35 / 302  |
 | Data science in IT Security              |                         |   13.49%   | 34 / 252  |
@@ -67,7 +68,7 @@ Here are what I know about my results as of now for this year ordered by Percent
 | DevOps                                   |                         |   14.95%   | 70 / 468  |
 | Cloud BI                                 |  {{< emoji `:two:` >}}  |   16.93%   | 31 / 183  |
 | Cloud Engineering                        |                         |   17.36%   | 62 / 357  |
-| Excel                                    | {{< emoji `:three:` >}} |   18.35%   | 96 / 523  |
+| Excel                                    | {{< emoji `:five:` >}}  |   18.35%   | 96 / 523  |
 | Design Patterns                          |                         |   19.12%   | 87 / 455  |
 | Node.js fullstack development            |  {{< emoji `:one:` >}}  |   19.32%   | 63 / 326  |
 | Web development with traditional methods |                         |   21.22%   | 146 / 688 |
