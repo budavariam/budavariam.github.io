@@ -56,25 +56,25 @@ I earned these badges, that are currently visible on [my profile](https://app.me
 
 Here are what I know about my results as of now for this year ordered by Percentage:
 
-| Category name                            |  {{< emoji `:100:` >}}  | Percentage |  Exact  |
-| ---------------------------------------- | :---------------------: | :--------: | :-----: |
-| Embedded Systems (C)                     |                         |  Top 20%   | ? / 217 |
-| Data science in IT Security              |                         |  Top 20%   | ? / 252 |
-| React                                    | {{< emoji `:three:` >}} |  Top 20%   | ? / 302 |
-| Python in cloud                          | {{< emoji `:three:` >}} |  Top 20%   | ? / 313 |
-| Artifical Intelligence                   |                         |  Top 20%   | ? / 313 |
-| Cloud Engineering                        |                         |  Top 20%   | ? / 357 |
-| DevOps                                   |                         |  Top 20%   | ? / 468 |
-| Language-independent programming         |                         |  Top 20%   | ? / 663 |
-| Cloud BI                                 |  {{< emoji `:two:` >}}  |  Top 40%   | ? / 183 |
-| Node.js fullstack development            |  {{< emoji `:one:` >}}  |  Top 40%   | ? / 326 |
-| Test automation                          |                         |  Top 40%   | ? / 358 |
-| NetworKING                               |                         |  Top 40%   | ? / 383 |
-| Accessible websites                      |                         |  Top 40%   | ? / 384 |
-| Design Patterns                          |                         |  Top 40%   | ? / 455 |
-| Excel                                    | {{< emoji `:three:` >}} |  Top 40%   | ? / 523 |
-| Web development with traditional methods |                         |  Top 40%   | ? / 688 |
-| Linux System Development and Maintenance |                         |  Top 60%   | ? / 421 |
+| Category name                            |  {{< emoji `:100:` >}}  | Percentage |   Exact   |
+| ---------------------------------------- | :---------------------: | :--------: | :-------: |
+| Python in cloud                          | {{< emoji `:three:` >}} |   Top 25   |  ? / 313  |
+| Language-independent programming         |                         |   11.16%   | 74 / 663  |
+| React                                    | {{< emoji `:three:` >}} |   11.58%   | 35 / 302  |
+| Data science in IT Security              |                         |   13.49%   | 34 / 252  |
+| Embedded Systems (C)                     |                         |   13.82%   | 30 / 217  |
+| Artifical Intelligence                   |                         |   14.05%   | 44 / 313  |
+| DevOps                                   |                         |   14.95%   | 70 / 468  |
+| Cloud BI                                 |  {{< emoji `:two:` >}}  |   16.93%   | 31 / 183  |
+| Cloud Engineering                        |                         |   17.36%   | 62 / 357  |
+| Excel                                    | {{< emoji `:three:` >}} |   18.35%   | 96 / 523  |
+| Design Patterns                          |                         |   19.12%   | 87 / 455  |
+| Node.js fullstack development            |  {{< emoji `:one:` >}}  |   19.32%   | 63 / 326  |
+| Web development with traditional methods |                         |   21.22%   | 146 / 688 |
+| NetworKING                               |                         |   22.71%   | 87 / 383  |
+| Test automation                          |                         |   23.46%   | 84 / 358  |
+| Accessible websites                      |                         |   28.90%   | 111 / 384 |
+| Linux System Development and Maintenance |                         |   47.50%   | 200 / 421 |
 
 Nevertheless I am looking forward to it next year!
 
