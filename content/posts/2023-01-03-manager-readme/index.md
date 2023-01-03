@@ -118,9 +118,9 @@ I'm still learning communication and management. So please be patient with me. I
 - I want to avoid meeting during my lunch break or after work hours.
 - For ad-hoc help, ping me on Slack, and I'll tell you when I'm available.
 - My calendar is up to date with personal slots booked as well. You can book a time there with confidence.
-- Please only book between 2 slots that have 30 mins between them, or let me know in advance.
+- Please only book between 2 time slots that have at least 30 mins between them, or let me know in advance.
 - If you send me a calendar invitation, please give me the context in a few sentences or make a descriptive title that I can remember if we discussed it earlier
-- Please don't set up a meeting where you tell 5+ people what we need to figure out on the spot. Let us prepare
+- Please don't set up a meeting where you tell 5+ people what we need to figure out on the spot. Let us prepare for larger discussions.
 
 ### When it comes to mistakes, what's the best way for employees to come forward?
 
