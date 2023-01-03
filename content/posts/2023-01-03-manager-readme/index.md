@@ -65,6 +65,9 @@ Basically, the sooner you finish the tasks, the better you are based on this met
 In this sense, it makes you more valuable if you can estimate how much time it'd take you to finish a task.
 It's even better if you could estimate something that you haven't done before, of course I know it's a dream.
 
+In a broader sense we have detailed carreer plan document that we go through regularly
+to be on the same page of what's expected on certain levels.
+
 ### How will I help my teammates get better at their jobs?
 
 I'll be there for technical problem debugging and can refer to tutorials or pieces of training.
@@ -226,6 +229,8 @@ You ask many questions.
 You fit with the team personally, and you feel with most of them that you can work together effectively.
 
 ## Disclaimer
+
+This document is reflects my personal experience, these thoughts and ideas are my own.
 
 This document captures how I feel currently. I aim to update it regularly when my team changes.
 I can remind myself of my values and reevaluate how I work.
