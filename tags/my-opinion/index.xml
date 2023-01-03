@@ -6,7 +6,18 @@
     <description>Recent content in my-opinion on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/my-opinion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/my-opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manager Readme</title>
+      <link>https://budavariam.github.io/posts/2023/01/03/manager-readme/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2023/01/03/manager-readme/</guid>
+      <description>&lt;p&gt;As the new year approached, I wanted to write a Team Leader manifesto or a document to catch how it feels to be a team leader after one year.
+To summarize what I learned or to help new team leaders with what to expect.&lt;/p&gt;
+&lt;p&gt;I found this Manager Readme format and wanted to try it out.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Supercharge your command line</title>
       <link>https://budavariam.github.io/posts/2020/04/27/supercharge-your-command-line/</link>

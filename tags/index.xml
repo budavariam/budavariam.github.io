@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>my-opinion</title>
+      <link>https://budavariam.github.io/tags/my-opinion/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/my-opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>team-lead</title>
+      <link>https://budavariam.github.io/tags/team-lead/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/team-lead/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>challenge</title>
       <link>https://budavariam.github.io/tags/challenge/</link>
@@ -778,15 +796,6 @@
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/fzf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>my-opinion</title>
-      <link>https://budavariam.github.io/tags/my-opinion/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/my-opinion/</guid>
       <description></description>
     </item>
     
