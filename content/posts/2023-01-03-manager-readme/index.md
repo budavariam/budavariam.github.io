@@ -205,10 +205,10 @@ I'm interested in how you feel, what you struggle with, and how I can help.
 - If you believe in personality tests, I got blue and green in the DISC model. What it means for me is that I prefer to talk about technical stuff, and I want to support you.
 - I don't like to repeat myself. So if I ask you something to do, I'll expect you to write it down to remember it.
   I'll occasionally remind you of it in a friendly tone, but it'll make our work together more seamless if you remember it, and you'll grow in my eye.
-- I'll make sure that there are no elephants in the room. If we discuss something only half of the team does not know about, I'll give them context in a few sentences. I'll expect the same. Please keep me in the loop while I'm on vacation. Write me anything. It'll make my catchup easier when I get back from it. I won't read it while I'm away.
+- I'll make sure that there are no elephants in the room. If we discuss something only half of the team does not know about, I'll give them context in a few sentences. I'll expect the same in return. Please keep me in the loop while I'm on vacation. Write me anything. It'll make my catchup easier when I get back from it. I won't read it while I'm away.
 - I don't like the firefighting mentality. I'll try to be one step ahead of the team, and I prefer dealing with issues earlier than they become a burning issue
 - I wouldn't say I like micromanagement. I believe you'll ask questions if you get stuck for at least an hour.
-- I'm incredibly polite, so it might not be evident when I'm pissed off. If I shout, you'll know that I'm super mad.
+- I'm incredibly polite, so it might not be evident when I'm pissed off. If I raise my voice, you'll know that I'm super mad.
 
 ## Where to focus on your first 90 days?
 
