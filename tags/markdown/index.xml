@@ -6,7 +6,17 @@
     <description>Recent content in markdown on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microjournaling With Obsidian</title>
+      <link>https://budavariam.github.io/posts/2023/01/15/microjournaling-with-obsidian/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2023/01/15/microjournaling-with-obsidian/</guid>
+      <description>&lt;p&gt;This week I listened to the Art of Manliness podcast ep. &lt;a href=&#34;https://www.artofmanliness.com/character/habits/7-journaling-techniques-that-can-change-your-life/&#34;&gt;#867&lt;/a&gt; about journaling techniques that could change your life.&lt;/p&gt;
+&lt;p&gt;It really resonated with me, and got me thinking about doing something about my bad habits and stepping on the path I&amp;rsquo;d like to walk.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Reveal.js CLI</title>
       <link>https://budavariam.github.io/posts/2020/12/17/reveal.js-cli/</link>

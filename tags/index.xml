@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android</title>
+      <link>https://budavariam.github.io/tags/android/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://budavariam.github.io/tags/markdown/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>obsidian</title>
+      <link>https://budavariam.github.io/tags/obsidian/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>https://budavariam.github.io/tags/productivity/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>my-opinion</title>
       <link>https://budavariam.github.io/tags/my-opinion/</link>
@@ -512,15 +548,6 @@
     </item>
     
     <item>
-      <title>productivity</title>
-      <link>https://budavariam.github.io/tags/productivity/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>shell</title>
       <link>https://budavariam.github.io/tags/shell/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
@@ -679,15 +706,6 @@
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/snowflake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://budavariam.github.io/tags/markdown/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
