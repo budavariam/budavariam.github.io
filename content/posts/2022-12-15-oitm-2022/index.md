@@ -59,7 +59,7 @@ Here are what I know about my results as of now for this year ordered by Percent
 
 | Category name                            |  {{< emoji `:100:` >}}  | Percentage |   Exact   |
 | ---------------------------------------- | :---------------------: | :--------: | :-------: |
-| Python in cloud                          | {{< emoji `:four:` >}}  |   Top 25   |  ? / 313  |
+| Python in cloud                          | {{< emoji `:four:` >}}  |    4.79%   | 15 / 313  |
 | Language-independent programming         |                         |   11.16%   | 74 / 663  |
 | React                                    | {{< emoji `:three:` >}} |   11.58%   | 35 / 302  |
 | Data science in IT Security              |                         |   13.49%   | 34 / 252  |
