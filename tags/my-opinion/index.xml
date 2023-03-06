@@ -6,7 +6,17 @@
     <description>Recent content in my-opinion on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/my-opinion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/my-opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organizing Project Scripts</title>
+      <link>https://budavariam.github.io/posts/2023/03/06/organizing-project-scripts/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2023/03/06/organizing-project-scripts/</guid>
+      <description>&lt;p&gt;Working on a project often comes with many different scripts.
+When I switch between projects and languages sometimes I found it tiring having to figure out what buld tool I&amp;rsquo;m using an how to execute those scripts that are lying around. I&amp;rsquo;m looking for a unified solution.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Manager Readme</title>
       <link>https://budavariam.github.io/posts/2023/01/03/manager-readme/</link>
