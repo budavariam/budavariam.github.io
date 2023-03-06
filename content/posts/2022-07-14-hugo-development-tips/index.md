@@ -44,7 +44,7 @@ Access parameters with [.Get](https://gohugo.io/templates/shortcode-templates/#a
 [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 I suggest you not to enable emoji parsing globally, because it can mess up source codes.
-I'd prefer to use ```{{ emoji `:emojicode:` }}``` in markdown content.
+I'd prefer to use ```{{< emoji `:emojicode:` >}}``` in markdown content.
 
 ```go
 // Add this shortcode definition to e.g: `layouts/shortcodes/emoji.html` in order to use it

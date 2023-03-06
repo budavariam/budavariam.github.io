@@ -140,7 +140,7 @@ As far as I know
 
 Countless tools [written in python](https://wiki.python.org/moin/ConfigurationAndBuildTools).
 
-It's up to you (and your tech-lead {{ emoji `:sweat_smile:` }}) what do you prefer to work with.
+It's up to you (and your tech-lead {{< emoji `:sweat_smile:` >}}) what do you prefer to work with.
 
 ### Conclusion
 
