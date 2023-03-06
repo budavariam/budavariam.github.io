@@ -29,13 +29,13 @@ In this podcast [Campbell Walker](https://www.instagram.com/struthless69/) taks 
 ### Switch up bad habits with better ones
 
 Sometimes my autopilot just opens up my phone and and goes through its clicking routine, switching between apps, without gaining anything out of it.
-My brain just wants to get a little endorphine boost.
+My brain just wants to get a little endorphin boost.
 What I came to realize is that it's a complete waste of time, and I end up learning something I didn't even wanted to hear about. Or just reading about other people's complaints or bits of their lifes without any interaction just filling my head with noise.
 
-For some time killer apps I uninstalled the dedicated apps, this way their functionalities are much limited and more painful to use.
+For some time killer apps I `uninstalled` the dedicated apps, this way their functionalities are much limited and more painful to use.
 
-For the ones I kept, I set up timers to warn me after 30 minutes.
-Also I made sure that the worst time killer apps are not in reach, and I have to deliberately search for them.
+For the ones I kept, I set up `timers` to warn me after 30 minutes.
+Also I made sure that the worst time killer apps are `not in reach`, and I have to deliberately search for them.
 
 To tackle this mindless clicking I want to channel this energy to `create notes`,
 and think about my ongoing issues whenever I feel like I have a few minutes to use my phone.
@@ -95,7 +95,7 @@ If I open the app in any given day it gives me this default note.
 
 ### Sync Obsidian
 
-I saw that there's an option to sync to Obsidian cloud for a monthly fee, but my whole point of moving away from Google Kepp to take control of my data does not play well with this idea. So I started to see what are my options.
+I saw that there's an option to sync to Obsidian cloud for a monthly fee, but my whole point of moving away from Google Keep to take control of my data does not play well with this idea. So I started to see what are my options.
 
 - Obsidian cloud sync for $8/month
 - [GitJournal](https://gitjournal.io/), a promising open source app
