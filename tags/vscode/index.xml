@@ -6,7 +6,18 @@
     <description>Recent content in vscode on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vscode Build With Multiple Commands</title>
+      <link>https://budavariam.github.io/posts/2023/03/13/vscode-build-with-multiple-commands/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2023/03/13/vscode-build-with-multiple-commands/</guid>
+      <description>&lt;p&gt;In the past few weeks I started to get familiar with &lt;a href=&#34;https://lit.dev/&#34;&gt;LitElement&lt;/a&gt;.
+I love the &lt;a href=&#34;https://lit.dev/docs/tools/starter-kits/&#34;&gt;starter kit&lt;/a&gt;, but I hate to start up the manual build tasks.
+Nowadays I work with VSCode a lost, so I tried to come up with a convenient vendor locked-in solution for a change.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Markdown Slideshow</title>
       <link>https://budavariam.github.io/posts/2020/06/01/markdown-slideshow/</link>

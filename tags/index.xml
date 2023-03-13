@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>build</title>
+      <link>https://budavariam.github.io/tags/build/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lit-element</title>
+      <link>https://budavariam.github.io/tags/lit-element/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/lit-element/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>my-solution</title>
+      <link>https://budavariam.github.io/tags/my-solution/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/my-solution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://budavariam.github.io/tags/vscode/</link>
+      <pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>my-opinion</title>
       <link>https://budavariam.github.io/tags/my-opinion/</link>
@@ -283,15 +319,6 @@
       <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/quick-tip/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>my-solution</title>
-      <link>https://budavariam.github.io/tags/my-solution/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/my-solution/</guid>
       <description></description>
     </item>
     
@@ -787,15 +814,6 @@
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/hosting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vscode</title>
-      <link>https://budavariam.github.io/tags/vscode/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/vscode/</guid>
       <description></description>
     </item>
     
