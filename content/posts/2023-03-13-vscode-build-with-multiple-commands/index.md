@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vscode Build With Multiple Commands
+title: VSCode Build With Multiple Commands
 tags: [my-solution, vscode, build, lit-element]
 cover:
     alt: House floor plan
@@ -13,7 +13,7 @@ date: 2023-03-13
 
 In the past few weeks, I became familiar with [LitElement](https://lit.dev/).
 I love the [starter kit](https://lit.dev/docs/tools/starter-kits/), but I hate to start up the manual build tasks.
-Nowadays, I work with VSCode a lost, so I tried to devise a convenient vendor locked-in solution for a change.
+Nowadays, I work with VSCode a lot, so I tried to devise a convenient vendor locked-in solution for a change.
 
 <!--more-->
 
