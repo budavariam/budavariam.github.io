@@ -6,7 +6,6 @@ cover:
     alt: Cover
     hidden: true
 date: 2023-04-08
-draft: true
 ---
 
 I like to set up certain things when I move to a new machine.
