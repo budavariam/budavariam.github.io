@@ -88,4 +88,9 @@ I'm looking forward to the next Hackathon.
 
 Happy coding!
 
-Cover Photo by [Kelly L](https://www.pexels.com/@kelly-l-1179532/) from [Pexels](https://www.pexels.com/photo/inside-of-empty-aircraft-before-departure-3861783/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Kelly L"
+    artist-url="https://www.pexels.com/@kelly-l-1179532/"
+    img-url="https://www.pexels.com/photo/inside-of-empty-aircraft-before-departure-3861783/"
+>}}

@@ -263,4 +263,9 @@ byobu-tmux    # any screen options can be given
 
 Happy coding!
 
-Cover Photo by [Kevin Ku](https://www.pexels.com/@kevin-ku-92347/) from [Pexels](https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Kevin Ku"
+    artist-url="https://www.pexels.com/@kevin-ku-92347/"
+    img-url="https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/"
+>}}

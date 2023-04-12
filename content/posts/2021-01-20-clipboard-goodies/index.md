@@ -174,6 +174,11 @@ copy(window.myGlobalObject)
 
 I hope you've found it useful.
 
-Cover Photo by [Negative Space](https://www.pexels.com/@negativespace/) from [Pexels](https://www.pexels.com/photo/coffee-notebook-writing-computer-34601/)
-
 Happy coding!
+
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Negative Space"
+    artist-url="https://www.pexels.com/@negativespace/"
+    img-url="https://www.pexels.com/photo/coffee-notebook-writing-computer-34601/"
+>}}

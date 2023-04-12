@@ -124,6 +124,11 @@ I loved its simplicity and clear interface, so I decided to use it for this proj
 
 I'm not affiliated with Google in any way, I just wanted to share my custom solution on their cool platform.
 
-Cover Photo by [Julius Silver](https://www.pexels.com/@julius-silver-240301) from [Pexels](https://www.pexels.com/photo/cottages-in-the-middle-of-beach-753626/)
-
 Happy coding!
+
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Julius Silver"
+    artist-url="https://www.pexels.com/@julius-silver-240301"
+    img-url="https://www.pexels.com/photo/cottages-in-the-middle-of-beach-753626/"
+>}}

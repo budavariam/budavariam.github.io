@@ -244,5 +244,9 @@ If you have anything to add or discuss hit me up on Linkedin or via Email.
 
 Happy leading!
 
-Cover Photo by [Miguel Á. Padriñán](https://www.pexels.com/@padrinan/) from
-[Pexels](https://www.pexels.com/photo/paper-boats-on-solid-surface-194094/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Miguel Á. Padriñán"
+    artist-url="https://www.pexels.com/@padrinan/"
+    img-url="https://www.pexels.com/photo/paper-boats-on-solid-surface-194094/"
+>}}

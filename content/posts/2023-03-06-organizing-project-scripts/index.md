@@ -151,4 +151,9 @@ But for projects that need some utilities that might even be in different langua
 
 Happy coding!
 
-Cover Photo by [Pixabay](https://www.pexels.com/@pixabay/) from [Pexels](https://www.pexels.com/photo/black-text-on-gray-background-261763/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Pixabay"
+    artist-url="https://www.pexels.com/@pixabay/"
+    img-url="https://www.pexels.com/photo/black-text-on-gray-background-261763/"
+>}}

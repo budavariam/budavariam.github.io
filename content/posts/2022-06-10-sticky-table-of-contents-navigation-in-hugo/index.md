@@ -98,4 +98,9 @@ It was a great practice to get to know hugo better, while creating something fan
 
 Happy coding!
 
-Cover Photo by [ENESFILM](https://www.pexels.com/@enesfilm/) from [Pexels](https://www.pexels.com/photo/a-person-scooping-out-a-cheesy-pizza-9513587/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="ENESFILM"
+    artist-url="https://www.pexels.com/@enesfilm/"
+    img-url="https://www.pexels.com/photo/a-person-scooping-out-a-cheesy-pizza-9513587/"
+>}}

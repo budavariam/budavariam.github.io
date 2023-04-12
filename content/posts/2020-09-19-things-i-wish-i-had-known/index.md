@@ -187,4 +187,9 @@ It takes effort to keep the docs up to date, but if you handle them as the main 
 
 Happz coding$
 
-Cover Photo by [Christina Morillo](https://www.pexels.com/@divinetechygirl) from [Pexels](https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Christina Morillo"
+    artist-url="https://www.pexels.com/@divinetechygirl"
+    img-url="https://www.pexels.com/photo/black-and-gray-laptop-computer-turned-on-doing-computer-codes-1181271/"
+>}}

@@ -167,4 +167,9 @@ I just wanted to share my experience and code I used to connect it together.
 
 Happy coding!
 
-Cover Photo by [Troy Squillaci](https://www.pexels.com/@troy-squillaci-1303476/) from [Pexels](https://www.pexels.com/photo/close-up-of-obsidian-4766367/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Troy Squillaci"
+    artist-url="https://www.pexels.com/@troy-squillaci-1303476/"
+    img-url="https://www.pexels.com/photo/close-up-of-obsidian-4766367/"
+>}}

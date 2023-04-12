@@ -206,4 +206,9 @@ I hope you found this collection as useful as I did.
 
 Happy coding!
 
-Cover Photo by [Manuel Geissinger](https://www.pexels.com/@artunchained) from [Pexels](https://www.pexels.com/photo/black-server-racks-on-a-room-325229/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Manuel Geissinger"
+    artist-url="https://www.pexels.com/@artunchained"
+    img-url="https://www.pexels.com/photo/black-server-racks-on-a-room-325229/"
+>}}

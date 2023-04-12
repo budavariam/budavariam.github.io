@@ -102,7 +102,11 @@ These pages helped me along the way:
 I felt amazing at the end. Finally, we had accomplished something helpful in such a short timeframe.
 I hope I can participate in similar events in the future.
 
-Cover Photo by [Tima Miroshnichenko](https://www.pexels.com/@tima-miroshnichenko) from
-[Pexels](https://www.pexels.com/photo/close-up-view-of-system-hacking-in-a-monitor-5380664/)
-
 Happy coding!
+
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Tima Miroshnichenko"
+    artist-url="https://www.pexels.com/@tima-miroshnichenko"
+    img-url="https://www.pexels.com/photo/close-up-view-of-system-hacking-in-a-monitor-5380664/"
+>}}

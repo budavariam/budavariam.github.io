@@ -59,4 +59,9 @@ This template is used by integration tests only.
 
 Happy coding!
 
-Cover Photo by [Ylanite Koppens](https://www.pexels.com/@nietjuh) from [Pexels](https://www.pexels.com/photo/letters-and-an-eyeglass-on-table-1809342)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Ylanite Koppens"
+    artist-url="https://www.pexels.com/@nietjuh"
+    img-url="https://www.pexels.com/photo/letters-and-an-eyeglass-on-table-1809342"
+>}}

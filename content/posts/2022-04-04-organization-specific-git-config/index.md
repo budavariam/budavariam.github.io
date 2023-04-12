@@ -113,4 +113,9 @@ I hope it will prevent you many headaches.
 
 Happy coding!
 
-Cover Photo by [Ibolya Toldi](https://www.pexels.com/@ibolya-toldi-2149985/) from [Pexels](https://www.pexels.com/photo/carnival-mask-decorated-with-pink-flower-3836671/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Ibolya Toldi"
+    artist-url="https://www.pexels.com/@ibolya-toldi-2149985/"
+    img-url="https://www.pexels.com/photo/carnival-mask-decorated-with-pink-flower-3836671/"
+>}}

@@ -155,4 +155,9 @@ You can access it in your code throug Site Params in your partial templates.
 
 I hope you've found what you were looking for.
 
-Cover Photo by [Pixabay](https://www.pexels.com/@pixabay/) from [Pexels](https://www.pexels.com/photo/blog-icon-information-internet-262508/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Pixabay"
+    artist-url="https://www.pexels.com/@pixabay/"
+    img-url="https://www.pexels.com/photo/blog-icon-information-internet-262508/"
+>}}

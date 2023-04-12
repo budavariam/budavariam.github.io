@@ -153,4 +153,9 @@ I hope it will help you as much as it will help me.
 
 Happy coding!
 
-Cover Photo by [Rifqi Ramadhan](https://www.pexels.com/@rifkyilhamrd) from [Pexels](https://www.pexels.com/photo/photography-of-waterfalls-between-trees-788200/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="Rifqi Ramadhan"
+    artist-url="https://www.pexels.com/@rifkyilhamrd"
+    img-url="https://www.pexels.com/photo/photography-of-waterfalls-between-trees-788200/"
+>}}

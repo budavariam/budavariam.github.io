@@ -105,4 +105,9 @@ Otherwise you still have thee option to generate the images with a CLI tool.
 
 Happy coding!
 
-Cover Photo by [C1superstar](https://www.pexels.com/@c1superstar-24564633/) from [Pexels](https://www.pexels.com/photo/the-statue-of-the-little-mermaid-on-a-rock-in-copenhagen-denmark-7874460/)
+{{< photo_credit
+    img-site="Pexels"
+    artist-name="C1superstar"
+    artist-url="https://www.pexels.com/@c1superstar-24564633/"
+    img-url="https://www.pexels.com/photo/the-statue-of-the-little-mermaid-on-a-rock-in-copenhagen-denmark-7874460/"
+>}}
