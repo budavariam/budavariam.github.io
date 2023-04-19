@@ -30,3 +30,9 @@ I set up my dotfiles. As I wrote in my previous post [Keep Your Configs Safe](..
 - Peacock
 - ShellCheck
 - Gremlins tracker
+
+## Favourite Application Configs
+
+- Set up iTerm to open links with my favourite applications
+
+  ![Iterm config](./iterm_config.png)
