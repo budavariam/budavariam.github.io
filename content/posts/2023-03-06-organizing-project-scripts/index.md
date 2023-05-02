@@ -88,6 +88,8 @@ I remembered that in university we used make for building C projects. I dusted o
 
 ## Makefiles
 
+Makefiles are useful for creating a starting point for your application, a general way of letting the public know how to build your applications.
+
 > Make can be used to manage any project where some files need to be updated automatically from others whenever the others change in addition to building programs.
 
 [source](https://en.wikipedia.org/wiki/Make_(software))
@@ -126,6 +128,8 @@ In a Makefile, the default target is the `first target` defined in the file if t
 
 - `.PHONY` variable has to duplicate all task names
 - It can also grow to be too complex. There are tools (like [makefile2graph](https://github.com/lindenb/makefile2graph) to visualize it.
+- It has to use tabs for identation
+- Variable definitions overlap with bash. In order to escape dollar sign you have to double them e.g `$$HOME` is an environment variable from the system, while `$HOME` is a variable defined in the makefile
 
 ## Other possibilities
 
