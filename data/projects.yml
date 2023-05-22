@@ -55,7 +55,7 @@ categories:
       - name: matytermind
         image: matytermind.png
         github: https://github.com/budavariam/Matytermind
-        demo_site: https://matytermind.up.railway.app/
+        demo_site: https://matytermind.onrender.com/
         description: A simple mastermind implementation. Backend handles the result evaluation.
         tech: [react, node, typescript]
       - name: quarantine-bingo
