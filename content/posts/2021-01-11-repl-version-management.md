@@ -36,7 +36,7 @@ In case it does not work without `sudo` you can follow the advice in the [docs](
 
 Note: It's not supported on windows.
 
-### NVM installer
+### NVM
 
 Install following [the guide](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -45,6 +45,10 @@ Install following [the guide](https://github.com/nvm-sh/nvm#installing-and-updat
 - Install and use the latest version `nvm install latest`
 - Clean up cache: `nvm cache clear`
 - Uninstall a specific version: `nvm uninstall <version>`
+
+- my favourite feature is that I can automatically
+  load the selected version if an rc file is present:
+  `node --version > .nvmrc`
 
 ## Python
 
