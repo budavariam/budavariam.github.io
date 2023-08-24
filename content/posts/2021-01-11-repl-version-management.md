@@ -48,7 +48,7 @@ Install following [the guide](https://github.com/nvm-sh/nvm#installing-and-updat
 
 - my favourite feature is that I can automatically
   load the selected version if an rc file is present:
-  `node --version > .nvmrc`
+  `node --version > .nvmrc && nvm use`
 
 ## Python
 
