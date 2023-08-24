@@ -12,6 +12,9 @@ That would be plain silly... BUT there's a better way.
 ## Node.js
 
 For Node, there's an npm package called [n](https://www.npmjs.com/package/n).
+And an external installer script called [nvm](https://github.com/nvm-sh/nvm)
+
+### N package
 
 1. Install any version of [node](https://nodejs.org/en/download/)
 1. Run `npm install -g n`
@@ -32,6 +35,16 @@ In case it does not work without `sudo` you can follow the advice in the [docs](
 > or take ownership of the system directories
 
 Note: It's not supported on windows.
+
+### NVM installer
+
+Install following [the guide](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+- Install specific versions: `nvm install <version>`
+- Select version from installed `nvm list`
+- Install and use the latest version `nvm install latest`
+- Clean up cache: `nvm cache clear`
+- Uninstall a specific version: `nvm uninstall <version>`
 
 ## Python
 
