@@ -4,7 +4,7 @@ title: OITM 2023
 tags: [oitm, competition, challenge]
 cover:
   alt: OITM 2023 Logo
-  hidden: false
+  hidden: true
 resources:
   - name: cover
     src: cover.png
