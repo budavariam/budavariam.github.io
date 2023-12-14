@@ -4,7 +4,7 @@ title: OITM 2023
 tags: [oitm, competition, challenge]
 cover:
   alt: OITM 2023 Logo
-  hidden: true
+  hidden: false
 resources:
   - name: cover
     src: cover.png
@@ -64,23 +64,23 @@ I earned these badges, that are currently visible on [my profile](https://app.me
 Here are what I know about my results as of now for this year ordered by Percentage:
 
 
-| Category name                            |  {{< emoji `:100:` >}}  | Percentage | Exact |
-|------------------------------------------|:-----------------------:|:----------:|:-----:|
-| Accessible websites                      |  {{< emoji `:two:` >}}  |  TOP 40%   | ? / ? |
-| AWS Fundamentals (English)               |                         |  TOP 60%   | ? / ? |
-| Cloud BI                                 |  {{< emoji `:one:` >}}  |  TOP 20%   | ? / ? |
-| Cyber Security                           |  {{< emoji `:two:` >}}  |  TOP 40%   | ? / ? |
-| DevOps                                   | {{< emoji `:three:` >}} |  TOP 20%   | ? / ? |
-| Front-end development                    |  {{< emoji `:one:` >}}  |  TOP 20%   | ? / ? |
-| Networking                               |                         |  TOP 60%   | ? / ? |
-| Industrial networks                      |                         |  TOP 40%   | ? / ? |
-| IT Security                              |  {{< emoji `:one:` >}}  |  TOP 40%   | ? / ? |
-| Kubernetes (English)                     |                         |  TOP 60%   | ? / ? |
-| Linux System Development and Maintenance |                         |  TOP 40%   | ? / ? |
-| Artifical Intelligence                   |                         |  TOP 60%   | ? / ? |
-| Usage of LLMs (ChatGPT...)               |  {{< emoji `:one:` >}}  |  TOP 40%   | ? / ? |
-| Language-independent programming         |                         |  TOP 60%   | ? / ? |
-| Python                                   |                         |  TOP 40%   | ? / ? |
+| Category name                            |  {{< emoji `:100:` >}}  | Percentage |   Exact   |
+|------------------------------------------|:-----------------------:|:----------:|:---------:|
+| Cloud BI                                 |  {{< emoji `:one:` >}}  |   TOP 25   |   ? / ?   |
+| Front-end development                    |  {{< emoji `:one:` >}}  |   10,19%   | 82 / 804  |
+| DevOps                                   | {{< emoji `:three:` >}} |   15,74%   | 97 / 616  |
+| Usage of LLMs (ChatGPT...)               |  {{< emoji `:one:` >}}  |   17,46%   | 124 / 710 |
+| IT Security                              |  {{< emoji `:one:` >}}  |   19,58%   | 140 / 715 |
+| Python                                   |                         |   25,83%   | 225 / 871 |
+| Accessible websites                      |  {{< emoji `:two:` >}}  |   27,9%    | 150 / 537 |
+| Linux System Development and Maintenance |                         |   28,16%   | 149 / 529 |
+| Industrial networks                      |                         |   28,21%   | 79 / 280  |
+| Language-independent programming         |                         |   28,44%   | 252 / 886 |
+| Kubernetes (English)                     |                         |   31,96%   | 117 / 366 |
+| Artifical Intelligence                   |                         |   32,78%   | 179 / 546 |
+| AWS Fundamentals (English)               |                         |   35,4%    | 151 / 426 |
+| Cyber Security                           |  {{< emoji `:two:` >}}  |   35,96%   | 187 / 520 |
+| Networking                               |                         |   39,03%   | 317 / 812 |
 
 Nevertheless I am looking forward to it next year!
 
