@@ -136,6 +136,8 @@ params:
           value: budavariam
         - name: twitter
           value: BudavariMatyas
+        - name: monkeytype
+          value: budavariam
         - name: tumblr
           value: budavari
         - name: facebook
