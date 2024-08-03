@@ -25,6 +25,6 @@ Install [jpegoptim](https://github.com/tjko/jpegoptim) to compress your images, 
 ## Docker
 
 You can set the development environment up locally easier with docker.
-Run `docker-compose up`, wait until you see that *the server is running*,
+Run `docker compose up`, wait until you see that *the server is running*,
 navigate to [localhost:4000](localhost:4000).
 You can edit the content and changes trigger regeneration.
