@@ -6,13 +6,58 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://budavariam.github.io/tags/ai/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>challenge</title>
       <link>https://budavariam.github.io/tags/challenge/</link>
-      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eink</title>
+      <link>https://budavariam.github.io/tags/eink/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/eink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>esp32</title>
+      <link>https://budavariam.github.io/tags/esp32/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://budavariam.github.io/tags/hackathon/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iot</title>
+      <link>https://budavariam.github.io/tags/iot/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/iot/</guid>
       <description></description>
     </item>
     
@@ -121,15 +166,6 @@
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/team-lead/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackathon</title>
-      <link>https://budavariam.github.io/tags/hackathon/</link>
-      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/hackathon/</guid>
       <description></description>
     </item>
     
