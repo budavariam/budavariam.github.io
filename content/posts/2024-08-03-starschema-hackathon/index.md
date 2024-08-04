@@ -24,7 +24,7 @@ and explore it together with someone.
 After orientation, I met a colleague who was planning on working alone on an open source project related to robotics,
 it was a match made in heaven.
 
-The topic of the hackathon was: *Make us think of make us wow*.
+The topic of the hackathon was: *Make us think or make us wow*.
 
 We needed to do something awesome.
 
