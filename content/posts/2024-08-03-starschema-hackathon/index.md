@@ -82,22 +82,22 @@ Then just waited for the AI magic to happen.
     align="center"
 >}}
 
+Its usability is nice. The image generation took about 5-10 seconds, and the image loaded in the screen way under a second. 
+
 ## What I learned
 
 - Large UDP packets are usually chunked. I saw that most tools I used split them into 1024 bytes by default.
   Although I could not make my UDP server recieve more than 1472 bytes. I spent too much time titrating this.
   Since I needed `128x296/8 = 4736` bytes I decided to split them into chunks in the sending receiving.
 - Streamlit is awesome
+- `nc -u` is great for testibg UDP packet send.
 - I love that I can display any black and white image in this eink display by just putting them in a bytearray.
   So far I only used textboxes with the API on top of it.
 - Next time I need to prepare the machine better when going on stage.
   My machine was used for sharing the presentation for the viewers, connecting to the projector,
   channeling the sound and so on.
 - I like to work on hackathons with a small team where we know each other and can almost finish each other's sentences.
-  Although this time it was extremely small, but we could function way better.
-  I had a bad experience where our team was basically split into a few 2 member teams,
-  and all the components needed to function so that the pipeline works.
-  I needed to check on the people regularly so that they don't get lost in the details.
+  Although this time it was extremely small, but we could function well.
 - It's better to arrive with an idea of what we're going to do, so that we could prepare better.
 - The final result does not have to be production ready.
   With a gross 6 hours of work without proper preparation it's a bit unrealistic for complex ideas.
@@ -110,7 +110,7 @@ Then just waited for the AI magic to happen.
 - Let the ESP know that an image will arrive soon, do not keep the server alive constantly
 - Do not buffer on ESP
 - Run the assistant on the cloud as well
-- Generate a border for the images, do not stretch them
+- Generate a border for the images, Do not stretch them
 
 ## Results
 
@@ -137,7 +137,7 @@ Every team did something with AI. The trend was evident. Ideas of other teams:
 
 ## Closing words
 
-Today hackathon way better than how I anticipated.
+Today's hackathon way better than how I anticipated.
 I arrived without a plan, and I got to focus deeply on problems I rarely face during my working days.
 I got to be amazed by how believable results can AI provide.
 I'm grateful for this opportunity and how it turned out.
