@@ -11,6 +11,29 @@ RevealJS
 
 - [Print slides](http://localhost:9999/?print-pdf-now)
 
+You can add CSS classes to control the presentation
+
+```md
+![Image that stretches](./bunny.png) {.stretch}
+- List item that shows up later {.fragment}
+- List item that shows up later {.fragment}
+```
+
+You can define a frontmatter definition in the top:
+
+```yaml
+---
+theme: "white"
+transition: "none"
+highlightTheme: "monokai"
+customTheme: "overrides"
+logoImg: "./images/logo.png"
+slideNumber: true
+center: false
+title: "Presentation"
+---
+```
+
 ## Present From a Single Laptop
 
 - [DeskPad](https://github.com/Stengo/DeskPad)
