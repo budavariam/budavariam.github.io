@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iterm2 on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/iterm2/</link>
+    <description>Recent content in iterm2 on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boost Developer Workflow</title>
+      <link>https://budavariam.github.io/posts/2025/01/15/boost-developer-workflow/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2025/01/15/boost-developer-workflow/</guid>
+      <description>&lt;p&gt;I found a tiling window manager and AI companion in iTerm2.
+It&amp;rsquo;s been a while since I wrote a post.
+In the past few days I stumbled upon a few fascinating things that
+I&amp;rsquo;ve been waiting for for a while now and I wanted to share it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
