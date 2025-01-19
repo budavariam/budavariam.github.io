@@ -9,5 +9,8 @@
         "activityBarBadge.foreground": "#e7e7e7",
         "sash.hoverBorder": "#62bfda"
     },
-    "peacock.color": "#39aed0"
+    "peacock.color": "#39aed0",
+    "conventionalCommits.scopes": [
+        "post"
+    ]
 }

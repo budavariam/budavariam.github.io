@@ -11,6 +11,7 @@
     "imgopt": "jpegoptim static/images/**/*.jpg",
     "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
     "serve": "hugo serve",
+    "dev": "docker compose up",
     "start": "HUGO_PARAMS_env=development hugo serve -D -F"
   },
   "repository": {
