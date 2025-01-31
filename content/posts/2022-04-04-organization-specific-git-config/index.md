@@ -58,7 +58,7 @@ You need to do 2 things:
    echo """[user]\n   email = personal_address@example.com""" >> ~/project_dir/personal/.gitconfig
    ```
 
-1. Extend your git config conditionally
+1. Extend your global git config conditionally at the end of the file
 
    ```conf
    [includeIf "gitdir:~/project_dir/personal/"]

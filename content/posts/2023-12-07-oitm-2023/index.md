@@ -66,7 +66,7 @@ Here are what I know about my results as of now for this year ordered by Percent
 
 | Category name                            |  {{< emoji `:100:` >}}  | Percentage |   Exact   |
 |------------------------------------------|:-----------------------:|:----------:|:---------:|
-| Cloud BI                                 |  {{< emoji `:one:` >}}  |   TOP 25   |   ? / ?   |
+| Cloud BI                                 |  {{< emoji `:one:` >}}  |    6,52%   | 15 / 230  |
 | Front-end development                    |  {{< emoji `:one:` >}}  |   10,19%   | 82 / 804  |
 | DevOps                                   | {{< emoji `:three:` >}} |   15,74%   | 97 / 616  |
 | Usage of LLMs (ChatGPT...)               |  {{< emoji `:one:` >}}  |   17,46%   | 124 / 710 |
