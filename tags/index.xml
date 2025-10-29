@@ -6,7 +6,61 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://budavariam.github.io/tags/ai/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cnc</title>
+      <link>https://budavariam.github.io/tags/cnc/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/cnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comfyui</title>
+      <link>https://budavariam.github.io/tags/comfyui/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/comfyui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://budavariam.github.io/tags/hackathon/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ollama</title>
+      <link>https://budavariam.github.io/tags/ollama/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/ollama/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plotter</title>
+      <link>https://budavariam.github.io/tags/plotter/</link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/plotter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>iterm2</title>
       <link>https://budavariam.github.io/tags/iterm2/</link>
@@ -35,15 +89,6 @@
     </item>
     
     <item>
-      <title>ai</title>
-      <link>https://budavariam.github.io/tags/ai/</link>
-      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>challenge</title>
       <link>https://budavariam.github.io/tags/challenge/</link>
       <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
@@ -67,15 +112,6 @@
       <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/esp32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackathon</title>
-      <link>https://budavariam.github.io/tags/hackathon/</link>
-      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/hackathon/</guid>
       <description></description>
     </item>
     
