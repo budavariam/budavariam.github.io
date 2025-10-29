@@ -8,8 +8,8 @@
     "bts": "node utils/svg-inline/base64-to-svg.js",
     "stb": "node utils/svg-inline/svg-to-base64.js",
     "new_post": "node utils/new_post",
-    "imgopt": "jpegoptim static/images/**/*.jpg",
-    "pngopt": "find . -name '*.png' -exec optipng -o7 {} \\;",
+    "jpgopt": "find content/posts -name '*.jpg' -exec jpegoptim --strip-all {} \\;",
+    "pngopt": "find content/posts -name '*.png' -exec optipng -o7 -strip all {} \\;",
     "serve": "hugo serve",
     "start": "HUGO_PARAMS_env=development hugo serve -D -F"
   },
