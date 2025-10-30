@@ -29,6 +29,13 @@ hackathon will be in October, and ideas that combine AI and Robotics are more
 than welcome. At that time I was really into drawing, and my idea started to
 grow that I want to make an AI driven CNC pen plotter.
 
+## What is a CNC Pen Plotter?
+
+A CNC (Computer Numerical Control) pen plotter is a machine that
+automatically draws images by moving a pen based on computer instructions
+called GCode. Think of it as a robotic arm that can precisely recreate
+digital drawings on paper.
+
 ## Idea for this Hackathon
 
 My goal was to create a web application that drives the whole process of
@@ -45,18 +52,29 @@ I split the process into seemingly logical parts:
 
 1. Select image Source
 2. Adjust Raster image to a new Raster image
-3. Transform Raster image to SVG
+3. Transform Raster image to SVG (Scalable Vector Graphics)
 4. Run `svgo` optimizer optionally
-5. Convert SVG to GCode
+5. Convert SVG to GCode (machine control instructions)
 6. Optionally Preview GCode in the app before sending
 7. Send GCode to the plotter
 
-I chose [CNC.js](https://cnc.js.org/) as my GCode sender and wrote my UI code as a custom
-TypeScript widget.
+I chose [CNC.js](https://cnc.js.org/) as my GCode sender and wrote my UI code
+as a custom TypeScript widget.
 
 I bought an entry level CNC so that I don't have to go deep too soon and
 drown in the possibilities of designing my own structure and fine tune it to
 perfection.
+
+### Tech Stack Overview
+
+The system has three main components:
+
+- Frontend: React with TypeScript
+- Backend: FastAPI with Celery workers for async processing
+- Hardware Control: FluidNC firmware on MKS DLC32 v2 controller
+- AI Tools: ComfyUI for image enhancement, Ollama, MCP for agents
+
+There are also minor technical experiments that are part of it but not essential.
 
 ### Original plan
 
@@ -106,7 +124,8 @@ While I was developing, I found some issues that made this challenging.
 
 First of all, I did not want to pay for hobby development to an AI image
 enhancement service, so I needed to find a local engine. Luckily I found
-[ComfyUI](https://www.comfy.org/)  fairly quickly and fell in love with its ease of use.
+[ComfyUI](https://www.comfy.org/) fairly quickly and fell in love with its
+ease of use.
 
 After that I needed to find pretrained models that work well. I found models
 for drawing realistic faces and models to actually do the sketches from the
@@ -116,11 +135,15 @@ face.
 
 When I got to the point of testing out the facial expression modifications, I
 was a bit shocked when the test image of a man smiled back at me as a woman.
-Apparently these models were a bit biased, and the terms I used to ask for
-some facial expressions did a gender swap as well. Prompt engineering to the
-rescue, when I added gender specific expressions to the mix, these biases
-went away. To prevent malfunction and surprises, I added an explicit selector
-if I shall add masculine or feminine terms to the prompt.
+Apparently these models were trained on datasets that associated certain
+facial expressions with specific genders. The terms I used in my prompts like
+"smiling" or "surprised" triggered these unintended transformations.
+
+Through prompt engineering (carefully crafting the text instructions given to
+the AI), I added gender specific terms like "masculine smile" or "bearded
+person looking happy" to the mix, and these biases went away. To prevent
+malfunction and surprises, I added an explicit selector to choose whether to
+add masculine or feminine terms to the prompt.
 
 {{< figure
     src="./bias_0.jpg"
@@ -166,20 +189,22 @@ parked this for a while.
     height="300px"
 >}}
 
-### Moving on
+### Changing the Plan
 
 Due to these problematic parts, I figured if I was not able to fix it in my
-limited free time over weeks, I won't be able to solve them in a single day,
-so I tried to limit the scope while still adding new features that seemed fun
-before the big day arrives.
+limited free time over weeks, I won't be able to solve them in a single day.
+Rather than force the photobooth workflow, I decided to change direction and
+focus on solving the hardware challenges first, while still adding new
+features that seemed fun before the big day arrives.
 
 While I was developing the app, my order arrived with the parts, so I spent a
 day assembling it and trying it out. To my surprise, this particular device
 only worked with its proprietary software.
 
 As I learned, the internet is filled with generative art and CNC enthusiasts,
-so I found ideas on how to circumvent this problem. I ordered new parts and
-decided that I'll spend the hackathon day to assemble the new controller.
+so I found ideas on how to circumvent this problem.
+I ordered new parts in a hurry and decided that
+I'll spend the hackathon day to assemble the new controller.
 
 ## Hackathon day
 
@@ -201,18 +226,23 @@ Things started out slowly. I spent the morning wrapping my head around the
 different options I had.
 
 My goal was to use my software instead of a windows-only app and make the
-basic functionality live, as in move the **X** and **Y axis** motors and **lift the pen**
-with a servo.
+basic functionality live, as in move the **X** and **Y axis** motors and
+**lift the pen** with a servo.
 
-I bought an `MKS DLC32 v2` with a TFT screen. Soon I realized that I cannot simply
-make the pen lift function work with the stock firmware, so I decided to
-switch to [FluidNC](http://wiki.fluidnc.com/en/home) and shed a tear of why I did not choose [Arduino with a CNC shield](https://www.instructables.com/3020-CNC-Arduino-GRBL-CNC-Shield-V3/). Since `FluidNC` does not support displays, and this display was
-designed specifically for this board, I put it away as well.
+I bought an `MKS DLC32 v2` with a TFT screen. Soon I realized that I cannot
+simply make the pen lift function work with the stock firmware, so I decided
+to switch to [FluidNC](http://wiki.fluidnc.com/en/home) and shed a tear of
+why I did not choose [Arduino with a CNC
+shield](https://www.instructables.com/3020-CNC-Arduino-GRBL-CNC-Shield-V3/).
+Since `FluidNC` does not support displays, and this display was designed
+specifically for this board, I put it away as well.
 
 I started by connecting the motors and the stepper drivers. Another reason I
-regretted my choice retrospectively is that it's not `UART` capable, so I need
-to set up the stepper motors manually. I collected all my strength and
-grabbed a multimeter to set up the [Vref](https://www.circuitist.com/how-to-set-driver-current-a4988-drv8825-tmc2208-tmc2209/) for my `TMC2208`. After I set it to a
+regretted my choice retrospectively is that the board doesn't support UART
+(Universal Asynchronous Receiver-Transmitter), a communication protocol that
+would let me configure the stepper motor drivers through software. Instead, I
+needed to manually configure them using a multimeter to [set the voltage
+reference](https://www.circuitist.com/how-to-set-driver-current-a4988-drv8825-tmc2208-tmc2209/) (Vref) for my `TMC2208` stepper drivers. After I set it to a
 seemingly safe value, I was extremely satisfied when the motors started to
 move smoothly.
 
@@ -231,17 +261,22 @@ to make it work, and I did not bring dupont cables to play with the pins
 (sidenote: yesterday night I figured out that I can use pin 25 as PWM to
 control the Z axis {{< emoji `:tada:` >}}).
 
+Since the hardware wasn't cooperating, I shifted focus to a creative feature
+Dénes was working on.
+
 Dénes had an idea to make a wordplay on digital fingerprints and someone's
-identifiability by their commits in a GitHub repository. So he was working on
-an algorithm to fetch commits and merge them into a seed for a random
-noise generator to make a [curl noise](https://en.wikipedia.org/wiki/Simulation_noise#Curl_noise) that can be transformed into an oval
-fingerprint like structure.
+identifiability by their commits in a GitHub repository. The concept was to
+fetch someone's commit history and merge the data into a seed for a random
+noise generator to create [curl
+noise](https://en.wikipedia.org/wiki/Simulation_noise#Curl_noise) that can be
+transformed into an oval fingerprint like structure. Each person's commit
+pattern would generate a unique visual fingerprint.
 
 After my failure, I joined in to add his implementation to my site. The
-challenge in it was that my site only supports image processing methods
-written in Python, but he did it in `p5.js`, so I needed to add a new image
-generator method that takes a `p5.js` code, runs it and takes the image, and
-works with it to generate the image and the drawing.
+challenge was that my site only supports image processing methods written in
+Python, but he did it in `p5.js`, so I needed to add a new image generator
+method to the UI that takes a `p5.js` code, runs it and takes the image,
+and works with it to generate the image and the drawing.
 
 {{< figure
     src="./fingerprint-0.png"
@@ -282,40 +317,65 @@ I did a quick demo to generate GCode and made it into preview stage, but we
 could not set the plotter up for a live demo this time as the mechanical
 switches started to malfunction by the end of the day.
 
-## Fun features
+## Beyond the Hackathon
 
-As I mentioned, I spent months on this project, so I added a bunch of things
-that I wanted to try for a long time. Also, when I developed a new method, I
-figured other things that would be fun to do. I managed to do:
+As I mentioned, I spent months on this project leading up to the hackathon,
+so I added many features I wanted to explore.
+Here are some of the most challenging or fun parts:
 
-- Embed Monaco editor to a website
-- Host a Jupyter server to prototype faster
-- Try out AI agents that use MCP server
-- Send jobs to `Celery` workers
-- Write a log-collector service and inspect logs in `Kibana`
-- Write a server in `Rust` that handles image processing
-- Try `Protobuf` for backend to backend communication
-- Read from macOS camera stream to Python via Docker
-- Generate QR codes
-- Have my own custom [GCode preview](https://gcode-preview.web.app/) instance
-- Write my own passthrough GRBL simulator
-- Use `httpd` to share files to have a retro feeling with Apache FTP servers
-- Try out `Streamlit` and connect it to `ollama`
-- Run user written Python scripts in the backend with safety measures
-  embedded, with some templates like zentangle drawer, postcard writer
-  according to Hungarian letter format, weather info through API
+### Core Features
+
+#### Image Processing & Generation
+
 - Generate text that looks like handwriting using single line fonts from TTF
   and Hershey vector fonts, adding jitter and making sure the SVG is not too
   complex
-- Add a configuration encoder/decoder to SVG and GCode files to ease reproducibility
+- Generate QR codes
+- Cache generated images in Redis if I generate them with the same settings
+- Have my own custom [GCode preview](https://gcode-preview.web.app/) instance
+- Run user written Python scripts in the backend with safety measures
+  embedded, with templates like zentangle drawer, postcard writer according
+  to Hungarian letter format, weather info through API.
+  These scripts are written in Monaco Editor (the same editor that powers VSCode)
+
+#### SVG to GCode Pipeline
+
+- Add a configuration encoder/decoder to SVG and GCode files to ease
+  reproducibility
+- Handle GCode tool change with multiple colors and stroke width
+- Write my own passthrough GRBL simulator
+
+### Infrastructure & Development Tools
+
+#### Backend Architecture
+
+- Send jobs to `Celery` workers (distributed task queue for async processing)
+- Write a log-collector service and inspect logs in `Kibana`
+- Write a separate server in `Rust` that handles image processing
+- Try `Protobuf` (Protocol Buffers) for efficient backend to backend
+  communication
+
+#### AI Integration
+
+- Use AI agents that use MCP server (Model Context Protocol)
+- Add a `Streamlit` app and connect it to `ollama` to call my FastAPI backend
+- Host a Jupyter server to prototype faster
+- [Blazeface](https://github.com/hollance/BlazeFace-PyTorch) Face detection to crop the user's face from the camera stream
+
+#### Development Environment
+
+- Read from macOS camera stream, and forward it to the backend to stream to the user
+- Use `httpd` to share files to have a retro feeling with Apache FTP servers
+  to speed up example sharing on the big day
 - GCode sender via WebSocket to `FluidNC` in case I cannot make it work with
   `CNC.js`
-- Handle GCode tool change with multiple colors and stroke width
+- I wrote the presentation in revealjs, and hosted it with [my CLI tool](https://github.com/budavariam/revealjs-cli)
 
-In this few months I was able to practiced AI Driven Development a bit, and experience first hand how certain models evolved.
-I used it mostly for when a feature seemed fun to have to
-showcase, but I did not have the mental capacity to dive deeper into its background.
-Later I sat down and fine tuned when I had better ideas.
+In these few months I was able to practice AI Driven Development and
+experience first hand how certain models evolved. I used it mostly when a
+feature seemed fun to showcase, but I did not have the mental capacity to
+dive deeper into its background. Later I sat down and fine tuned when I had
+better ideas.
 
 ### SVG to GCode Generation
 
@@ -333,28 +393,30 @@ colors, `CNC.js` will stop halfway and ask the user to change the tool
 manually, and then confirm that the tool change happened, and when they click
 the button the drawing continues.
 
-#### NP-complete
+#### Path Optimization
 
-The trickiest part is to add more and more optimizations to the mix. Since
-the optimal path calculation is NP-complete, like the Travelling Salesman
-problem, I decided I let others do it for my code and chose [ORTools](https://developers.google.com/optimization) by
-Google to handle the path order. I added heuristical points to each path
-segment to optimize on.
+The trickiest part is adding optimizations to minimize pen travel time. Since
+finding the optimal path is mathematically complex (an NP-complete problem
+similar to the famous [Travelling Salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)), I decided to let others
+handle the heavy lifting and chose [OR-Tools](https://developers.google.com/optimization) by Google. I added
+heuristic scoring points to each path segment for the optimizer to work with.
 
 #### Approaching the Shapes
 
-Another challenging piece was to determine which direction shall the plotter
-approach my shape. At first, each of my shapes were drawn from the bottom
+Another challenging piece was to determine which direction the plotter should
+approach each shape. At first, each of my shapes were drawn from the bottom
 left corner. Imagine you have 4 rectangles in a 2 by 2 grid. The optimal
 drawing order is definitely not the one where you travel through the whole
 shape just to arrive to that specific corner on the bottom left.
 
 So I added dynamic code generation after the optimization. When I assemble
 the final machine code, my module tracks the current location of the pen,
-takes the next segment and chooses the entry point closest to the pen, and
-draws the shape as if it was originally started from that point. For circles,
-I find the closest path and draw 2 semicircles. For paths and polylines, I
-need to check whether it's a closed shape or I only have 2 entry points.
+takes the next segment and calculates the Euclidean distance to all possible
+entry points. It chooses the entry point closest to the pen and draws the
+shape as if it was originally started from that point. For circles, I find
+the closest point on the circumference and draw 2 semicircles. For paths and
+polylines, I need to check whether it's a closed shape or I only have 2 entry
+points.
 
 ### AI MCP server
 
@@ -364,12 +426,14 @@ big model providers, and any time I tried to run agentic code editing locally
 my machine basically froze.
 
 I really liked the idea to have a chat app where I can ask an LLM to generate
-some text for me and have it use an MCP server to actually ask another
-service to do the work.
+some text for me and have it use an MCP server (Model Context Protocol, a
+standard that lets AI models call external tools and services) to actually
+ask another service to do the work.
 
 {{< figure
     src="./ai_handwriting-1.png"
-    caption="Streamlit coordinated Poem writng through my API via an MCP using agent"
+    caption="Streamlit coordinated Poem writing through my API via an MCP
+using agent"
     align="center"
     height="300px"
 >}}
@@ -399,9 +463,10 @@ devices that are connected to the machine, so I needed to figure out a way
 how to sneak this info through.
 
 My solution is to have a task running alongside my `docker-compose` script
-that runs [ser2net](https://github.com/cminyard/ser2net) and forward it to a TCP port. Then have a service inside
-Docker that runs a [socat](https://linux.die.net/man/1/socat) command that maps it into a virtual `/dev` device.
-To all my surprise, it works pretty well.
+that runs [ser2net](https://github.com/cminyard/ser2net) and forward it to a
+TCP port. Then have a service inside Docker that runs a
+[socat](https://linux.die.net/man/1/socat) command that maps it into a
+virtual `/dev` device. To all my surprise, it works pretty well.
 
 I haven't yet found how `CNC.js` supports streaming GCode over the network,
 but in theory this way could work. I just need to rewire `socat` to the
@@ -434,5 +499,26 @@ After my presentation, I got a feedback that this project was almost like
 more than one hackathon project.
 
 I think now I know what they meant.
+
+### Lessons Learned
+
+#### What worked well
+
+Breaking down the problem into modular components
+(image processing, SVG generation, GCode conversion) made it easier to
+iterate and add features over time.
+
+#### What I'd do differently
+
+- Starting with simpler hardware would have saved
+hours of troubleshooting. The Arduino CNC shield would have been a better
+choice for rapid prototyping.
+- I would allow combining multiple filters not just as a single selection next-next-finish wizard
+
+#### Biggest surprises
+
+- How well the Docker serial connection workaround
+performs. What seemed like a hack turned into a robust solution.
+- Local image generation can produce pretty images
 
 Happy coding!
