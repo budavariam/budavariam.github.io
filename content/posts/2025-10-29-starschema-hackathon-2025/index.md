@@ -432,8 +432,7 @@ ask another service to do the work.
 
 {{< figure
     src="./ai_handwriting-1.png"
-    caption="Streamlit coordinated Poem writing through my API via an MCP
-using agent"
+    caption="Streamlit coordinated Poem writing through my API via an MCP using agent"
     align="center"
     height="300px"
 >}}
