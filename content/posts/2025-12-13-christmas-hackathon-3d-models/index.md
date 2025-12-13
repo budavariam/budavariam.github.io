@@ -144,7 +144,7 @@ I built scripts along the way to make my job simpler:
 
 ## Final Result
 
-I used my revealjs-cli module to generate a presentation about my journey. It is [available here](https://github.com/budavariam/hackathon-3dmodels/blob/main/presentation/presentation.md).
+I used my revealjs-cli module to generate a presentation about my journey. It is [available here](https://budavariam.github.io/hackathon-3dmodels/#/).
 
 {{< figure
     src="stl_box.png"
