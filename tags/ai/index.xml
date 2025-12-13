@@ -6,7 +6,17 @@
     <description>Recent content in ai on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompting My Way Through 3D Models</title>
+      <link>https://budavariam.github.io/posts/2025/12/13/prompting-my-way-through-3d-models/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2025/12/13/prompting-my-way-through-3d-models/</guid>
+      <description>&lt;p&gt;Another working Saturday means another chance to work on something outside of daily work.
+This time I decided to do a solo hackathon to learn prompt engineering through creating 3D models.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Starschema Hackathon 2025</title>
       <link>https://budavariam.github.io/posts/2025/10/29/starschema-hackathon-2025/</link>

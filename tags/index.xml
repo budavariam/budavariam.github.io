@@ -6,13 +6,49 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ai</title>
       <link>https://budavariam.github.io/tags/ai/</link>
-      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>claude-code</title>
+      <link>https://budavariam.github.io/tags/claude-code/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://budavariam.github.io/tags/hackathon/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openscad</title>
+      <link>https://budavariam.github.io/tags/openscad/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/openscad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prompt-engineering</title>
+      <link>https://budavariam.github.io/tags/prompt-engineering/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/prompt-engineering/</guid>
       <description></description>
     </item>
     
@@ -31,15 +67,6 @@
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/comfyui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackathon</title>
-      <link>https://budavariam.github.io/tags/hackathon/</link>
-      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/hackathon/</guid>
       <description></description>
     </item>
     

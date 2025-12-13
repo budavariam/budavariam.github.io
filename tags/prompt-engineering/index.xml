@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prompt-engineering on Mátyás Budavári</title>
+    <link>https://budavariam.github.io/tags/prompt-engineering/</link>
+    <description>Recent content in prompt-engineering on Mátyás Budavári</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/prompt-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompting My Way Through 3D Models</title>
+      <link>https://budavariam.github.io/posts/2025/12/13/prompting-my-way-through-3d-models/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2025/12/13/prompting-my-way-through-3d-models/</guid>
+      <description>&lt;p&gt;Another working Saturday means another chance to work on something outside of daily work.
+This time I decided to do a solo hackathon to learn prompt engineering through creating 3D models.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
