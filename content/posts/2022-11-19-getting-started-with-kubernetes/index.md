@@ -211,7 +211,7 @@ k label pod my-pod environment=production
 k label pod my-pod version=v1.2.3 --overwrite
 ```
 
-If you're using `oh-my-zsh`, the kubectl plugin provides many helpful aliases like `kgp` for `kubectl get pods` and `kgpw` for `kubectl get pods --watch`.
+If you're using `oh-my-zsh`, the kubectl plugin provides many helpful aliases like `kgp` for `kubectl get pods` and `kgpw` for `kubectl get pods --watch`. See the available aliases in [ohmyzhs's github repo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl). 
 
 ## Building Blocks
 
