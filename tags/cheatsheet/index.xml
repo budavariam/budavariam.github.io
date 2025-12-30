@@ -6,7 +6,18 @@
     <description>Recent content in cheatsheet on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started With Kubernetes</title>
+      <link>https://budavariam.github.io/posts/2022/11/19/getting-started-with-kubernetes/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2022/11/19/getting-started-with-kubernetes/</guid>
+      <description>&lt;p&gt;So you&amp;rsquo;ve joined a new project as a developer, and that project uses Kubernetes.
+Everyone around you uses terms like &lt;code&gt;pods&lt;/code&gt;, &lt;code&gt;deployments&lt;/code&gt; and &lt;code&gt;configmaps&lt;/code&gt; and you don&amp;rsquo;t really know what they mean.
+Let me help you get started.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Hugo Development Tips</title>
       <link>https://budavariam.github.io/posts/2022/07/14/hugo-development-tips/</link>
