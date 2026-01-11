@@ -268,7 +268,7 @@ half time, I was able to add significant features to my application. Not bad
 for a single day's work.
 
 {{< figure
-    src="starschema.jpg"
+    src="plotter.jpg"
     caption="Working on the plotter setup"
     height="600px"
     align="center"
