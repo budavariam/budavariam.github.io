@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cnc</title>
+      <link>https://budavariam.github.io/tags/cnc/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/cnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generative-art</title>
+      <link>https://budavariam.github.io/tags/generative-art/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/generative-art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://budavariam.github.io/tags/hackathon/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maze</title>
+      <link>https://budavariam.github.io/tags/maze/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/maze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plotter</title>
+      <link>https://budavariam.github.io/tags/plotter/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/plotter/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ai</title>
       <link>https://budavariam.github.io/tags/ai/</link>
@@ -22,15 +67,6 @@
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/claude-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hackathon</title>
-      <link>https://budavariam.github.io/tags/hackathon/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/hackathon/</guid>
       <description></description>
     </item>
     
@@ -53,15 +89,6 @@
     </item>
     
     <item>
-      <title>cnc</title>
-      <link>https://budavariam.github.io/tags/cnc/</link>
-      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/cnc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>comfyui</title>
       <link>https://budavariam.github.io/tags/comfyui/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
@@ -76,15 +103,6 @@
       <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/ollama/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plotter</title>
-      <link>https://budavariam.github.io/tags/plotter/</link>
-      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/plotter/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,20 @@
     <description>Recent content in cnc on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/cnc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/cnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starschema Hackathon 2026 aka Challenge Day</title>
+      <link>https://budavariam.github.io/posts/2026/01/10/starschema-hackathon-2026-aka-challenge-day/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2026/01/10/starschema-hackathon-2026-aka-challenge-day/</guid>
+      <description>&lt;p&gt;Today was another working Saturday, swapped from January 2nd. Instead of a
+regular hackathon, we got to choose from different activities. My main goal
+was simple: make my plotter work. After &lt;a href=&#34;https://budavariam.github.io/posts/2025/10/29/starschema-hackathon-2025/&#34;&gt;failing to achieve this in the
+earlier hackathon&lt;/a&gt;, I was
+determined to finally see it draw.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Starschema Hackathon 2025</title>
       <link>https://budavariam.github.io/posts/2025/10/29/starschema-hackathon-2025/</link>
