@@ -17,7 +17,7 @@ Let me help you get started.
 
 <!--more-->
 
-I'd like to give you a high level overview and basic commands to get started. 
+I'd like to give you a high level overview and basic commands to get started.
 I try to be understandable rather than deep technical, there's a lot of ground to cover.
 
 I use it in my day to day job, I have enough knowledge to get by, but might not always know the latest nuances.
@@ -211,7 +211,7 @@ k label pod my-pod environment=production
 k label pod my-pod version=v1.2.3 --overwrite
 ```
 
-If you're using `oh-my-zsh`, the kubectl plugin provides many helpful aliases like `kgp` for `kubectl get pods` and `kgpw` for `kubectl get pods --watch`. See the available aliases in [ohmyzhs's github repo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl). 
+If you're using `oh-my-zsh`, the kubectl plugin provides many helpful aliases like `kgp` for `kubectl get pods` and `kgpw` for `kubectl get pods --watch`. See the available aliases in [ohmyzhs's github repo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl).
 
 ## Building Blocks
 
@@ -415,7 +415,7 @@ kubectl create configmap load-script \
 [Docs](https://kubernetes.io/docs/concepts/configuration/secret/)
 
 Although its name suggests it's a secret, note that the values by default are only base64 encoded,
-they can be decoded simply if you have API access or can add a custom pod. 
+they can be decoded simply if you have API access or can add a custom pod.
 For better security see the [Secret Best Practices](https://kubernetes.io/docs/concepts/security/secrets-good-practices).
 
 Just like with ConfigMaps Secrets can be used in environment variable values.

@@ -2,7 +2,7 @@
 layout: post
 title: Mermaid Diagrams
 tags: [ mermaid, developer-toolbox, javascript, github, diagram, cli]
-cover: 
+cover:
     alt: The statue of the little mermaid on a rock in copenhagen denmark
     hidden: false
 resources:
