@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitting Started</title>
+      <link>https://budavariam.github.io/posts/2026/02/04/gitting-started/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/posts/2026/02/04/gitting-started/</guid>
+      <description>&lt;p&gt;I did not learn git until I started working professionally. In the university we learned about SVN.
+We did not really use branches, wee followed trunk based development in all of the group projects.
+At my second job I had to get into git quickly. It was overwhelming at first, but luckily I had patient mentors,
+who answered my questions with enthusiasm, and taught me best practices that I still carry with me.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Starschema Hackathon 2026 aka Challenge Day</title>
       <link>https://budavariam.github.io/posts/2026/01/10/starschema-hackathon-2026-aka-challenge-day/</link>

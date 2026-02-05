@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mátyás Budavári</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://budavariam.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>beginner</title>
+      <link>https://budavariam.github.io/tags/beginner/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/beginner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer-toolbox</title>
+      <link>https://budavariam.github.io/tags/developer-toolbox/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/developer-toolbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://budavariam.github.io/tags/git/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>version-control</title>
+      <link>https://budavariam.github.io/tags/version-control/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://budavariam.github.io/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>cnc</title>
       <link>https://budavariam.github.io/tags/cnc/</link>
@@ -323,15 +359,6 @@
     </item>
     
     <item>
-      <title>developer-toolbox</title>
-      <link>https://budavariam.github.io/tags/developer-toolbox/</link>
-      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/developer-toolbox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>javascript</title>
       <link>https://budavariam.github.io/tags/javascript/</link>
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
@@ -454,15 +481,6 @@
       <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://budavariam.github.io/tags/dotfiles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://budavariam.github.io/tags/git/</link>
-      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://budavariam.github.io/tags/git/</guid>
       <description></description>
     </item>
     

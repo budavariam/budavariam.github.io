@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://budavariam.github.io/tags/beginner/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/git/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/2026/02/04/gitting-started/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/posts/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://budavariam.github.io/tags/version-control/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://budavariam.github.io/tags/cnc/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,22 +35,13 @@
     <loc>https://budavariam.github.io/tags/hackathon/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/maze/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/plotter/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/posts/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/posts/2026/01/10/starschema-hackathon-2026-aka-challenge-day/</loc>
-    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/ai/</loc>
@@ -164,9 +179,6 @@
     <loc>https://budavariam.github.io/posts/2022/07/14/hugo-development-tips/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://budavariam.github.io/tags/developer-toolbox/</loc>
-    <lastmod>2022-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://budavariam.github.io/tags/javascript/</loc>
     <lastmod>2022-06-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -219,9 +231,6 @@
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/tags/dotfiles/</loc>
-    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://budavariam.github.io/tags/git/</loc>
     <lastmod>2022-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://budavariam.github.io/posts/2022/04/04/organization-specific-git-config/</loc>
