@@ -8,9 +8,11 @@ cover:
 date: 2026-07-04
 ---
 
-For years `.env` files were a one-time setup ritual. Then feature branches started requiring different database
-configs, API keys, and service URLs — and suddenly I was doing the same manual swap dozens of times a week.
-This is the story of the tool I built to stop doing that.
+For years `.env` files were a one-time setup ritual. Then three things started happening at once: feature
+branches required different database configs and API keys for every context switch, a colleague showed me
+how much his tmux workflow had reduced the friction of his day, and a new team member joined and spent half
+a day trying to get the right credentials from the right people. This is the story of the tool I built to
+solve all three problems together.
 
 <!--more-->
 
@@ -57,6 +59,8 @@ that handles both problems together.
 The core idea is a `settings.json` at the root of the tool directory that describes your project: which
 services exist, what their presets are, and how to lay out a dev session. `penv` lives alongside your
 service repos and knows how to wire everything together.
+
+{{< asciinema src="demo.cast" cols="120" rows="30" idleLimit="2" >}}
 
 ### Env preset management
 

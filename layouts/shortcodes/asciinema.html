@@ -1,0 +1,79 @@
+{{- /*
+  asciinema shortcode — embed an asciinema player in a Hugo page.
+
+  Usage:
+    {{< asciinema src="demo.cast" >}}
+    {{< asciinema src="demo.cast" cols="120" rows="30" autoplay="true" loop="true" >}}
+    {{< asciinema src="demo.cast" speed="1.5" theme="monokai" >}}
+
+  Parameters (all optional except src):
+    src       path to the .cast file (relative to the page bundle, or absolute URL)
+    cols      terminal width  (default: from cast file)
+    rows      terminal height (default: from cast file)
+    autoplay  start playing immediately (default: false)
+    loop      loop the recording (default: false)
+    speed     playback speed multiplier (default: 1)
+    theme     colour theme: asciinema | monokai | solarized-dark | solarized-light | tango (default: asciinema)
+    idleLimit cap consecutive idle seconds (default: 2)
+*/ -}}
+
+{{- $src      := .Get "src" -}}
+{{- $cols     := .Get "cols" -}}
+{{- $rows     := .Get "rows" -}}
+{{- $autoplay := .Get "autoplay"  | default "false" -}}
+{{- $loop     := .Get "loop"      | default "false" -}}
+{{- $speed    := .Get "speed"     | default "1" -}}
+{{- $theme    := .Get "theme"     | default "asciinema" -}}
+{{- $idle     := .Get "idleLimit" | default "2" -}}
+
+{{- /* Resolve src: relative paths are served from the page bundle. */ -}}
+{{- $resolvedSrc := $src -}}
+{{- with .Page.Resources.GetMatch $src -}}
+  {{- $resolvedSrc = .RelPermalink -}}
+{{- end -}}
+
+{{- /* Emit the player assets exactly once per page via Page.Store. */ -}}
+{{- if not (.Page.Store.Get "asciinema-loaded") -}}
+  {{- .Page.Store.Set "asciinema-loaded" true -}}
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/asciinema-player@3.8.1/dist/bundle/asciinema-player.min.css">
+<script src="https://cdn.jsdelivr.net/npm/asciinema-player@3.8.1/dist/bundle/asciinema-player.min.js"
+        defer></script>
+{{- end }}
+
+<div class="asciinema-player-wrapper"
+     id="asciinema-{{ .Ordinal }}"
+     data-cast="{{ $resolvedSrc }}"
+     data-autoplay="{{ $autoplay }}"
+     data-loop="{{ $loop }}"
+     data-speed="{{ $speed }}"
+     data-theme="{{ $theme }}"
+     data-idle-limit="{{ $idle }}"
+     {{- with $cols }} data-cols="{{ . }}"{{ end }}
+     {{- with $rows }} data-rows="{{ . }}"{{ end }}>
+</div>
+<script>
+  (function () {
+    function init() {
+      var el = document.getElementById("asciinema-{{ .Ordinal }}");
+      if (!el || !window.AsciinemaPlayer) return;
+      var opts = {
+        autoPlay:   el.dataset.autoplay   === "true",
+        loop:       el.dataset.loop       === "true",
+        speed:      parseFloat(el.dataset.speed),
+        theme:      el.dataset.theme,
+        idleTimeLimit: parseFloat(el.dataset.idleLimit),
+      };
+      if (el.dataset.cols) opts.cols = parseInt(el.dataset.cols);
+      if (el.dataset.rows) opts.rows = parseInt(el.dataset.rows);
+      AsciinemaPlayer.create(el.dataset.cast, el, opts);
+    }
+    // AsciinemaPlayer loads via defer; run init after the script tag fires.
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      // DOMContentLoaded already fired — wait one tick for the deferred script.
+      setTimeout(init, 0);
+    }
+  })();
+</script>
