@@ -126,7 +126,42 @@ away wherever you are in the session.
 It works with **tmux**, **byobu**, and **GNU Screen**. Set `session_multiplexer` in your local settings and
 it uses the right binary throughout.
 
-### The local config split
+### Sharing secrets with new team members
+
+One thing `.env` backups in a personal folder never solved: onboarding. The classic handover is someone
+Slacking you a wall of environment variables, you pasting them into a file, half of them being wrong or
+outdated, and spending an hour debugging until someone mentions the values changed two weeks ago.
+
+With a shared backend like 1Password, the flow becomes different. The team maintains one vault with the
+canonical presets. A new joiner runs:
+
+```bash
+op signin
+penv op pull dev     # pulls every service's dev preset from 1Password
+penv load-env dev    # writes them all into the service repos
+```
+
+That's it. They have the same environment as everyone else, including the updates from last week that
+nobody announced.
+
+The same mechanism solves drift for existing team members. If someone rotates an API key and pushes the
+update to 1Password, `morning-check` will notice the next day:
+
+```
+buz-api [dev]: differs from 1Password  (1Password was updated — backend changes likely)
+
+  [d] show diff  [p] pull from 1Password  [push] push local → 1Password  [s] skip
+```
+
+It shows which direction the change went — whether your local version is newer (you made changes) or the
+backend is newer (someone else did). You pick the right direction without guessing.
+
+For teams that don't use 1Password, the same model works with SQLite: one person maintains a shared
+`secrets.db` and distributes it (or puts it in a private repo), and everyone pulls from the same source.
+It is not as ergonomic as a real secrets manager, but it is still better than a group chat full of
+`.env` snippets.
+
+
 
 There are two config files:
 
