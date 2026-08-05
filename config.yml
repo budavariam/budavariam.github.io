@@ -5,6 +5,8 @@ description: Developer from Szeged
 theme: "PaperModBudavariam"
 paginate: 25
 
+ignoreErrors: ["error-remote-getjson"]
+
 enableRobotsTXT: true
 enableInlineShortcodes: true
 enableEmoji: false
